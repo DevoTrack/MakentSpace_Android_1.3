@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="50dp"
+
+        android:weightSum="2"
+
+        >
+    <RelativeLayout
+        android:id="@+id/rl_start_time"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_info"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/rect_noborder"
+        android:divider="@drawable/divider"
+        android:showDividers="middle">
+
+        <!--android:background="@drawable/d_gray_border"-->
+
+
+
+
+            <!--android:background="@drawable/d_gray_border"-->
+
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/tv_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:hint="@string/start_time"
+                android:layout_toLeftOf="@+id/iv_start_time"
+                android:textSize="@dimen/midi"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:visibility="visible"
+                />
+
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:rotation="90"
+            android:scaleX=".6"
+            android:scaleY=".6"
+            android:id="@+id/iv_start_time"
+            android:src="@drawable/n2_standard_row_right_caret_gray"
+            android:tint="@color/text_shadow"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_end_time"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_info"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rect_noborder"
+            android:divider="@drawable/divider"
+            android:showDividers="middle">
+
+            <!--android:background="@drawable/d_gray_border"-->
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/tv_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:hint="@string/end_time"
+                android:textSize="@dimen/midi"
+                android:layout_toLeftOf="@+id/iv_end_time"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:visibility="visible"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+
+                android:rotation="90"
+                android:scaleX=".6"
+                android:id="@+id/iv_end_time"
+                android:scaleY=".6"
+                android:src="@drawable/n2_standard_row_right_caret_gray"
+                android:tint="@color/text_shadow"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/iv_remove"
+        android:src="@drawable/delete_image"
+
+        />
+</RelativeLayout>

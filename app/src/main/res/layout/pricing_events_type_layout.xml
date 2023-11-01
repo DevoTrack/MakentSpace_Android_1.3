@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layoutDirection="@string/layout_direction">
+
+    <RelativeLayout
+        android:id="@+id/rlt_eventsType"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/border">
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/tv_eventsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentStart="true"
+            android:text="EventsType Experience"
+            android:textColor="@color/text_shadow"
+            android:textSize="@dimen/midb" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/imagelayout"
+            android:layout_below="@id/tv_eventsTitle"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:id="@+id/events_image"
+                android:src="@drawable/icon_delete"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ededed"
+            android:id="@+id/rly_details"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/imagelayout"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical">
+
+            <com.makent.trioangle.palette.TextView.MakentLightTextView
+                android:layout_width="wrap_content"
+                android:id="@+id/hour_rate"
+                android:textSize="@dimen/small"
+                android:textAlignment="viewStart"
+                android:paddingStart="10dp"
+                android:textColor="@color/text_shadow"
+                android:layout_height="wrap_content"
+                android:text="Hourly Rate: 1200000"/>
+            <com.makent.trioangle.palette.TextView.MakentLightTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/small"
+                android:textAlignment="viewStart"
+                android:paddingStart="10dp"
+                android:textColor="@color/text_shadow"
+                android:id="@+id/fulldayrate"
+                android:text="FullDay Rated: 120000"/>
+            <com.makent.trioangle.palette.TextView.MakentLightTextView
+                android:layout_width="wrap_content"
+                android:id="@+id/min_booking_hours"
+                android:textSize="@dimen/small"
+                android:textAlignment="viewStart"
+                android:paddingStart="10dp"
+                android:textColor="@color/text_shadow"
+                android:layout_height="wrap_content"
+                android:text="Minimum Booking Hours:4"/>
+        </LinearLayout>
+        <!--   <com.makent.trioangle.palette.TextView.MakentBookTextView
+               android:id="@+id/tv_eventsTitle"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:layout_alignParentStart="true"
+               android:text="EventsType"
+               android:textColor="@color/text_shadow"
+               android:textSize="@dimen/midb" />
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/rv_Events"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_below="@+id/tv_eventsTitle"
+               android:layout_alignParentStart="true"
+               android:clipToPadding="false"
+               android:scrollbars="none" />-->
+        <!--<com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/tv_bed_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/tv_eventsTitle"
+            android:layout_alignEnd="@id/rv_Events"
+            android:text="+0"
+            android:visibility="gone"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/background"
+            android:textSize="@dimen/midb" />-->
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/explore_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/explore_nodata_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:text="@string/nodata_msg"
+            android:textColor="@color/text_light_shadow"
+            android:textSize="18sp" />
+
+        <com.makent.trioangle.palette.Button.MakentBookButton
+            android:id="@+id/explore_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/explore_nodata_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/d_blue_line_color"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/removefilter"
+            android:textAllCaps="false"
+            android:textColor="@color/background"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

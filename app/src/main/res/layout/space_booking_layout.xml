@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/llt_policy"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:orientation="vertical">
+
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/tv_cancelpolicy_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/set_your_space_availability"
+            android:textAlignment="textStart"
+            android:textColor="@color/text_shadow"
+            android:textSize="@dimen/midb" />
+
+        <RelativeLayout
+            android:id="@+id/rlt_cancelpolicy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_guidance_title"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:layout_weight="2"
+            android:divider="@drawable/divider"
+            android:showDividers="middle">
+
+            <!--android:background="@drawable/d_gray_border"-->
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/tv_cancelpolicy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rect_noborder"
+                android:gravity="start"
+                android:text=""
+                android:minHeight="40dp"
+                android:textAlignment="center"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="@dimen/midi"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:orientation="vertical">
+
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/tv_bookingtype_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bookingtype"
+            android:textAlignment="textStart"
+            android:textColor="@color/text_shadow"
+            android:textSize="@dimen/midb" />
+
+
+        <RelativeLayout
+            android:id="@+id/rlt_bookingtype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_guidance_title"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:layout_weight="2"
+            android:divider="@drawable/divider"
+            android:showDividers="middle">
+
+            <!--android:background="@drawable/d_gray_border"-->
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/tv_bookingtype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rect_noborder"
+                android:gravity="center_vertical"
+                android:text=""
+                android:minHeight="40dp"
+                android:textAlignment="center"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="@dimen/midi"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:orientation="vertical">
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/tv_securitydeposit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/securitydeposit"
+            android:textAlignment="textStart"
+            android:textColor="@color/text_shadow"
+            android:textSize="@dimen/midb" />
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:id="@+id/tv_securitydeposit_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/securitydeposit"
+            android:layout_marginTop="10dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/text_shadow"
+            android:textSize="@dimen/midi" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ll_price"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/tv_currency_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:maxLines="25"
+                android:layout_weight="0.4"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:background="@drawable/rect_noborder"
+                android:editable="false"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:visibility="visible"
+                />
+            <com.makent.trioangle.palette.EditText.MakentBookEditText
+                android:id="@+id/edt_securitydeposit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="25"
+                android:layout_weight="1.6"
+                android:padding="10dp"
+                android:inputType="number"
+                android:singleLine="true"
+                android:background="@drawable/rect_noborder"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:visibility="visible"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/d_redbutton_enable_disable"
+        android:text="@string/continue_"
+        android:textColor="@color/white"
+        android:layout_below="@+id/llt_policy"
+        />
+
+</RelativeLayout>

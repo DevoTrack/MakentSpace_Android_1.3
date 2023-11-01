@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:text="Pending Bookings"
+        android:textSize="@dimen/vbigb"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/tripsdetails_title"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text_shadow"/>
+
+    <com.makent.trioangle.palette.TextView.MakentLightTextView
+        android:text="@string/youhave"
+        android:textSize="@dimen/midb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tripsdetails_titlemsg"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/primary_dark_material_light"
+        android:layout_below="@+id/inbox"
+        android:layout_alignStart="@+id/inbox"
+        android:layout_marginTop="10dp" />
+</LinearLayout>

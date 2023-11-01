@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:id="@+id/rlt_sqft"
+        android:gravity="center"
+        >
+
+
+
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midv"
+            android:textColor="@color/text_shadow"
+            android:text="@string/sq_ft"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/rlt_acress"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        >
+
+
+
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midv"
+            android:textColor="@color/text_shadow"
+            android:text="@string/acres"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

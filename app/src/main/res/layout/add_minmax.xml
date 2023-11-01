@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_text_color"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/Addminmaxhead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/title_text_color">
+
+            <ImageView
+                android:id="@+id/reserveback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="20dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp"
+                android:src="@drawable/icon_checkmark_black"
+                android:tint="@color/text_shadow" />
+
+            <com.makent.trioangle.palette.TextView.MakentTextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/reserveback"
+                android:paddingTop="15dp"
+                android:text="@string/done"
+                android:textAlignment="textStart"
+                android:textColor="@color/text_light_shadow"
+                android:textSize="@dimen/big"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/room_details_hrline0"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_weight=".25"
+            android:background="@drawable/d_bottom" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.makent.trioangle.palette.TextView.MakentLightTextView
+                android:visibility="gone"
+                android:id="@+id/selectdate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:paddingTop="15dp"
+                android:text="Select Dates"
+                android:textColor="@color/text_light_shadow"
+                android:textSize="@dimen/midi"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/spinnerlayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2"
+
+                android:divider="@drawable/divider"
+                android:gravity="center"
+                android:showDividers="middle">
+
+
+                <Spinner
+                    android:id="@+id/myspinner1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    android:dropDownVerticalOffset="0dp"
+                    android:overlapAnchor="false"
+                    android:dropDownWidth="fill_parent"
+                    android:background="@drawable/d_gray_border"
+                    android:textAlignment="center" />
+
+
+                <ImageView
+                    android:id="@+id/bedarrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:rotation="90"
+                    android:scaleX=".6"
+                    android:scaleY=".6"
+                    android:src="@drawable/n2_standard_row_right_caret_gray"
+                    android:tint="@color/red_text"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.makent.trioangle.palette.TextView.MakentTextView
+                    android:id="@+id/maxstay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:text="Minimum Stay"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/text_light_shadow"
+                    android:textSize="@dimen/midi"
+                    android:textStyle="bold" />
+
+                <com.makent.trioangle.palette.EditText.MakentBookEditText
+                    android:id="@+id/maxistay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/reserveback"
+                    android:layout_weight="1"
+                    android:background="@drawable/rect_background"
+                    android:paddingTop="15dp"
+                    android:text="2"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/text_light_shadow"
+                    android:textSize="@dimen/midb"
+                    android:textStyle="bold" />
+
+                <com.makent.trioangle.palette.TextView.MakentTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@+id/reserveback"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectgray_background"
+                    android:gravity="center_vertical"
+                    android:paddingTop="15dp"
+                    android:text="@string/nights"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/text_light_shadow"
+                    android:textSize="@dimen/midb" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Star_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/d_bottom"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/start_dates"
+                    android:textColor="@color/text_light_shadow"
+                    android:textSize="@dimen/big" />
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:id="@+id/startdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:hint="17/05/2018"
+                    android:textColor="@color/text_light_gray"
+                    android:textSize="@dimen/midb" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/End_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/d_bottom"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/end_dates"
+                    android:textColor="@color/text_light_shadow"
+                    android:textSize="@dimen/big" />
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:id="@+id/enddate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:hint="17/05/2018"
+                    android:textColor="@color/text_light_gray"
+                    android:textSize="@dimen/midb" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/minimum_stay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/d_bottom"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/minimum_stay"
+                    android:textColor="@color/text_light_shadow"
+                    android:textSize="@dimen/big" />
+
+                <LinearLayout
+                    android:id="@+id/min_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.makent.trioangle.palette.EditText.MakentBookEditText
+                        android:id="@+id/minimumstay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/line_gray"
+                        android:textCursorDrawable="@null"
+                        android:background="@null"
+                        android:inputType="number"
+                        android:hint="0"
+                        android:maxWidth="60dp"
+                        android:textColor="@color/text_light_gray"
+                        android:textSize="@dimen/midb" />
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nights"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/text_light_shadow"
+                        android:textSize="@dimen/big" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/maximum_stay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/d_bottom"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/maximum_stay"
+                    android:textColor="@color/text_light_shadow"
+                    android:textSize="@dimen/big" />
+                <LinearLayout
+                    android:id="@+id/max_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <com.makent.trioangle.palette.EditText.MakentBookEditText
+                    android:id="@+id/maximumstay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:textCursorDrawable="@null"
+                    android:imeOptions="actionDone"
+                    android:hint="0"
+                    android:maxWidth="60dp"
+                    android:textColorHint="@color/line_gray"
+                    android:textColor="@color/text_light_gray"
+                    android:textSize="@dimen/midb" />
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nights"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/text_light_shadow"
+                        android:textSize="@dimen/big" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/rect_background"
+                    android:text="Cancel"
+                    android:textColor="@color/text_light_shadow"
+                    android:textSize="@dimen/midi"
+                    android:visibility="gone" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/accent_material_light"
+                    android:text="Save Changes"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="@dimen/midi" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/d_tab">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/d_tab"
+            android:fadingEdge="none"
+            android:showDividers="none"
+            android:layoutDirection="@string/layout_direction"
+            android:layout_alignParentBottom="true">
+
+        </TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/d_tab"
+            android:layout_above="@android:id/tabs">
+
+          <!--  <LinearLayout
+                trioangle:id="@+id/tab1"
+                trioangle:layout_width="match_parent"
+                trioangle:layout_height="match_parent" >
+
+                <include layout="@layout/explore_tab"/>
+
+            </LinearLayout>
+
+         <LinearLayout
+                trioangle:id="@+id/tab2"
+                trioangle:layout_width="match_parent"
+                trioangle:layout_height="match_parent" >
+                <include layout="@layout/activity_wish_list"/>
+            </LinearLayout>
+
+            <LinearLayout
+                trioangle:id="@+id/tab3"
+                trioangle:layout_width="match_parent"
+                trioangle:layout_height="match_parent" >
+                <include layout="@layout/trips_tab"/>
+            </LinearLayout>
+            <LinearLayout
+                trioangle:id="@+id/tab4"
+                trioangle:layout_width="match_parent"
+                trioangle:layout_height="match_parent" >
+                <include layout="@layout/inbox_tab"/>
+            </LinearLayout>
+
+            <LinearLayout
+                trioangle:id="@+id/tab5"
+                trioangle:layout_width="match_parent"
+                trioangle:layout_height="match_parent" >
+                <include layout="@layout/profile_tab"/>
+            </LinearLayout>-->
+        </FrameLayout>
+
+    </RelativeLayout>
+</TabHost>

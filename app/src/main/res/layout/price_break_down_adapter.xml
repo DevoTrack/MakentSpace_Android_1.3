@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlt_price_child_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/d_bottom"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Additiona"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/tv_price"
+            android:textColor="@color/text_shadow"
+            android:textSize="@dimen/midb"
+            android:id="@+id/tv_price_txt"
+            android:layout_alignParentStart="true"/>
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$23"
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_price"
+            android:textColor="@color/text_shadow"
+            android:textSize="@dimen/midb"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

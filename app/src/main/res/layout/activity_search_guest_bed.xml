@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    android:background="@color/white_bg"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context="com.makent.trioangle.travelling.Search_Guest_Bed">
+
+    <com.makent.trioangle.palette.Button.MakentAwesomeButton
+        android:background="@android:color/transparent"
+        android:text="&#xF138;"
+        android:textAlignment="textStart"
+        android:textSize="@dimen/midi"
+        android:textStyle="bold"
+        android:padding="@dimen/small11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/text_black"
+        android:id="@+id/guestbed_close"/>
+
+    <RelativeLayout
+        android:id="@+id/guestbed_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:layout_below="@+id/guestbed_close"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <com.makent.trioangle.palette.EditText.MakentBookEditText
+            android:id="@+id/edtGuestCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_24"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:maxLength="5"
+            android:maxLines="1"
+            android:inputType="number"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/text_black"
+            android:hint="1"/>
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/guesttext"
+            android:layout_toEndOf="@+id/edtGuestCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_24"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_black"
+            android:text="@string/guests"/>
+
+        <ImageView
+            android:id="@+id/guestplus"
+            android:layout_alignParentEnd="true"
+            android:layout_width="35dp"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            android:layout_height="35dp"/>
+        <!--android:src="@drawable/d_minus_selector_white"
+        android:src="@drawable/d_plus_selector_white"-->
+        <ImageView
+            android:id="@+id/guestminus"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="5dp"
+            android:layout_centerVertical="true"
+            android:enabled="false"
+            android:layout_toStartOf="@+id/guestplus" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/room_details_hrline"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height=".2dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/guestbed_lin"
+        android:background="@drawable/d_blueline_bottom"/>
+
+    <RelativeLayout
+        android:id="@+id/guest_pets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/room_details_hrline"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone">
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/pets"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/bigi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pets"/>
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:thumb="@drawable/n2_sheet_switch_thumb_backnone"
+            app:track="@drawable/n2_sheet_switch_track_backnone"
+            android:id="@+id/instant_switch" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/room_details_hrline1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height=".2dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:visibility="gone"
+        android:layout_below="@+id/guest_pets"
+        android:background="@drawable/d_blueline_bottom"/>
+
+    <ImageView
+        android:id="@+id/room_details_hrline2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height=".2dp"
+        android:layout_above="@+id/save"
+        android:background="@drawable/d_blueline_bottom"/>
+
+    <LinearLayout
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@android:color/transparent"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+        <Button
+            android:id="@+id/guestbed_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_button"
+            android:text="@string/save"
+            android:elevation="0dp"
+            android:textAllCaps="false"
+            android:textSize="@dimen/midb"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:minHeight="50dp"
+            android:textColor="@color/title_text_color"
+            />
+    </LinearLayout>
+</RelativeLayout>

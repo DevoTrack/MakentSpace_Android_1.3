@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--<ProgressBar
+        trioangle:layout_width="wrap_content"
+        trioangle:layout_height="wrap_content"
+        trioangle:id="@+id/progressBar"
+        trioangle:layout_gravity="center_horizontal" />-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemloading"
+        android:src="@drawable/dot_loading"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

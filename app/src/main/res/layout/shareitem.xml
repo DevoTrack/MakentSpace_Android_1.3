@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shareitem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:layoutDirection="@string/layout_direction"
+    android:background="@drawable/d_bottom">
+
+
+
+    <ImageView
+        android:id="@+id/shareicon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/user_profile"/>
+
+
+
+    <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:id="@+id/sharename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/text_light_shadow"
+        android:text="cur_name"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/shareicon"
+        android:textSize="@dimen/midb" />
+
+
+
+</RelativeLayout>
+

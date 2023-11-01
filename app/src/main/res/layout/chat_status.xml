@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical">
+
+           <LinearLayout
+            android:id="@+id/textmessage"
+            android:background="@color/transparent"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <com.makent.trioangle.palette.TextView.MakentLightTextView
+                android:id="@+id/textViewMessage"
+                android:textColor="@color/text_shadow"
+                android:textSize="@dimen/midb"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pre-approval" />
+
+            <com.makent.trioangle.palette.TextView.MakentLightTextView
+                android:id="@+id/textViewTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/text_shadow"
+                android:text="3 guests and 1 infant, Jan 10 - Jan 13"
+                android:textSize="@dimen/midi"/>
+
+        </LinearLayout>
+
+</LinearLayout>
+

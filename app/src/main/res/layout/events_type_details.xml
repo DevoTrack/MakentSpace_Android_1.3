@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layoutDirection="@string/layout_direction"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:id="@+id/tv_eventsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:text="EventsType"
+        android:textColor="@color/text_shadow"
+        android:textSize="@dimen/midb" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:id="@+id/events_image"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_delete"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_background"
+        android:orientation="vertical">
+
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:layout_width="wrap_content"
+            android:id="@+id/hour_rate"
+            android:textSize="@dimen/small"
+            android:textAlignment="viewStart"
+            android:textColor="@color/text_shadow"
+            android:layout_height="wrap_content"
+            android:text="Hourly Rate: $12000"/>
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small"
+            android:textAlignment="viewStart"
+            android:textColor="@color/text_shadow"
+            android:id="@+id/fulldayrate"
+            android:text="FullDay Rated: $12000"/>
+
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:layout_width="wrap_content"
+            android:id="@+id/min_booking_hours"
+            android:textSize="@dimen/small"
+            android:textAlignment="viewStart"
+            android:textColor="@color/text_shadow"
+            android:layout_height="wrap_content"
+            android:text="Minimum Booking Hours:4"/>
+    </LinearLayout>
+
+    </LinearLayout>
+

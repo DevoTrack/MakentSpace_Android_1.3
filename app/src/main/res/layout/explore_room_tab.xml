@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:layoutDirection="@string/layout_direction"
+    tools:context=".travelling.HomeActivity">
+
+    <ImageView
+        android:id="@+id/explore_room_image"
+        android:layout_width="fill_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:background="#ccc"
+        android:minHeight="270dp"
+        android:tileMode="repeat"
+        android:minWidth="270dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/explore_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:visibility="gone"
+        />
+
+    <com.makent.trioangle.palette.TextView.MakentTextView
+        android:text="$100"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/midb"
+        android:textStyle="bold"
+        android:textColor="@color/text_shadow"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/explore_room_image"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="viewStart"
+        android:id="@+id/explore_amount" />
+
+    <ImageView
+        android:id="@+id/explore_wishlists"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/n2_heart_light_outline"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:layout_alignTop="@+id/explore_room_image"
+        android:layout_alignEnd="@+id/explore_room_image" />
+
+    <com.makent.trioangle.palette.TextView.MakentLightTextView
+        android:layout_toEndOf="@+id/explore_amount"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Entire place in Burlingame"
+        android:textSize="@dimen/midb"
+        android:textAlignment="viewStart"
+        android:layout_below="@+id/explore_room_image"
+        android:textStyle="bold"
+        android:textColor="@color/text_shadow"
+        android:layout_height="wrap_content"
+        android:id="@+id/explore_roomdetails"/>
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:layout_width="match_parent"
+            android:singleLine="false"
+            android:layout_marginEnd="20dp"
+            android:text="Gallery Space . 6"
+            android:textSize="@dimen/text_18"
+            android:textAlignment="viewStart"
+            android:textStyle="bold"
+            android:textColor="@color/text_shadow"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/explore_roomdetails"
+            android:layout_alignStart="@+id/explore_amount"
+            android:id="@+id/tvspacetype"/>
+
+
+    <com.makent.trioangle.palette.TextView.MakentLightTextView
+        android:text=" 99+ Reviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_shadow"
+        android:textSize="@dimen/small"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:id="@+id/explore_reviewrate"
+        android:layout_below="@+id/tvspacetype"
+        android:layout_alignTop="@+id/explore_room_rate"
+        android:layout_toEndOf="@+id/explore_room_rate" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="10.5dp"
+        android:maxHeight="12.5dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="2dp"
+        android:id="@+id/explore_room_rate"
+        android:clickable="false"
+        android:isIndicator="true"
+        style="@style/CustomRatingBar"
+        android:layout_below="@+id/tvspacetype"
+        android:layout_alignStart="@+id/explore_amount" />
+
+    <com.makent.trioangle.palette.TextView.MakentLogoIcon
+        android:text="Z"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/mid"
+        android:textStyle="bold"
+        android:textColor="@color/yellow"
+        android:layout_height="wrap_content"
+        android:id="@+id/explore_instantbook"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/explore_room_image"
+        android:layout_alignBaseline="@+id/explore_amount"
+        android:layout_toEndOf="@+id/explore_amount" />
+
+</RelativeLayout>

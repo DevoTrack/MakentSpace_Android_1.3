@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lys"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.makent.trioangle.host.LYSActivity">
+
+    <RelativeLayout
+        android:id="@+id/location_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:clipToPadding="false"
+        android:background="@drawable/d_bottom_shadow"
+        android:paddingTop="15dp"
+        android:gravity="start">
+
+        <ImageView
+            android:id="@+id/location_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="20dp"
+            android:scaleY=".8"
+            android:scaleX=".8"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/back_grayblack_arrow"/>
+
+
+        <com.makent.trioangle.palette.TextView.MakentTextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/big"
+            android:textColor="@color/text_light_shadow"
+            android:text="@string/locaiton"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/location_back" />
+        >
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/location_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="25dp"
+        android:background="@color/text_color"
+        android:paddingTop="25dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_below="@+id/location_title"
+        android:layout_alignParentStart="true">
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/location_msg"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/bigi"
+            android:textColor="@color/calendar_text_active"
+            android:text="@string/location_msg"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/hrline0"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_above="@+id/location_search"
+        android:src="@drawable/d_bottom"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/location_placesearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="@dimen/vbig"
+        android:background="@color/text_color"
+        android:layout_above="@+id/location_search"/>
+    <RelativeLayout
+        android:id="@+id/location_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:background="@color/title_text_color"
+        android:paddingTop="5dp"
+        android:layout_below="@id/location_center">
+
+
+        <EditText
+            android:id="@+id/location_edit"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="60dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midb"
+            android:hint="@string/city"
+            android:singleLine="true"
+            android:textAlignment="viewStart"
+            android:textCursorDrawable="@null"
+            android:backgroundTint="@color/red_text"
+            android:textColorHint="@color/text_dark_gray"
+            android:textColor="@color/text_shadow"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:id="@+id/location_gps_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:tint="@color/red_text"
+            android:src="@drawable/icon_current_location"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location_search"
+        android:layout_above="@+id/location_next"
+        android:gravity="center">
+
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        tools:context="com.makent.trioangle.host.LYS_Location"
+        android:id="@+id/lysmap"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:gravity="center"
+        />
+        <com.makent.trioangle.palette.TextView.MakentLogoIcon2
+            android:id="@+id/map_marker"
+            android:layout_width="wrap_content"
+           android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/vvbig"
+            android:textColor="@color/background"
+            android:text="4"
+            android:paddingBottom="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/location_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:enabled="false"
+        android:background="@drawable/d_redbutton_enable_disable"
+        android:paddingTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal|center_vertical">
+
+        <com.makent.trioangle.palette.TextView.MakentTextView
+            android:id="@+id/location_next_txt"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/big"
+            android:textColor="@color/title_text_color"
+            android:text="@string/locaiton_next"
+            android:layout_marginStart="20dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

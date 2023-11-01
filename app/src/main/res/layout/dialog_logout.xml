@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="10dp"
+    android:layoutDirection="@string/layout_direction"
+    android:paddingBottom="20dp">
+
+    <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:id="@+id/logout_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_light_shadow"
+        android:text="@string/logout_msg"
+        android:textSize="@dimen/midb"
+        android:layout_below="@+id/logout_tiltle"/>
+
+    <com.makent.trioangle.palette.Button.MakentBookButton
+        android:id="@+id/logout_ok"
+        android:background="@android:color/transparent"
+        android:textColor="@color/red_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:textAllCaps="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/logout_msg"/>
+
+    <com.makent.trioangle.palette.Button.MakentBookButton
+        android:id="@+id/logout_cancel"
+        android:background="@android:color/transparent"
+        android:textColor="@color/text_shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:textAllCaps="true"
+        android:layout_below="@id/logout_msg"
+        android:layout_toStartOf="@+id/logout_ok"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="5dp" />
+
+    <com.makent.trioangle.palette.TextView.MakentTextView
+        android:id="@+id/logout_tiltle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_light_shadow"
+        android:text="@string/logout_msg"
+        android:textSize="@dimen/midb"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

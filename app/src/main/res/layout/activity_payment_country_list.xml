@@ -1,0 +1,85 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:background="@color/guestBgc"
+    android:layoutDirection="@string/layout_direction"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:fitsSystemWindows="false"
+        app:elevation="0dp">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetEnd="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" >
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingStart="20dp"
+                android:paddingBottom="10dp"
+                android:paddingEnd="20dp"
+                android:src="@drawable/back_white_arrow"
+                android:id="@+id/selct_country_back"/>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/country_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    </androidx.recyclerview.widget.RecyclerView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/selct_country_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/title_text_color"
+        android:tint="@color/background"
+        android:src="@drawable/n2_icon_chevron_right"/>
+
+    <!--<ImageView
+        trioangle:layout_width="wrap_content"
+        trioangle:layout_height="wrap_content"
+        trioangle:src="@drawable/backarrow"
+        trioangle:id="@+id/selct_country_next"
+        trioangle:layout_alignParentRight="true"
+        trioangle:layout_marginRight="20dp"
+        trioangle:layout_marginEnd="20dp"
+        trioangle:layout_marginBottom="20dp"
+        trioangle:layout_alignParentBottom="true"
+        trioangle:visibility="invisible"
+        trioangle:layout_alignParentEnd="true" />-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/title_text_color"
+    android:layout_marginEnd="20dp"
+    android:layout_marginStart="20dp"
+    tools:context=".travelling.HomeActivity">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/review_title">
+    <com.makent.trioangle.palette.TextView.MakentTextView
+        android:text="@string/reviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/bigb"
+        android:textStyle="bold"
+        android:textColor="@color/text_shadow"
+        android:id="@+id/review_titlename" />
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="10.5dp"
+        android:maxHeight="12.5dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="2dp"
+        android:clickable="false"
+        android:isIndicator="true"
+        style="@style/CustomRatingBar"
+        android:id="@+id/ratingBar_total"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp" />
+
+    <ImageView
+        android:id="@+id/room_details_hrline"
+        android:layout_width="50dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/room_details_hostprofile"
+        android:background="@drawable/d_bottom"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/review_title"
+        >
+    <RelativeLayout
+        android:id="@+id/room_details_reviewlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp"
+        >
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midb"
+            android:textColor="@color/text_shadow"
+            android:text="@string/accuracy"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="10.5dp"
+            android:maxHeight="12.5dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="2dp"
+            android:clickable="false"
+            android:layout_alignParentEnd="true"
+            android:isIndicator="true"
+            style="@style/CustomRatingBar"
+            android:layout_marginTop="5dp"
+            android:id="@+id/ratingBar_accuracy"
+            />
+
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp"
+            >
+            <com.makent.trioangle.palette.TextView.MakentLightTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/midb"
+                android:textColor="@color/text_shadow"
+                android:text="@string/arrival"/>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="10.5dp"
+                android:maxHeight="12.5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="2dp"
+                android:clickable="false"
+                android:layout_alignParentEnd="true"
+                android:isIndicator="true"
+                style="@style/CustomRatingBar"
+                android:layout_marginTop="5dp"
+                android:id="@+id/ratingBar_arrival" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp"  >
+            <com.makent.trioangle.palette.TextView.MakentLightTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/midb"
+                android:textColor="@color/text_shadow"
+                android:text="@string/cleanliness"/>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="10.5dp"
+                android:maxHeight="12.5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="2dp"
+                android:clickable="false"
+                android:layout_alignParentEnd="true"
+                android:isIndicator="true"
+                style="@style/CustomRatingBar"
+                android:layout_marginTop="5dp"
+                android:id="@+id/ratingBar_clean" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp">
+            <com.makent.trioangle.palette.TextView.MakentLightTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/midb"
+                android:textColor="@color/text_shadow"
+                android:text="@string/comminication"/>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="10.5dp"
+                android:maxHeight="12.5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="2dp"
+                android:clickable="false"
+                android:layout_alignParentEnd="true"
+                android:isIndicator="true"
+                style="@style/CustomRatingBar"
+                android:layout_marginTop="5dp"
+                android:id="@+id/ratingBar_communication"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp">
+            <com.makent.trioangle.palette.TextView.MakentLightTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/midb"
+                android:textColor="@color/text_shadow"
+                android:text="@string/location"/>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="10.5dp"
+                android:maxHeight="12.5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="2dp"
+                android:clickable="false"
+                android:layout_alignParentEnd="true"
+                android:isIndicator="true"
+                style="@style/CustomRatingBar"
+                android:layout_marginTop="5dp"
+                android:id="@+id/ratingBar_location"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp">
+            <com.makent.trioangle.palette.TextView.MakentLightTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/midb"
+                android:textColor="@color/text_shadow"
+                android:text="@string/value"/>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="10.5dp"
+                android:maxHeight="12.5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="2dp"
+                android:clickable="false"
+                android:layout_alignParentEnd="true"
+                android:isIndicator="true"
+                style="@style/CustomRatingBar"
+                android:layout_marginTop="5dp"
+                android:id="@+id/ratingBar_value"/>
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/room_details_hrline0"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/room_details_hostprofile"
+            android:background="@drawable/d_bottom"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

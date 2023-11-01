@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:gravity="center_horizontal"
+    android:paddingTop="20dp"
+    android:paddingStart="40dp"
+    android:paddingEnd="40dp"
+    android:paddingBottom="20dp">
+
+    <com.makent.trioangle.palette.TextView.MakentLogoIcon
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/background"
+        android:text="k"
+        android:textSize="@dimen/vvvbig"/>
+     <com.makent.trioangle.palette.TextView.MakentBookTextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="@color/text_light_shadow"
+         android:text="@string/addlistprepared"
+         android:textSize="@dimen/vbigb"
+         android:layout_marginTop="20dp"/>
+     <com.makent.trioangle.palette.TextView.MakentBookTextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="@color/text_dark_gray"
+         android:text="@string/addlistmsg"
+         android:textSize="@dimen/midb"
+         android:textAlignment="center"
+         android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>

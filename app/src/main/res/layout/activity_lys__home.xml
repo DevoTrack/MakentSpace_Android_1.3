@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lys__home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.makent.trioangle.host.LYS_Home">
+
+    <RelativeLayout
+        android:id="@+id/lyshome_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:background="@color/title_text_color">
+
+        <ImageView
+            android:id="@+id/lyshome_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="20dp"
+            android:scaleY=".8"
+            android:scaleX=".8"
+            android:paddingTop="20dp"
+            android:src="@drawable/back_grayblack_arrow"/>
+        <com.makent.trioangle.palette.TextView.MakentTextView
+            android:id="@+id/lyshome"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/big"
+            android:textColor="@color/text_light_shadow"
+            android:text="@string/lys"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/lyshome_back" />
+
+        <com.makent.trioangle.palette.Button.MakentButton
+            android:id="@+id/lyshome_preview"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midi"
+            android:background="@android:color/transparent"
+            android:textColor="@color/text_light_shadow"
+            android:text="@string/preview"
+            android:paddingStart="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+        >
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/lyshome_steps"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/lyshome_title"
+        android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/lyshome_steps1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/text_light_gray"/>
+
+    <ImageView
+        android:id="@+id/lyshome_steps2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginStart="2dp"
+        android:background="@color/text_light_gray"/>
+
+    <ImageView
+        android:id="@+id/lyshome_steps3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginStart="2dp"
+        android:background="@color/text_light_gray"/>
+
+    <ImageView
+        android:id="@+id/lyshome_steps4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginStart="2dp"
+        android:background="@color/text_light_gray"/>
+
+    <ImageView
+        android:id="@+id/lyshome_steps5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginStart="2dp"
+        android:background="@color/text_light_gray"/>
+    <ImageView
+        android:id="@+id/lyshome_steps6"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:layout_marginStart="2dp"
+        android:background="@color/text_light_gray"/>
+
+    </LinearLayout>
+    <com.makent.trioangle.palette.Button.MakentBookButton
+        android:id="@+id/lyshome_steps_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/d_redbutton_enable_disable"
+        android:text="@string/steps_left6"
+        android:enabled="false"
+        android:saveEnabled="false"
+        android:textColor="@color/title_text_color"
+        android:textSize="@dimen/big" />
+
+    <com.makent.trioangle.palette.Button.MakentButton
+        android:id="@+id/listyourspace"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/midb"
+        android:layout_height="wrap_content"
+        android:background="@drawable/d_redbutton_enable_disable"
+        android:enabled="false"
+
+        android:text="@string/lys"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/title_text_color"
+         />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listyourspace"
+        android:layout_below="@+id/lyshome_steps"
+        android:layout_alignParentStart="true">
+    <RelativeLayout
+        android:id="@+id/lyshome_scroll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lyshome_steps"
+        android:background="@color/title_text_color">
+    <RelativeLayout
+        android:id="@+id/lyshome_addphoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_text_color">
+    <ImageView
+        android:id="@+id/lyshome_addphoto_img"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/default_photo_bg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignBottom="@+id/lyshome_addphoto_img"
+        android:background="@color/transparent">
+
+       <com.makent.trioangle.palette.TextView.MakentTextView
+        android:id="@+id/lyshome_addphoto_txt"
+        android:layout_width="wrap_content"
+
+        android:textAlignment="textStart"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/midb"
+        android:textColor="@color/title_text_color"
+        android:text="@string/add_photo"
+        />
+        <CheckBox
+           android:theme="@style/checkBoxStyle"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_alignParentEnd="true"
+           android:clickable="false"
+           android:id="@+id/checkBox1" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lyshome_describe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/lyshome_addphoto"
+        android:layout_centerHorizontal="true">
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/describeyourspace"
+            android:textColor="@color/red_text"
+            android:textSize="@dimen/midb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/describe_txt" />
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/describeyourspace_msg"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="@dimen/midi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/decribe_msg"
+            android:layout_below="@+id/describe_txt"
+            android:layout_marginEnd="50dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_alignStart="@+id/describe_txt"/>
+
+        <CheckBox
+            android:theme="@style/checkBoxStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:clickable="false"
+            android:id="@+id/checkBox2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lyshome_setprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/lyshome_describe"
+        android:layout_centerHorizontal="true">
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/setprice"
+            android:textColor="@color/red_text"
+            android:textSize="@dimen/midb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/setprice_txt" />
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/setprice_msg"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="@dimen/midi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/setprice_msg"
+            android:layout_below="@+id/setprice_txt"
+            android:layout_marginEnd="50dp"
+            android:layout_alignStart="@+id/setprice_txt"/>
+
+        <CheckBox
+            android:theme="@style/checkBoxStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:clickable="false"
+            android:id="@+id/checkBox3" />
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/lyshome_setaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/lyshome_setprice"
+            android:layout_centerHorizontal="true">
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:text="@string/setaddress"
+                android:textColor="@color/red_text"
+                android:textSize="@dimen/midb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/checkBox4"
+                android:id="@+id/setaddress_txt" />
+
+        <CheckBox
+                android:theme="@style/checkBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:clickable="false"
+                android:id="@+id/checkBox4" />
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/setaddress_msg"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="@dimen/midi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/setaddress_msg"
+            android:layout_marginEnd="50dp"
+            android:layout_below="@+id/setaddress_txt"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lyshome_setbooksetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/lyshome_sethouserules"
+            android:layout_centerHorizontal="true">
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:text="@string/setbooksetting"
+                android:textColor="@color/red_text"
+                android:textSize="@dimen/midb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/setbooksetting_txt" />
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:text="@string/setbooksetting_msg"
+                android:textColor="@color/text_dark_gray"
+                android:textSize="@dimen/midi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/setbooksetting_msg"
+                android:layout_below="@+id/setbooksetting_txt"
+                android:layout_marginEnd="50dp"
+                android:layout_alignStart="@+id/setbooksetting_txt"/>
+
+            <CheckBox
+                android:theme="@style/checkBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:clickable="false"
+                android:visibility="invisible"
+                android:id="@+id/checkBox6" />
+        </RelativeLayout>
+
+        <com.makent.trioangle.palette.Button.MakentBookButton
+            android:id="@+id/optionaldetails"
+            android:layout_marginTop="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lyshome_setbooksetting"
+            android:background="@color/button_material_light"
+            android:textAllCaps="false"
+            android:text="@string/optionaldetails"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="@dimen/big"/>
+
+        <RelativeLayout
+            android:id="@+id/lyshome_sethouserules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/lyshome_setaddress">
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:text="@string/sethouserules"
+                android:textColor="@color/red_text"
+                android:textSize="@dimen/midb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sethouserules_txt" />
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:text="@string/sethouserules_msg"
+                android:textColor="@color/text_dark_gray"
+                android:textSize="@dimen/midi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sethouserules_msg"
+                android:layout_below="@+id/sethouserules_txt"
+                android:layout_marginEnd="50dp"
+                android:layout_alignStart="@+id/sethouserules_txt"/>
+
+            <CheckBox
+                android:theme="@style/checkBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:clickable="false"
+                android:visibility="invisible"
+                android:id="@+id/checkBox5" />
+        </RelativeLayout>
+    </RelativeLayout>
+ </ScrollView>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:angle="90"
+        android:centerColor="@color/text_black"
+        android:endColor="@color/text_black"
+        android:startColor="@color/text_black" />
+    <corners android:radius="0dp" />
+
+    <!-- <gradient
+         trioangle:startColor="#ff9a6922"
+         trioangle:centerColor="#ff9a4025"
+         trioangle:endColor="#ff9a0e32"
+         trioangle:angle="90"/>-->
+
+
+</shape>

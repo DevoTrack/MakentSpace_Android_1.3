@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rltHeader"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+
+        <ImageView
+            android:id="@+id/iv_Back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_grayblack_arrow"/>
+
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/iv_Back"
+            android:text="@string/booking"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/header_title"
+            android:id="@+id/tv_header_title"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

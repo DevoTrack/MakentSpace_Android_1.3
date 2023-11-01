@@ -1,0 +1,79 @@
+{
+  "project_info": {
+    "project_number": "413995402979",
+    "firebase_url": "https://makentspace-bf20a.firebaseio.com",
+    "project_id": "makentspace-bf20a",
+    "storage_bucket": "makentspace-bf20a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413995402979:android:1d96dafe769398ce87a7d6",
+        "android_client_info": {
+          "package_name": "com.trioangle.makentspace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "413995402979-0n1obtc4t26071b9gatgm2oko2gphdu8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.trioangle.makentspace",
+            "certificate_hash": "20cb8cb4c0b75216c91fb40fba169db37bbca378"
+          }
+        },
+        {
+          "client_id": "413995402979-28tgcnb2g2j55cpgr964i4sf0j924l4u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.trioangle.makentspace",
+            "certificate_hash": "804b7810c711f63e48dcc8794941c5ca3a55f776"
+          }
+        },
+        {
+          "client_id": "413995402979-g1rmr7e6tpeu3bkm58n2gg0dkt35g3kt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.trioangle.makentspace",
+            "certificate_hash": "e30c28afde757152e827fdac52f617cc0869e187"
+          }
+        },
+        {
+          "client_id": "413995402979-tnu8mvnik81tdefu47beb0h92g9or6gg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.trioangle.makentspace",
+            "certificate_hash": "dc1502aea084161536476d7fef9d9e71aea81f37"
+          }
+        },
+        {
+          "client_id": "413995402979-s6efj3n4d7hn4v3g3huivjn2btj3r6jj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkJXJbIpmWmHp3w1q6K4_GYS8Y1_1YaU4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "413995402979-lscas87rcte4930sp9tlcfmrp3e32tm1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "413995402979-au9g0qiq43aemt8m1qehagfme9260fdn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.trioangle.space"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

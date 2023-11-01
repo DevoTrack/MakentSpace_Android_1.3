@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/predictedRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:layout_centerVertical="true"
+    android:gravity="center_vertical">
+
+
+    <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/title_text_color"
+        android:textSize="@dimen/big"
+        android:text="Siva Madirai"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingBottom="5dp"/>
+    <com.makent.trioangle.palette.TextView.MakentLightTextView
+        android:id="@+id/address_secondry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/title_text_color"
+        android:textSize="@dimen/midb"
+        android:text="Siva Sonai Madirai"
+        android:singleLine="true"
+        android:layout_below="@+id/address"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"/>
+    <ImageView
+        android:id="@+id/room_details_hrline"
+        android:layout_width="match_parent"
+        android:layout_height=".1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/address_secondry"
+        android:background="@drawable/d_blueline_bottom"/>
+
+</RelativeLayout>

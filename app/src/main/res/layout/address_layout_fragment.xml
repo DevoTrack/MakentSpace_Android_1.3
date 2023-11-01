@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="30dp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/rlt_heading"
+        >
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/tv_right_fit"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midb"
+            android:textColor="@color/text_bold"
+            android:text="@string/let_get_started"
+            android:layout_alignParentTop="true"
+            />
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/tv_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_right_fit"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/people_searching_on_makent_space"
+            android:textAlignment="textStart"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="@dimen/midb" />
+
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/tv_listing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_sub_title"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/listing"
+            android:textAlignment="textStart"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/midb" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlt_title_layout"
+        android:layout_below="@+id/rlt_heading"
+        android:layout_marginBottom="50dp"
+        >
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/tv__subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/what_is_the_full_address_of_your_space"
+            android:textAlignment="textStart"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/midb" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv__subtitle"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rlt_address"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            >
+
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/tv_address_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/address_space"
+                android:textAlignment="textStart"
+                android:textColor="@color/text_shadow"
+                android:textSize="@dimen/midb" />
+
+            <RelativeLayout
+                android:id="@+id/rlt_address_view"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:layout_weight="2"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_address_title"
+                android:divider="@drawable/divider"
+                android:showDividers="middle">
+
+                <!--android:background="@drawable/d_gray_border"-->
+                <com.makent.trioangle.palette.EditText.MakentBookEditText
+                    android:id="@+id/edt_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/midb"
+                    android:singleLine="true"
+                    android:textAlignment="viewStart"
+                    android:hint="@string/house_name_number_street_road"
+                    android:paddingStart="15dp"
+                    android:gravity="center"
+                    android:background="@drawable/rect_noborder"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:visibility="visible"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+            <com.makent.trioangle.palette.TextView.MakentLightTextView
+                android:id="@+id/tv_address_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_below="@+id/rlt_address_view"
+                android:text="@string/street_city_state_country"
+                android:textAlignment="textStart"
+                android:textColor="@color/text_shadow"
+                android:textSize="@dimen/smalli" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_place_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_below="@+id/rlt_address_view"
+                android:background="@color/white" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlt_address"
+            android:id="@+id/rlt_address_two"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+
+            >
+
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/tv_address_title_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/address_line_2"
+                android:textAlignment="textStart"
+                android:textColor="@color/text_shadow"
+                android:textSize="@dimen/midb" />
+
+            <RelativeLayout
+                android:id="@+id/rlt_address_view_two"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:layout_weight="2"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_address_title_two"
+                android:divider="@drawable/divider"
+                android:showDividers="middle">
+
+                <!--android:background="@drawable/d_gray_border"-->
+                <com.makent.trioangle.palette.EditText.MakentBookEditText
+                    android:id="@+id/edt_address_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rect_noborder"
+                    android:gravity="center"
+                    android:paddingStart="15dp"
+                    android:singleLine="true"
+                    android:textAlignment="viewStart"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="@dimen/midb"
+                    android:visibility="visible" />
+
+
+            </RelativeLayout>
+
+            <com.makent.trioangle.palette.TextView.MakentLightTextView
+                android:id="@+id/tv_address_hint_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_below="@+id/rlt_address_view_two"
+                android:text="@string/apt_floor_etc"
+                android:textAlignment="textStart"
+                android:textColor="@color/text_shadow"
+                android:textSize="@dimen/smalli" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlt_address_two"
+            android:id="@+id/rlt_guidance"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+
+            >
+
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/tv_guidance_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/check_in_guidance"
+                android:textAlignment="textStart"
+                android:textColor="@color/text_shadow"
+                android:textSize="@dimen/midb" />
+
+            <RelativeLayout
+                android:id="@+id/rlt_guidance_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:layout_weight="2"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_guidance_title"
+                android:divider="@drawable/divider"
+                android:showDividers="middle">
+
+                <!--android:background="@drawable/d_gray_border"-->
+                <com.makent.trioangle.palette.EditText.MakentBookEditText
+                    android:id="@+id/edt_guidance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/midb"
+                    android:minHeight="90dp"
+                    android:textAlignment="viewStart"
+                    android:paddingStart="15dp"
+                    android:text=""
+                    android:gravity="start"
+                    android:background="@drawable/rect_noborder"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:visibility="visible"
+                    />
+
+
+            </RelativeLayout>
+
+            <com.makent.trioangle.palette.TextView.MakentLightTextView
+                android:id="@+id/tv_tv_guidance_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_below="@+id/rlt_guidance_view"
+                android:text="@string/share_any_special"
+                android:textAlignment="textStart"
+                android:textColor="@color/text_shadow"
+                android:textSize="@dimen/smalli" />
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/tv_tv_guidance_info_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_below="@+id/tv_tv_guidance_hint"
+                android:text="@string/this_information"
+                android:textAlignment="textStart"
+                android:textColor="@color/text_shadow"
+                android:textSize="@dimen/smalli" />
+        </RelativeLayout>
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/tv_choose_on_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/rlt_guidance"
+            android:layout_marginEnd="15dp"
+            android:visibility="gone"
+            android:text="@string/choose_on_map"
+            android:layout_alignStart="@+id/rlt_guidance"
+            android:textAlignment="textStart"
+            android:textColor="@color/text_shadow"
+            android:textSize="@dimen/midb" />
+
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/tv_mark_exact_geo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tv_choose_on_map"
+            android:layout_marginEnd="15dp"
+            android:visibility="gone"
+            android:text="@string/mark_exact_geo"
+            android:layout_alignStart="@+id/rlt_guidance"
+            android:textAlignment="textStart"
+            android:textColor="@color/text_shadow"
+            android:textSize="@dimen/midb" />
+    </RelativeLayout>
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/continue_"
+        android:background="@drawable/d_redbutton_enable_disable"
+        android:id="@+id/btn_continue"
+        android:textColor="@color/white"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

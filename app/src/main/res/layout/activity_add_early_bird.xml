@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layoutDirection="@string/layout_direction"
+    >
+
+    <RelativeLayout
+        android:id="@+id/describe_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/d_bottom_shadow"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/describe_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingEnd="20dp"
+            android:scaleY=".8"
+            android:scaleX=".8"
+            android:paddingTop="5dp"
+            android:src="@drawable/back_grayblack_arrow"/>
+
+
+        <com.makent.trioangle.palette.TextView.MakentTextView
+            android:id="@+id/describe"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/big"
+            android:textColor="@color/text_light_shadow"
+            android:text="@string/Earlybirddiscounts"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/describe_back" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="30dp"
+        android:paddingTop="10dp"
+        android:layout_centerInParent="true"
+
+        android:paddingBottom="10dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <com.makent.trioangle.palette.EditText.MakentBookEditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:inputType="number"
+                android:id="@+id/day_text"
+                android:gravity="center"
+                android:maxLength="4"
+                android:textCursorDrawable="@null"
+                android:backgroundTint="@color/text_shadow"
+                android:textColorHint="@color/line_gray"
+                android:textColor="@color/text_light_shadow"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Days"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <com.makent.trioangle.palette.EditText.MakentBookEditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:inputType="number"
+                android:maxLength="2"
+                android:id="@+id/percentage_txt"
+                android:gravity="center"
+                android:textCursorDrawable="@null"
+                android:backgroundTint="@color/text_shadow"
+                android:textColorHint="@color/line_gray"
+                android:textColor="@color/text_light_shadow"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:paddingStart="5dp"
+                android:text="%"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:id="@+id/delete_icon"
+        android:tint="@color/red_text"
+        android:src="@drawable/delete_image"/>
+
+    <com.makent.trioangle.palette.Button.MakentButton
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="@dimen/midb"
+        android:paddingStart="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingEnd="10dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:text="@string/save"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:background="@drawable/d_red_button"
+        android:textColor="@color/title_text_color"
+        />
+</RelativeLayout>

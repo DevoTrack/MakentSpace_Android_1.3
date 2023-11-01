@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="afterDescendants"
+    android:focusableInTouchMode="true"
+    android:layout_marginBottom="50dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/rlt_heading"
+        >
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/tv_right_fit"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midb"
+            android:textColor="@color/text_bold"
+            android:text="@string/let_get_down"
+            android:layout_alignParentTop="true"
+            />
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_right_fit"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/please_complete_the_following"
+            android:textAlignment="textStart"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="@dimen/midb" />
+
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/tv_listing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/listing"
+            android:textAlignment="textStart"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/midb" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        android:layout_below="@+id/rlt_heading"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlt_furnished"
+            >
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/tv_furnished_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:text="@string/is_your_space_fully_furnished"
+                android:textAlignment="textStart"
+                android:textColor="@color/text_shadow"
+                android:textSize="@dimen/midb" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/rg_fully_furnished"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="40dp"
+                android:layout_below="@+id/tv_furnished_txt"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Yes"
+                    android:id="@+id/rb_yes"
+                    />
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text=" No"
+                    android:id="@+id/rb_no"
+                    />
+
+
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlt_room_number"
+            android:layout_below="@+id/rlt_furnished"
+            >
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rlt_title_room"
+                android:layout_marginTop="10dp"
+                >
+
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:id="@+id/tv_room_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:maxWidth="150dp"
+                    android:text="@string/how_many_working_stations_are_available_in_your_space"
+                    android:layout_centerVertical="true"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midb" />
+
+                <LinearLayout
+                    android:id="@+id/llt_no_rooms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:padding="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_centerVertical="true"
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/iv_room_minus"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:enabled="false"
+                        android:layout_marginEnd="5dp"
+                        />
+
+
+                    <!--android:src="@drawable/d_minus_selector_white"
+                    android:src="@drawable/d_plus_selector_white"-->
+                    <com.makent.trioangle.palette.EditText.MakentLightEditText
+                        android:id="@+id/edt_room_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/midb"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:background="@color/transparent"
+                        android:textColor="@color/text_shadow"
+                        android:text=""
+
+                        />
+                    <ImageView
+                        android:id="@+id/iv_room_plus"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="35dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_height="35dp"
+
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlt_rest_room"
+            android:visibility="gone"
+            android:layout_below="@+id/rlt_room_number"
+            android:layout_marginTop="20dp"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rlt_title_layout"
+
+                >
+
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:id="@+id/tv_rest_num_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:maxWidth="150dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="Number of Restrooms"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midb" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/llt_no_rest_rooms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                >
+
+
+                <ImageView
+                    android:id="@+id/iv_rest_room_minus"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:enabled="false"
+                    android:layout_marginEnd="5dp"
+                    />
+
+
+                <!--android:src="@drawable/d_minus_selector_white"
+                android:src="@drawable/d_plus_selector_white"-->
+                <com.makent.trioangle.palette.EditText.MakentLightEditText
+                    android:id="@+id/edt__rest_room_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midb"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_rest_room_plus"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="5dp"
+
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlt_rest_room"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:id="@+id/rlt_floor_number"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rlt_floor_title_layout"
+
+                >
+
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:id="@+id/tv_floor_num_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:maxWidth="150dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="Floor number (if applicable)"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midb" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/llt_no_floor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                >
+
+
+                <ImageView
+                    android:id="@+id/iv_floor_minus"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:enabled="false"
+                    android:layout_marginEnd="5dp"
+                    />
+
+
+                <!--android:src="@drawable/d_minus_selector_white"
+                android:src="@drawable/d_plus_selector_white"-->
+                <com.makent.trioangle.palette.EditText.MakentLightEditText
+                    android:id="@+id/edt__floor_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midb"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_floor_plus"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="5dp"
+
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlt_working_stations"
+            android:layout_below="@+id/rlt_floor_number"
+            >
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/tv_working_station_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:text="@string/are_your_working_stations_desks_shared_or_private"
+                android:textAlignment="textStart"
+                android:textColor="@color/text_shadow"
+                android:textSize="@dimen/midb" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="40dp"
+                android:id="@+id/rg_working_station"
+                android:layout_below="@+id/tv_working_station_txt"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rb_shared"
+                    android:text="@string/shared"
+                    />
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:id="@+id/rb_private"
+                    android:text="@string/privatee"
+                    />
+
+
+            </RadioGroup>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlt_venue"
+            android:layout_below="@+id/rlt_working_stations"
+            >
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/tv_venue_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:text="@string/have_you_ever_hosted_your_venue_with_a_website_like_makentspace_before"
+                android:textAlignment="textStart"
+                android:textColor="@color/text_shadow"
+                android:textSize="@dimen/midb" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="40dp"
+                android:weightSum="2"
+                android:id="@+id/rg_new_experienced"
+                android:layout_below="@+id/tv_venue_txt"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/rb_new_to_all"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:text="@string/no_i_m_new_to_all_this"
+                    />
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:id="@+id/rb_experienced"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:text="@string/yes_i_m_experienced_with_space_hosting"
+                    />
+
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlt_square_footage"
+            android:layout_below="@+id/rlt_venue"
+            android:layout_marginTop="20dp"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rlt_square_title_layout"
+
+                >
+
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:id="@+id/tv_sqr_footage_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:maxWidth="150dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/how_big_your_space"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midb" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llt_sqr_rooms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="28dp"
+                android:padding="5dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+
+
+                <ImageView
+                    android:id="@+id/iv_sqr_room_minus"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="5dp"
+                    android:enabled="false" />
+
+
+                <!--android:src="@drawable/d_minus_selector_white"
+                android:src="@drawable/d_plus_selector_white"-->
+                <com.makent.trioangle.palette.EditText.MakentLightEditText
+                    android:id="@+id/edt__sqr_room_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midb"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_sqr_room_plus"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="5dp"
+
+                    />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/spinnerlayout"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/llt_sqr_rooms"
+                android:divider="@drawable/divider"
+                android:showDividers="middle">
+
+                <!--android:background="@drawable/d_gray_border"-->
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:id="@+id/tv_acres"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/midb"
+                    android:singleLine="true"
+                    android:text="@string/sq_ft"
+                    android:textAlignment="center"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center"
+                    android:background="@drawable/rect_noborder"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:visibility="visible"
+                    />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/continue_"
+        android:background="@drawable/d_redbutton_enable_disable"
+        android:id="@+id/btn_continue"
+        android:textColor="@color/white"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>

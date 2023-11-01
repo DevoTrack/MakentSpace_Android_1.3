@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_terms"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.makent.trioangle.profile.TermsActivity">
+
+    <RelativeLayout
+        android:id="@+id/terms_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/d_bottom_shadow"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/terms_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingEnd="20dp"
+            android:scaleY=".8"
+            android:scaleX=".8"
+            android:paddingTop="5dp"
+            android:src="@drawable/back_grayblack_arrow"/>
+
+
+        <com.makent.trioangle.palette.TextView.MakentTextView
+            android:id="@+id/terms"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/big"
+            android:textColor="@color/text_light_shadow"
+            android:text="@string/term"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/terms_title_back" />
+    </RelativeLayout>
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/terms_title"
+        />
+</RelativeLayout>

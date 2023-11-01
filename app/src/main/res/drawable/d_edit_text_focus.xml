@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+        android:state_pressed="true"
+        android:color="@color/red_text"
+        /> <!-- pressed -->
+    <item
+        android:state_focused="true"
+        android:color="@color/red_text"
+        /> <!-- focused -->
+    <item
+        android:color="@color/text_shadow"
+        /> <!-- default -->
+</selector>
+<!--
+<selector xmlns:trioangle="http://schemas.android.com/apk/res/android">
+
+    <item trioangle:backgroundTint="@color/text_shadow"
+        trioangle:focusable="false"/>
+    <item trioangle:backgroundTint="@color/red_text"
+        trioangle:focusable="true"/>
+</selector>-->

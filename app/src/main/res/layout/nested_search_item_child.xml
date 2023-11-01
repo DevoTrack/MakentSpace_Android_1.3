@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_linear"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id= "@+id/icons"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="15dp" />
+
+    <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:id="@+id/tv_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="10dp"
+        android:textSize="@dimen/midb"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        android:textColor="@color/white"
+        android:text="Child Item"/>
+
+    </LinearLayout>
+    <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:visibility="gone"
+        android:id="@+id/tv_isShared"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:paddingEnd="5dp"
+        android:layout_marginTop="-7dp"
+        android:textSize="@dimen/small"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        android:textColor="@color/text_light_blue"
+        android:text="@string/is_shared"/>
+    <ImageView
+        android:id="@+id/image_child"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/d_blue_line"/>
+</LinearLayout>

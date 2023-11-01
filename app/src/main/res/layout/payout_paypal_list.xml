@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_linear"
+    android:background="@android:color/transparent"
+    android:layoutDirection="@string/layout_direction"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/text_color"
+        android:id="@+id/paypalemailmore">
+
+        <com.makent.trioangle.palette.Button.MakentBookButton
+            android:id="@+id/paypal_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="@dimen/midb"
+            android:textStyle="bold"
+            android:background="@color/red_text"
+            android:textColor="@color/title_text_color"
+            android:layout_alignParentEnd="true"
+            android:textAllCaps="false"
+            android:text="@string/delete"/>
+
+        <com.makent.trioangle.palette.Button.MakentBookButton
+            android:id="@+id/paypal_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="@dimen/midb"
+            android:textStyle="bold"
+            android:background="@color/red_text"
+            android:textColor="@color/title_text_color"
+            android:textAllCaps="false"
+            android:text="@string/makedefault"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/paypal_delete" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:background="@color/text_color"
+        android:id="@+id/paypalemailid">
+
+    <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:id="@+id/paypal_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="@dimen/midi"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        android:textColor="@color/text_shadow"
+        android:text="@string/paypal_email"/>
+
+
+        <ImageView
+            android:id="@+id/image_child1"
+            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:scaleY=".7"
+            android:scaleX=".7"
+            android:tint="@color/text_light_shadow"
+            android:src="@drawable/n2_standard_row_right_caret_gray"/>
+    <ImageView
+        android:id="@+id/image_child"
+        android:layout_below="@+id/paypal_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/d_blue_line"/>
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/paypal_ready"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midi"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:textColor="@color/guestButton"
+            android:text="@string/defaults"
+            android:layout_alignBottom="@+id/image_child"
+            android:layout_toStartOf="@+id/image_child1" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <LinearLayout
+        android:id="@+id/hostcalendar_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:background="@color/text_color"
+        android:paddingBottom="10dp"
+        android:orientation="vertical"
+        android:clipToPadding="false">
+
+        <ImageView
+            android:id="@+id/room_details_hrline1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/d_bottom_shadow"/>
+        <LinearLayout
+            android:id="@+id/hostcalendar_cancel_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+            <com.makent.trioangle.palette.Button.MakentBookButton
+                android:id="@+id/hostcalendar_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:textAlignment="textStart"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textSize="@dimen/midi"
+                android:textColor="@color/text_dark_gray"/>
+
+            <com.makent.trioangle.palette.Button.MakentBookButton
+                android:id="@+id/hostcalendar_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:textAlignment="textEnd"
+                android:text="@string/savechanges"
+                android:textAllCaps="false"
+                android:textSize="@dimen/midi"
+                android:textColor="@color/red_text"/>
+
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/room_details_hrline2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/d_bottom"/>
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/hostcalendar_date"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midi"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/text_shadow"
+            android:text="4 Jan - 5 Jan"/>
+
+        <RadioGroup
+            android:checkedButton="@+id/available"
+            android:id="@+id/datestatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/d_gray_outline"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:id="@+id/available"
+                android:background="@drawable/d_toggle_widget_background"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@string/fonts_Bold"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/available"
+                android:textColor="@color/text_shadow" />
+
+            <RadioButton
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:id="@+id/blocked"
+                android:fontFamily="@string/fonts_Bold"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/d_toggle_widget_background"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/blocked"
+                android:textColor="@color/text_shadow" />
+        </RadioGroup>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/start_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:id="@+id/date_lay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="5"
+                    android:layout_alignParentStart="true">
+
+                    <TextView
+                        android:id= "@+id/start_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="@string/start_date"
+                        android:fontFamily="@string/fonts_Bold"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/midi"/>
+
+                    <TextView
+                        android:id="@+id/start_date_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="13/10/2019"
+                        android:fontFamily="@string/fonts_Bold"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/midi"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="5"
+                    android:layout_toRightOf="@+id/date_lay">
+
+                    <TextView
+                        android:id= "@+id/end_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/start_date"
+                        android:text="@string/end_date"
+                        android:fontFamily="@string/fonts_Bold"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="@dimen/midi"/>
+
+                    <TextView
+                        android:id="@+id/end_date_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/end_date"
+                        android:text="13/10/2019"
+                        android:layout_toRightOf="@+id/start_date_num"
+                        android:fontFamily="@string/fonts_Bold"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/midi"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/_end_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_below="@+id/start_lay">
+
+                <LinearLayout
+                    android:id="@+id/_start_time_lay"
+                    android:layout_weight="5"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id= "@+id/start_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/start_time"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/midi"/>
+
+                    <TextView
+                        android:id="@+id/start_time_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="3:00 AM"
+                        android:textSize="@dimen/midi"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/end_time_lay"
+                    android:layout_weight="5"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id= "@+id/end_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/end_time"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/midi"/>
+
+                    <TextView
+                        android:id="@+id/end_time_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="3:00 AM"
+                        android:textSize="@dimen/midi"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/_note_lay"
+                android:layout_below="@+id/_end_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/_add_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/midi"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/add_note"/>
+
+                <ImageView
+                    android:id="@+id/_add_arrow"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/_add_note"
+                    android:background="@drawable/ic_arrow_drop_down"
+                    android:backgroundTint="@color/text_light_shadow" />
+            </RelativeLayout>
+                <EditText
+                    android:id="@+id/_et_add_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="70dp"
+                    android:maxLength="500"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    android:layout_margin="7dp"
+                    android:layout_below="@+id/_note_lay"
+                    android:textCursorDrawable="@null"
+                    android:gravity="top|start"
+                    android:textColor="@color/text_shadow"
+                    android:background="@drawable/background"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

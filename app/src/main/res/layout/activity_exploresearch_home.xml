@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+
+     <!--<android.support.v4.widget.SwipeRefreshLayout
+         android:id="@+id/swipeContainer"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_gravity=""
+         app:layout_behavior="@string/appbar_scrolling_view_behavior">
+-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/explore_room_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        android:paddingBottom="80dp"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_below="@+id/appbar">
+    </androidx.recyclerview.widget.RecyclerView>
+
+<!--
+    </android.support.v4.widget.SwipeRefreshLayout>
+-->
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/explore_nodata"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_below="@+id/appbar">
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/nodata_msg"
+            android:textColor="@color/text_light_shadow"
+            android:textSize="@dimen/midb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/explore_nodata_txt"/>
+        <com.makent.trioangle.palette.Button.MakentBookButton
+            android:text="@string/removefilter"
+            android:textColor="@color/background"
+            android:textAllCaps="false"
+            android:textSize="@dimen/midb"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:id="@+id/explore_remove"
+            android:background="@drawable/d_blue_line_color"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mapfilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/d_map_filter"
+        android:layout_gravity="center_horizontal|bottom"
+        android:divider="@drawable/divider"
+        android:layout_centerHorizontal="true"
+        android:dividerPadding="10dp"
+        android:showDividers="middle"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true">
+        <com.makent.trioangle.palette.Button.MakentButton
+            android:text="@string/map"
+            android:textSize="@dimen/big"
+            android:background="@android:color/transparent"
+            android:drawablePadding="10dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:textColor="@color/text_bold"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/explore_map"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:id="@+id/explore_filter" >
+            <com.makent.trioangle.palette.TextView.MakentTextView
+                android:text="@string/filters"
+
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/small11"
+                android:textAlignment="textEnd"
+                android:textColor="@color/text_bold"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/explore_filter_txt"
+                android:layout_centerVertical="true"/>
+
+            <com.makent.trioangle.palette.TextView.MakentTextView
+                android:textColor="@color/title_text_color"
+                android:textSize="@dimen/midv"
+                android:textAlignment="textStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="0.55"
+                android:scaleY="0.55"
+                android:background="@drawable/n2_ic_filters"
+                android:id="@+id/explore_filter_count"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/explore_filter_txt"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

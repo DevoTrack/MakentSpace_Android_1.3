@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lys"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    android:background="@color/text_color"
+    tools:context="com.makent.trioangle.host.LYS_Step5_SetHouseRules">
+
+    <RelativeLayout
+        android:id="@+id/sethouse_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/d_bottom_shadow"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/sethouse_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleY=".7"
+            android:scaleX=".7"
+            android:backgroundTint="@color/text_shadow"
+            android:paddingStart="15dp"
+            android:paddingEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/icon_checkmark_black"/>
+
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/sethouse"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midb"
+            android:textColor="@color/text_light_shadow"
+            android:text="@string/done"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/sethouse_back" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sethouse_title">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/sethouse_rules"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/d_bottom_shadow"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:background="@drawable/d_bottom"
+        android:paddingTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <ImageView
+            android:id="@+id/houserules1_select"
+            android:layout_width="wrap_content"
+            android:src="@drawable/d_house_rules_select"
+            android:layout_height="wrap_content"
+            android:scaleX=".8"
+            android:scaleY=".8"
+            android:layout_alignParentEnd="true"
+            />
+        <ImageView
+           android:id="@+id/houserules1_unselect"
+           android:layout_width="wrap_content"
+           android:src="@drawable/d_house_rules_unselect"
+           android:layout_height="wrap_content"
+            android:scaleX=".8"
+            android:scaleY=".8"
+           android:layout_toStartOf="@+id/houserules1_select"/>
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/houserules1_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/smalli"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/text_shadow"
+            android:text="@string/house_rules1"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:background="@drawable/d_bottom"
+            android:paddingTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/houserules2_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/smalli"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/text_shadow"
+                android:text="@string/house_rules2"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:id="@+id/houserules2_select"
+                android:layout_width="wrap_content"
+                android:src="@drawable/d_house_rules_select"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:scaleX=".8"
+                android:scaleY=".8"
+                />
+            <ImageView
+                android:id="@+id/houserules2_unselect"
+                android:layout_width="wrap_content"
+                android:src="@drawable/d_house_rules_unselect"
+                android:layout_height="wrap_content"
+                android:scaleX=".8"
+                android:scaleY=".8"
+                android:layout_toStartOf="@+id/houserules2_select"/>
+            >
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:background="@drawable/d_bottom"
+            android:paddingTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <ImageView
+                android:id="@+id/houserules3_select"
+                android:layout_width="wrap_content"
+                android:src="@drawable/d_house_rules_select"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:scaleX=".8"
+                android:scaleY=".8"/>
+            <ImageView
+                android:id="@+id/houserules3_unselect"
+                android:layout_width="wrap_content"
+                android:src="@drawable/d_house_rules_unselect"
+                android:layout_height="wrap_content"
+                android:scaleX=".8"
+                android:scaleY=".8"
+                android:layout_toStartOf="@+id/houserules3_select"/>
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/houserules3_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/smalli"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/text_shadow"
+                android:text="@string/house_rules3"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+            >
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:background="@drawable/d_bottom"
+            android:paddingTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <ImageView
+                android:id="@+id/houserules4_select"
+                android:layout_width="wrap_content"
+                android:src="@drawable/d_house_rules_select"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:scaleX=".8"
+                android:scaleY=".8"/>
+            <ImageView
+                android:id="@+id/houserules4_unselect"
+                android:layout_width="wrap_content"
+                android:src="@drawable/d_house_rules_unselect"
+                android:layout_height="wrap_content"
+                android:scaleX=".8"
+                android:scaleY=".8"
+                android:layout_toStartOf="@+id/houserules4_select"/>
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/houserules4_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/smalli"
+                android:textColor="@color/text_shadow"
+                android:text="@string/house_rules4"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+            >
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:background="@color/title_text_color"
+            android:paddingTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/houserules5_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/smalli"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/text_shadow"
+                android:text="@string/house_rules5"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"/>
+
+            <ImageView
+                android:id="@+id/houserules5_select"
+                android:layout_width="wrap_content"
+                android:src="@drawable/d_house_rules_select"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:scaleX=".8"
+                android:scaleY=".8"/>
+
+            <ImageView
+                android:id="@+id/houserules5_unselect"
+                android:layout_width="wrap_content"
+                android:src="@drawable/d_house_rules_unselect"
+                android:layout_height="wrap_content"
+                android:scaleX=".8"
+                android:scaleY=".8"
+                android:layout_toStartOf="@+id/houserules5_select"/>
+        </RelativeLayout>
+        </LinearLayout>
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/houserules_qus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small"
+            android:textColor="@color/red_text"
+            android:layout_below="@+id/sethouse_rules"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/house_rules6"/>
+
+        <RelativeLayout
+            android:id="@+id/additional_rules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/d_bottom"
+            android:layout_below="@+id/houserules_qus"
+            android:paddingTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/additional_rules_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_light_shadow"
+                android:textSize="@dimen/midb"
+                android:layout_marginStart="20dp"
+                android:text="@string/additional_rules"/>
+
+            <ImageView
+                android:id="@+id/additional_rules_img"
+                android:layout_width="wrap_content"
+                android:background="@drawable/n2_standard_row_right_caret_gray"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/text_dark_gray"
+                android:textColor="@color/text_shadow"
+                android:layout_marginEnd="20dp"
+                android:scaleX=".7"
+                android:scaleY=".7"
+                android:layout_alignParentEnd="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/houserules_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/additional_rules">
+
+            <ImageView
+                android:id="@+id/houserules_tips_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleY=".6"
+                android:scaleX=".6"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="@color/text_light_blue"
+                android:background="@drawable/icon_lightbulb_sm_blue"/>
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:text="@string/house_rules_tip"
+                android:textColor="@color/text_dark_gray"
+                android:textSize="@dimen/small"
+                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/houserules_tips_txt"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/houserules_tips_img" />
+        </RelativeLayout>
+
+        </RelativeLayout>
+
+</ScrollView>
+    </RelativeLayout>

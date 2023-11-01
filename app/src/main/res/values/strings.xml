@@ -1,0 +1,1547 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE resources [<!ENTITY appname "Makent Space">
+    <!ENTITY facebook_key "616513745839684">
+    <!ENTITY google_maps_key "AIzaSyAoFmX3FBIMMx6H1E_neY7ED-UMAoLSmow">
+    <!ENTITY google_key_url "AIzaSyAoFmX3FBIMMx6H1E_neY7ED-UMAoLSmow">
+    <!ENTITY baseUrl "https://makentspace.trioangle.com/">]>
+
+<resources>
+    <string name="app_name" translatable="false">&appname;</string>
+    <string name="version">"Version 1.2.3"</string>
+
+    <string name="packagename" translatable="false">"com.trioangle.makentspace"</string>
+
+    <string name="baseurl" translatable="false">"&baseUrl;api/</string>
+    <string name="helplink" translatable="false">"&baseUrl;help</string>
+    <string name="whyhostlink" translatable="false">"&baseUrl;why_host"</string>
+    <string name="sharelink" translatable="false">"&baseUrl;rooms/"</string>
+    <string name="sharelinkexp" translatable="false">"&baseUrl;experiences/"</string>
+    <string name="termslink" translatable="false">"&baseUrl;terms_of_service"</string>
+    <string name="guestrefund" translatable="false">"&baseUrl;guest_refund"</string>
+    <string name="hostguarantee" translatable="false">"&baseUrl;host_guarantee"</string>
+    <string name="privacylink" translatable="false">"&baseUrl;privacy_policy"</string>
+    <string name="appleredirecturl" translatable="false">"&baseUrl;api/apple_callback"</string>
+
+    <string name="policy" translatable="false"><html>"By signing up, I agree to &appname;'s "
+      <a link="http://makentspace.trioangle.com/terms_of_service"><u>"Terms of Service, "</u></a>
+      <a link="http://makentspace.trioangle.com/privacy_policy"><u>"Non-Discrimination Policy, "</u></a>
+      <a link="http://makentspace.trioangle.com/privacy_policy"><u>"Payments Terms of Service, "</u></a>
+      <a link="http://makentspace.trioangle.com/privacy_policy"><u>"Privacy Policy, "</u></a>
+      <a link="http://makentspace.trioangle.com/guest_refund"><u>"Guest Refund Policy, "</u></a>and
+      <a link="http://makentspace.trioangle.com/host_guarantee"><u>"Host Guarantee Terms."</u></a></html>
+     </string>
+
+    <string name="facebook_key" translatable="false">&facebook_key;</string>
+    <string name="facebook_provider" translatable="false">"com.facebook.app.FacebookContentProvider&facebook_key;"</string>
+
+
+    //Live key
+    <string name="google_key" translatable="false">&google_key_url;</string>
+    <string name="google_map_key" translatable="false">&google_maps_key;</string>
+
+
+    <string name="mapurl" translatable="false">"https://maps.googleapis.com/maps/api/"</string>
+
+    <!-- fonts -->
+    <string name="fonts_logo" translatable="false">"fonts/Airglyphs.ttf"</string>
+    <string name="fonts_Bold" translatable="false">"fonts/CircularAir-Bold.otf"</string>
+    <string name="fonts_Book" translatable="false">"fonts/CircularAir-Book.otf"</string>
+
+    <string name="fonts_makent_logo" translatable="false">"fonts/Makent-Logo.ttf"</string>
+    <string name="fonts_makent1" translatable="false">"fonts/makent1.ttf"</string>
+    <string name="fonts_makent2" translatable="false">"fonts/makent2.ttf"</string>
+    <string name="fonts_makent3" translatable="false">"fonts/makent3.ttf"</string>
+    <string name="fonts_makent4" translatable="false">"fonts/makent4.ttf"</string>
+
+    <string name="layout_direction">0</string>
+
+    <!--Font Icon String Start-->
+    <string name="f1like" translatable="false">B</string>
+    <string name="f1like1" translatable="false">C</string>
+    <string name="f1share" translatable="false">S</string>
+
+
+    <string name="flogoinvite" translatable="false">s</string>
+    <string name="flogosetting" translatable="false">R</string>
+    <string name="flogohelp" translatable="false">2</string>
+    <string name="f1whyhost" translatable="false">c</string>
+
+    <string name="f1users" translatable="false">.</string>
+    <string name="f3calendar" translatable="false">i</string>
+
+
+    <string name="f4checknormal" translatable="false">n</string>
+    <string name="f4check" translatable="false">o</string>
+    <string name="f4checkplus" translatable="false">k</string>
+    <string name="f4checkminus" translatable="false">j</string>
+    <string name="f4globe" translatable="false">d</string>
+    <string name="f4searchmap" translatable="false">f</string>
+
+    <string name="dot" translatable="false">"·"</string>
+
+    <!--Font Icon String End-->
+
+    <string name="sigin_terms1">"By signing up, I agree to &appname;'s  "</string>
+    <string name="sigin_terms7">"  "</string>
+    <string name="sigin_terms2">"Terms of Service"</string>
+    <string name="sigin_terms3">"Non-Discrimination Policy "</string>
+    <string name="sigin_terms4">"Privacy Policy"</string>
+    <string name="sigin_terms5">"Guest Refund Policy "</string>
+    <string name="sigin_terms6">"Host Guarantee Terms"</string>
+    <string name="anim_speed">"50"</string>
+    <string name="Comma" translatable="false">", "</string>
+    <string name="sign_apple">Continue with Apple</string>
+
+    <string name="and">" and "</string>
+    <!-- Menu Start-->
+    <string name="menudelete">"Delete"</string>
+    <string name="menuarchive">"Archive"</string>
+    <string name="menueveryone">"Make Public"</string>
+    <string name="menuonlyme">"Make Private"</string>
+    <!-- Menu End-->
+
+    <!-- Main Page Start-->
+    <string name="login">Log in</string>
+    <string name="welcome">Welcome to &appname;.</string>
+    <string name="createaccount">Create Account</string>
+    <string name="continue_google">Continue with Google</string>
+    <string name="continue_facebook">Continue with Facebook</string>
+    <string name="continue_">Continue</string>
+    <string name="spotsleft_alert">"Do you Want to Continue with Available SpotsLeft\t"</string>
+    <string name="alter_title">Available Spots Left </string>
+
+    <!-- Main Page End-->
+
+    <!-- Signup Name page Start-->
+    <string name="name_title">"What's your name?"</string>
+    <string name="first_name">FIRST NAME</string>
+    <string name="last_name">LAST NAME</string>
+    <!-- Signup Name page End-->
+
+    <!-- Signup Email page Start-->
+    <string name="email_title">"And, your email?"</string>
+    <string name="email_address">EMAIL ADDRESS</string>
+    <string name="emailalreadyexits">"You already have an account with this email. \nTry logging in, instead."</string>
+    <string name="emailalreadyuse1">Log In Error</string>
+    <!-- Signup Enail page End-->
+
+    <!-- Signup Password page Start-->
+    <string name="password_title">Create a password</string>
+    <string name="password_msg">Your password must be include at least one symbol and be 8 or more characters long.</string>
+    <string name="password">PASSWORD</string>
+    <string name="show">Show</string>
+    <string name="hide">Hide</string>
+    <string name="hours_total">hours total</string>
+    <string name="meet_your_host">Meet Your Host,</string>
+    <string name="reviewss">reviews</string>
+    <string name="guest_age">Guests ages</string>
+    <string name="can_attend">and up can attend.</string>
+
+    <!-- Signup Password page End-->
+
+    <!-- Signup facebook page Start-->
+    <string name="facebook_title">"Looks good?"</string>
+    <string name="facebook_msg">"Make sure your information is correct before continuing."</string>
+    <string name="birth_day">BIRTHDAY</string>
+    <string name="availableexperience">"available experience"</string>
+    <string name="availableexperiences">"available experiences"</string>
+    <!-- Signup facebook page End-->
+
+    <!-- Signin page Start-->
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login_title">Log In</string>
+    <string name="showpassword">Show Password</string>
+    <string name="retry">Retry</string>
+    <string name="invalidelogin">Invalid Login details  </string>
+    <string name="invalidesignup">Invalid Signup details  </string>
+    <string name="datesnotavailable">"Those dates are not available..."</string>
+    <string name="pleasepickpreviousdate">Please pick previous date</string>
+    <!-- Signin Password page End-->
+
+    <!-- Forgot Password page Start-->
+    <string name="forgot_title">"Forgot your password?"</string>
+    <string name="forgot_msg">Enter your email to find your account.</string>
+    <string name="forgot_email_send">A link to reset your password has been sent to  </string>
+    <string name="forgot_invalid_mail">No account exists for the requested email address</string>
+    <!-- Forgot Password page End-->
+
+
+    <!-- Signup DOB page Start-->
+    <string name="dob_title">"When is your birthday?"</string>
+    <string name="dob_msg">"You must be at least 18 years old to use &appname;. Others won't see your birthday."</string>
+    <string name="dob">"BIRTHDAY"</string>
+    <string name="setdob">Set your birth date</string>
+    <string name="cancelc">CANCEL</string>
+    <!-- Signup DOB page End-->
+
+    <!-- Profile Page Start-->
+    <string name="view_edit">View and edit profile</string>
+    <string name="invite_friends">Invite friends</string>
+    <string name="switch_to">Switch to Hosting</string>
+    <string name="switch_to_t">Switch to Travelling</string>
+    <string name="settings">Settings</string>
+    <string name="Help">"Help &amp; Support</string>
+    <string name="whyhost">Why host</string>
+    <string name="logout">Log out</string>
+    <string name="logout_msg">Are you sure you want to \nlogout?</string>
+    <!-- Profile Page End-->
+
+
+    <string name="terms">When you book,you agree to the Makent Additional Terms of Service,Guest Release and Waiver,and Cancellation Policy</string>
+    <string name="review_guest_requirment">Review Guest Requirements</string>
+    <string name="guest_reqr">Guest Requirements</string>
+
+    <!-- Home Page Start-->
+    <string name="explore">Explore</string>
+    <string name="bookings">Bookings</string>
+    <string name="inbox">Inbox</string>
+
+    <string name="profile">Profile</string>
+    <string name="choose">Choose</string>
+    <string name="wishlist">"Saved"</string>
+    <string name="booking_title">Booking</string>
+    <!-- Home Page End-->
+
+    <!-- Explore tab page Start-->
+    <string name="review">Reviews</string>
+    <string name="review_one">Review</string>
+    <string name="review_s">reviews</string>
+    <string name="review_s_one">review</string>
+    <string name="where">"Where"</string>
+    <string name="anywhere">"Anywhere</string>
+    <string name="nearby">"Nearby</string>
+    <string name="whereto">"Where to?"</string>
+    <string name="makent_hosts_experience_event_cancellation_policy"><![CDATA[Makent Hosts Experience & Event Cancellation policy]]></string>
+    <string name="u2022_any_experience"> Any experience or event, canceled within 24 hours of booking, is eligible for a full refund.</string>
+    <string name="when">"When"</string>
+    <string name="guest">"&#160;Guest"</string>
+    <string name="read_more">read more</string>
+    <string name="pets">"Pets</string>
+    <string name="what_i_ll_provide">what i\'ll provide</string>
+    <string name="clear">Clear all</string>
+    <string name="map">MAP</string>
+    <string name="filters">FILTERS</string>
+    <string name="nodata_msg">"We couldn't find any listings. \n Try  removing your filters"</string>
+    <string name="removefilter">"Remove all filters"</string>
+    <!-- Explore tab Page End-->
+
+
+    <!-- Rooms Details page Start-->
+    <string name="guests">"&#160; Guests"</string>
+    <string name="rooms">"Bedrooms"</string>
+    <string name="beds">"beds"</string>
+    <string name="bath">"bath"</string>
+    <string name="s_guest">"Guest"</string>
+    <string name="g_guest">"Guests</string>
+    <string name="is_shared">"Note: This is a shared room"</string>
+    <string name="bedroom">"bedroom"</string>
+    <string name="s_bedroom">"bedrooms"</string>
+    <string name="bed">"bed"</string>
+    <string name="bathroom">"bathroom"</string>
+    <string name="s_bathroom">"bathrooms"</string>
+    <string name="about_home">About this home</string>
+    <string name="about_listing">About this listing</string>
+    <string name="checkin">Check-In time</string>
+    <string name="guide">View Guidebook</string>
+    <string name="checkout">Check-Out time</string>
+    <string name="chin">Check-in</string>
+    <string name="chout">Check-out</string>
+    <string name="exp_cal_title">When would you like to go?</string>
+    <string name="houserules">House rules</string>
+    <string name="cancelpolicy">Cancellation policy</string>
+    <string name="availability">Availability</string>
+    <string name="contacthost">Contact host</string>
+    <string name="triplength">Trip length</string>
+    <string name="contacthost_msg">"Contact request has sent to "</string>
+    <string name="similarlisting">Similar listings</string>
+    <string name="checkavailability">Check availability</string>
+    <string name="booknow">Book Now</string>
+    <string name="requestbook">Request to Book</string>
+    <string name="instantbook">Instant Book</string>
+    <string name="request_book">request_to_book</string>
+    <string name="instant_book">instant_book</string>
+    <string name="pernight">per night</string>
+    <string name="check">Check</string>
+    <string name="read">Read</string>
+    <string name="flexible">Flexible</string>
+    <string name="datedialog1">"Do you want to add "</string>
+    <string name="datedialog2">" to your search?"</string>
+    <string name="datedialog3">"Do you want to add %s to your search?"</string>
+    <string name="no">NO</string>
+    <string name="in">in</string>
+    <string name="yes">YES</string>
+    <string name="hosted_by">hosted by</string>
+    <string name="no_internet_available">No Internet Available</string>
+
+    <!-- Rooms Details Page End-->
+
+    <!-- Inbox Tab Page Start-->
+    <string name="message_s">Message</string>
+    <string name="inbox_msg">You have no unread messages</string>
+
+    <string name="start_exploring">Start Exploring</string>
+    <!-- Inbox Tab Page End-->
+
+    <!-- Trips page Start-->
+    <string name="trips_details">"What will be your first \nadventure?"</string>
+    <string name="startexploring">Start exploring</string>
+    <!-- Trips Page End-->
+
+
+    <!-- List view Start-->
+    <string name="listview_footer_hint_normal">Pull to load more items</string>
+    <string name="listview_footer_hint_ready">Loading</string>
+    <string name="addlistprepared">"Prepared!"</string>
+    <string name="addlistmsg">"Just 3 more steps to list"</string>
+    <string name="addlisting">"Add Listing"</string>
+    <string name="yourlisting">"Your Listing"</string>
+
+    <!-- List view End-->
+
+    <!-- Request Page Start-->
+    <string name="nights">Nights</string>
+    <string name="Guests">Guests</string>
+    <string name="price_breakdown">See price breakdown</string>
+    <string name="req_msg">"This payment transacts in USD. Your total charge is $470. The exchange rate for booking this listing is $1 to CLP667.783 (includes 3% &appname;
+        conversion fee)."</string>
+    <string name="coupon">Coupon Code</string>
+    <string name="add">Add</string>
+    <string name="steps">Steps left to book</string>
+    <string name="payment">"1.Payment"</string>
+    <string name="messagehost">"Message host"</string>
+    <string name="houserule">"Space rules"</string>
+    <string name="agree">Agree</string>
+    <string name="agreed">Agreed</string>
+    <string name="setps_left">"You have 3 steps left"</string>
+    <string name="setps_left1">"You have 1 step left"</string>
+    <string name="setps_left2">"You have 2 steps left"</string>
+    <string name="setps_left3">"You have 3 steps left"</string>step_left
+    <string name="youhave">"You have"</string>
+    <!-- Request page End-->
+    <!-- Payment Page Start-->
+    <string name="add_payment">Add Payment</string>
+    <string name="payments">Payment</string>
+    <string name="save">"Save"</string>
+    <string name="showall">"Show All"</string>
+    <string name="select">"Select"</string>
+    <string name="select_payment_title">Select your payment method</string>
+    <string name="selectcountry">Select Country</string>
+    <string name="creditcard">Credit Card</string>
+    <string name="paypal">PayPal</string>
+    <!-- Payment Page End-->
+
+    <!-- Message to host Page Start-->
+
+    <string name="request_book_to_host">Request Booking Send to Host</string>
+    <string name="payment_successfull_paid">Payment Successfully Paid</string>
+    <string name="success_completed">Payment has Successfully Completed.</string>
+
+    <string name="introduce">Introduce yourself</string>
+    <string name="done">Done</string>
+    <string name="msg_host">"Tell suite Mirador a bit about yourself and your trip."</string>
+    <string name="write_msg">Write a message...</string>
+    <!-- Message to host Page End-->
+
+    <!-- House rules Page Start-->
+    <string name="house_title">"Suite Mirador's House Rules"</string>
+    <string name="msg_house_rules">"When you stay in an &appname;, you're staying in someone's home. You'll need to agree to suite Mirador's house rules before you can book."</string>
+    <string name="other_rules">Other rules</string>
+    <string name="other_rules_msg">"Feel at home away from home maeaning that:\nYou respect your neighbors and keep things quiet after dark please!\nYou respect the house as It whould ne yours! \n\nSince 2016 two more cave houses have been renovated on top of the Hector Cave house."</string>
+    <string name="nosmoking">No smoking</string>
+    <string name="notsutable_for_pers">"Not suitable for pets"</string>
+    <string name="noparties">No parties or events</string>
+    <string name="infants">"May not be safe or suitable for infants (Under 2 years)"</string>
+
+    <!-- House rules Page End-->
+
+    <!-- Additional Prices Page Start-->
+    <string name="additionalprices">"Additional Prices"</string>
+    <string name="extrapeople">"Extra People"</string>
+    <string name="securitydeposit">"Security Deposit"</string>
+    <string name="cleaningfee">"Cleaning Fee"</string>
+    <string name="discout_message">"You can give discounts for your list from our website."</string>
+    <string name="lengthofstay">"Length of stay discounts"</string>
+    <string name="earlybird">"Early bird discounts"</string>
+    <string name="lastmin">"Last min discounts"</string>
+    <string name="hostfee">"&appname; Host Fee"</string>
+    <string name="minimum_stay">"Minimum Stay"</string>
+    <string name="maximum_stay">"Maximum Stay"</string>
+
+    <!-- Additional Prices Page End-->
+
+    <!-- Price Break Down Page Start-->
+    <string name="pricebreakdown">"Payment Breakdown"</string>
+    <string name="customerreceipt">"Customer Receipt"</string>
+    <string name="night">"night"</string>
+    <string name="day">"day"</string>
+    <string name="days">"days"</string>
+    <string name="Days">"Days"</string>
+    <string name="nightc">"Night"</string>
+    <string name="nightss">"nights"</string>
+    <string name="servicefee">"Service Fee"</string>
+    <string name="servicefee_msg">"This helps us run our platform and offer \nservices like 24/7 support on your trip."</string>
+    <string name="additionalfee">"Additional Guest Fee"</string>
+    <string name="foreachguestafter">"For each guest after"</string>
+    <string name="securityfee">"Security Fee"</string>
+    <!-- Price Break Down Page End-->
+
+
+    <!-- Filter Page Start-->
+    <string name="reset_all">"Reset all"</string>
+    <string name="reset">"Reset"</string>
+    <string name="instant_book_only">"Instant Book only"</string>
+    <string name="instant_book_msg">"Book without waiting for the host to respond"</string>
+    <string name="avg_price">Average price is $87 per night</string>
+
+    <string name="room_type">Room type</string>
+    <string name="bed_type">Bed type</string>
+    <string name="entire_place">Entire place</string>
+    <string name="private_room">Private room</string>
+
+    <string name="shared_room">Shared room</string>
+
+
+    <string name="anybed">Any beds</string>
+    <string name="anybedrooms">Any bedrooms</string>
+    <string name="anybathrooms">Any bathrooms</string>
+
+    <string name="bedss">"+ beds"</string>
+    <string name="bedrooms">"+ bedrooms"</string>
+    <string name="bathrooms">"+ bathrooms"</string>
+
+    <string name="wifi">Wifi</string>
+    <string name="pool">Pool</string>
+    <string name="kitchen">Kitchen</string>
+    <string name="see_amenities">See all amenities</string>
+    <!-- Filter Page End-->
+
+    <string name="test">Test</string>
+    <string name="title_activity_request">RequestActivity</string>
+    <string name="amenities">Amenities</string>
+    <string name="select_amenities">Select amenities</string>
+    <string name="select_categories">Select categories</string>
+
+
+    <!-- House rules Page Start-->
+    <string name="reviews">Reviews</string>
+    <string name="accuracy">"Accuracy"</string>
+    <string name="arrival">"Arrival"</string>
+    <string name="cleanliness">"Cleanliness"</string>
+    <string name="comminication">Communication</string>
+    <string name="location">Location</string>
+    <string name="value">Value</string>
+    <string name="title_activity_search__guest__bed">Search_Guest_Bed</string>
+
+    <!-- House rules Page End-->
+
+
+    <!-- Calendar Library Start-->
+
+
+    <string name="day_name_format">EEE</string>
+    <string name="invalid_date">Date must be between %1$s and %2$s.</string>
+    <string name="invalid_country">Please provide your country</string>
+    <string name="invalid_state">Please provide your state</string>
+    <string name="invalid_city">Please provide your city</string>
+
+    <string name="month_name_format">MMMM yyyy</string>
+
+    <!-- Calendar Library End-->
+
+    <!-- Host page Start-->
+
+    <string name="switchhost">"Switching to Hosting"</string>
+    <string name="switchtravel">"Switching to Travelling"</string>
+    <string name="reservation">"Reservation"</string>
+    <string name="reservations">"reservation"</string>
+    <string name="reservationss">"reservations"</string>
+    <string name="preaccept">"Pre-Accept"</string>
+    <string name="preapprove">"Pre-Approve"</string>
+    <string name="calendar">"Calendar"</string>
+    <string name="calendars">"Calendar"</string>
+    <string name="listing">"Listings"</string>
+    <string name="profilec">"Profile"</string>
+    <string name="expires">"Expires in "</string>
+    <string name="expired">"Expired "</string>
+
+    <!-- Host Page End-->
+
+    <!-- Host Home page Start-->
+
+    <string name="no_reservation">"No Reservation Requests"</string>
+    <string name="no_listing">"No Listing"</string>
+    <string name="no_listing_msg">"You have no listing \nright now."</string>
+    <string name="host_home_meg">"You have no reservation requests \nor booking inquiries to respond \nto right now."</string>
+    <!-- Host Home Page End-->
+
+    <!-- Calendar Home page Start-->
+    <!-- Calendar Home Page End-->
+
+    <!-- Listing Home page Start-->
+    <string name="complete">"Complete"</string>
+    <string name="incomplete">"Incomplete"</string>
+    <!-- Listing Home Page End-->
+
+
+    <!-- List your space previous start-->
+    <string name="lys">"List Your Space"</string>
+    <string name="lys_msg">"What type of space do \n you want to list?"</string>
+    <string name="entirehome_msg">"Your entire home"</string>
+    <string name="privateroom_msg">"A single room in your home"</string>
+    <string name="sharedroom_msg">"A couch, airbed, etc."</string>
+    <!-- List your space previous End-->
+
+    <!-- Property type start-->
+    <string name="property_type">"Property type"</string>
+    <string name="property_type_msg1">"What type of place is \nyour entire home in?"</string>
+    <string name="apartment">"Apartment"</string>
+    <string name="house">"House"</string>
+    <string name="home">"Listing"</string>
+    <string name="homes">"Listings"</string>
+    <string name="nothing">"Nothing saved yet"</string>
+    <string name="bedbreak">"Bed &amp; Breakfast"</string>
+    <string name="more">More</string>
+    <string name="more_c">MORE</string>
+
+    <string-array name="property_type_more">
+        <item>Loft</item>
+        <item>Townhouse</item>
+        <item>Condominium</item>
+        <item>Bungalow</item>
+        <item>Cabin</item>
+        <item>Villa</item>
+        <item>Castle</item>
+        <item>Dorm</item>
+        <item>Treehouse</item>
+        <item>Boat</item>
+        <item>Plane</item>
+        <item>"Camper/RV"</item>
+        <item>Lgloo</item>
+        <item>Lighthouse</item>
+        <item>Yurt</item>
+        <item>Tipi</item>
+        <item>Cave</item>
+        <item>Island</item>
+        <item>Chalet</item>
+        <item>Earthhouse</item>
+        <item>Hut</item>
+        <item>Train</item>
+        <item>Tent</item>
+        <item>Other</item>
+
+    </string-array>
+    <!-- Property type End-->
+
+    <!-- LYS Map Home page Start-->
+    <string name="locaiton">"Location"</string>
+    <string name="location_msg">"What city is your house located in?"</string>
+    <string name="locaiton_next">Next</string>
+    <!-- LYS Map Home Page End-->
+
+    <!-- LYS Edit Location Home page Start-->
+    <string name="editlocaiton">"Edit Location"</string>
+    <string name="editlocation_msg">"Your exact address, location, and directions are only visible to guests with a confirmed reservation."</string>
+    <string name="editlocaiton_law">Notice About Your Local Laws</string>
+    <string name="editlocaiton_law_msg">A friendly note about hosting on &appname;</string>
+    <!-- LYS Edit Location Page End-->
+
+    <!-- LYS Rooms & Beds page Start-->
+    <string name="roombed">"Rooms &amp; Beds"</string>
+    <string name="roombed_msg">"Just a little more about \n your cabin..."</string>
+    <string name="roombed_max">Max Guests</string>
+    <string name="roombed_bed">Beds</string>
+    <string name="roombed_bedrooms">Bedrooms</string>
+    <string name="roombed_bath">Bathrooms</string>
+    <string name="roombed_type">Beds and Type</string>
+
+    <string name="steps_left6">"6 steps to list"</string>
+
+    <!-- LYS Rooms & Beds Page End-->
+
+    <!-- List your space start-->
+    <string name="preview">"PREVIEW"</string>
+    <string name="add_photo">"Add Photos"</string>
+    <string name="photo">"Photo"</string>
+    <string name="photos">"Photos"</string>
+    <string name="describeyourspace">"Describe your space"</string>
+    <string name="describeyourspace_msg">"Summarize the highlights of your listing"</string>
+    <string name="setprice">"Set Price"</string>
+    <string name="setprice_msg">"Try out suggested price to start"</string>
+    <string name="setaddress">"Set Address"</string>
+    <string name="setaddress_msg">"Only confirmed guests see your address"</string>
+    <string name="sethouserules">"Set House Rules"</string>
+    <string name="sethouserules_msg">"Guests agree to rules before booking"</string>
+    <string name="setbooksetting">"Set Booking Settings"</string>
+    <string name="setbooksetting_msg">"How guests can book"</string>
+    <string name="booksetting">"Booking Settings"</string>
+    <string name="optionaldetails">"Optional Details"</string>
+    <string name="selectcurrency">"Select Currency"</string>
+    <string name="changecurrency">"Change Currency"</string>
+    <string name="setpstolist">"steps to list"</string>
+    <string name="setptolist">"step to list"</string>
+    <!-- List your space End-->
+
+    <!-- Step1 start-->
+    <string name="photo_msg">"Add Photos to\n your listing"</string>
+    <!-- Step1 End-->
+
+    <!-- Step2 start-->
+    <string name="addtitle">"Add a title"</string>
+    <string name="addtitle_msg">"Give your place a descriptive title"</string>
+
+    <string name="addsummary">"Write a summary"</string>
+    <string name="addsummary_msg">"Be clear and descriptive."</string>
+
+
+    <string name="title">"Title"</string>
+    <string name="title_msg">"Be clear and descriptive."</string>
+
+    <string name="summary">"Summary"</string>
+    <string name="summary_msg">"Tell travelers what you love about the space. You can include details about the decor, the amenities it includes, and the neighborhood."</string>
+    <string name="characters">"characters left"</string>
+    <!-- Step2 End-->
+
+    <!-- Step3 start-->
+    <string name="price_msg">Fixed price is your default nightly rate.</string>
+    <string name="price_tip">"Price tip: "</string>
+    <string name="price_tip1">"22"</string>
+    <string name="price_tip2">" per night based on \ndemand and your listing's attributes"</string>
+    <!-- Step3 End-->
+
+    <!-- Step4 start-->
+    <string name="search">"Search..."</string>
+    <string name="addressnot_see">"Don't see your address? Use the address \nform instead."</string>
+    <string name="street_hint">"Street / Road Name"</string>
+    <string name="apt_hint">"Apt / Suite / Building"</string>
+    <string name="city_hint">"City / Town / District"</string>
+    <string name="state_hint">"State / Province / County"</string>
+    <string name="pin_hint">"Zip / Postal Code"</string>
+    <string name="country_hint">"Country"</string>
+    <!-- Step4 end-->
+
+    <!-- Step5 start-->
+    <string name="house_rules1">"Suitable for children (Age 2-12)"</string>
+    <string name="house_rules2">"Suitable for infants (Under 2)"</string>
+    <string name="house_rules3">"Suitable for pets"</string>
+    <string name="house_rules4">"Smoking allowed"</string>
+    <string name="house_rules5">"Events or parties allowed"</string>
+    <string name="house_rules6">"Is my listing suitable for children?"</string>
+
+    <string name="additional_rules">"Additional rules"</string>
+    <string name="house_rules">"House Rules"</string>
+    <string name="words">"words"</string>
+    <string name="word">"word"</string>
+    <string name="house_rules_msg">"How do you expect your guests to behave?"</string>
+    <string name="house_rules_tip">"You can cancel penalty-free if guests who \nbooked instantly break your House Rules."</string>
+    <!-- Step5 End-->
+
+    <!-- Optional Deatils start-->
+    <string name="price">Price</string>
+    <string name="currency">"Currency"</string>
+    <string name="usd">"USD"</string>
+    <string name="symbol">($)</string>
+
+    <string name="details">"Details"</string>
+    <string name="details_small">"&#160; details &#160;"</string>
+    <string name="tell_travelers">"to tell travelers about your space and hosting style."</string>
+    <string name="description">"Description"</string>
+    <string name="roomsbeds">"Rooms &amp; Beds"</string>
+    <string name="none">"None"</string>
+    <string name="deactivatelist">"Deactivate Listing"</string>
+    <string name="enable_permissions">Please Enable Permissions</string>
+    <!-- Optional Deatils End-->
+
+    <!-- Optional Deatils price start-->
+    <string name="longterm">"Long-Term Prices"</string>
+    <string name="longterm_msg">"You can set a price to reflect the space, amenities, and hospitality you'll be providing."</string>
+    <string name="weeklyprice">"Weekly Price"</string>
+    <string name="weekly">"Weekly"</string>
+    <string name="monthly">"Monthly"</string>
+    <string name="weekendprice">"Weekend Pricing"</string>
+    <string name="monthlyprice">"Monthly Price"</string>
+
+    <string name="guest_stay_minimum">"Guests Stay For Minimum"</string>
+    <string name="guest_stay_maximum">"Guests Stay For Maximum"</string>
+
+    <string name="length_of_stay_discount">"length of stay discount"</string>
+    <string name="last_min_discount">"last min discount"</string>
+    <string name="early_bird_discount">"early bird discount"</string>
+    <string name="during">"During"</string>
+
+    <!-- Optional Deatils price End-->
+
+    <!-- Description start-->
+    <string name="space">"The space"</string>
+    <string name="space_msg">"What makes your space unique?"</string>
+    <string name="guest_access">"Guest Access"</string>
+    <string name="guest_access_msg">"What will guests have access to?"</string>
+    <string name="interaction_guest">"Interaction with Guests"</string>
+    <string name="guest_interaction">"Guest Interaction"</string>
+    <string name="interaction_guest_msg">"How often do you interact with your guests?"</string>
+
+    <string name="neighborhood">"The Neighborhood"</string>
+    <string name="overview">"Overview"</string>
+    <string name="overview_msg">"What do you love about your neighborhood?"</string>
+    <string name="gettingaround">"Getting Around"</string>
+    <string name="gettingaround_msg">"Is there convenient public transit?"</string>
+
+
+    <string name="extradetails">"Extra Details"</string>
+    <string name="otherthing">"Other Things to Note"</string>
+    <string name="otherthing_msg">"Are there any other details you'd like to share?"</string>
+    <string name="des_houserules_msg">"How do you expect your guests to behave?"</string>
+    <string name="des_houserules_msg1">"You can cancel penalty-free if guests who booked instantly break your House Rules."</string>
+
+    <!-- Description End-->
+
+    <!-- Optional details Rooms and Beds Start-->
+    <string name="listinginfo">"Listing Info"</string>
+    <string name="selectlistingtype">Select Listing Type</string>
+    <!-- Optional details Rooms and Beds Start-->
+
+    <string-array name="amenities_type">
+        <item>Most Common</item>
+        <item>Extras</item>
+        <item>Special Features</item>
+        <item>Home Safety</item>
+    </string-array>
+
+    <string-array name="amenities_mostcommon">
+        <item>Essentials</item>
+        <item>Shampoo</item>
+        <item>TV</item>
+        <item>Heating</item>
+        <item>Kitchen</item>
+        <item>Air conditioning</item>
+        <item>Internet</item>
+        <item>Wifi</item>
+    </string-array>
+
+    <string-array name="amenities_extra">
+        <item>Hot tub</item>
+        <item>Pool</item>
+        <item>Breakfast</item>
+        <item>Gym</item>
+        <item>Indoor fireplace</item>
+        <item>Washer</item>
+        <item>Dryer</item>
+        <item>Free parking</item>
+        <item>"Elevator in building</item>
+    </string-array>
+
+    <string-array name="amenities_special_Features">
+        <item>Family friendly</item>
+        <item>Suitable for events</item>
+        <item>Wheelchair accessible</item>
+        <item>Smoking allowed</item>
+        <item>Pets allowed</item>
+        <item>pets live on this property</item>
+    </string-array>
+
+    <string-array name="amenities_home_safety">
+        <item>Smoke detector</item>
+        <item>Carbon monoxide detector</item>
+        <item>First aid kit</item>
+        <item>Safety card</item>
+        <item>Fire extinguisher</item>
+    </string-array>
+
+    <!-- Host Calendar Start-->
+    <string name="cancel">"Cancel"</string>
+    <string name="cancelrequest">"Cancel Request"</string>
+    <string name="savechanges">"Save Changes"</string>
+    <string name="available">"Available"</string>
+    <string name="blocked">Blocked</string>
+    <string name="nightlyPrice">Nightly Price</string>
+
+    <string name="unlisted">Unlisted</string>
+    <string name="listed">Listed</string>
+
+    <!-- Host Calendar end-->
+
+    <!-- Why Host Start-->
+    <string name="whyhost_title">"Earn money as an &appname; host"</string>
+    <string name="whyhost_msg">"From saving for home repairs to taking a dream trip, hosts use extra income to fund their passions."</string>
+    <string name="whyhost_title1">"What’s in a listing?"</string>
+    <string name="whyhost_msg1">"You’ll fill out a description, take and upload photos, and pick a price. Your listing helps guests get a sense of what your place is like."</string>
+    <string name="whyhost_title2">"Who can book"</string>
+    <string name="whyhost_msg2">"You set the rules for who stays and when. Booking and guest preferences help hosting fit into your lifestyle."</string>
+    <string name="whyhost_title3">"We’re here to help"</string>
+    <string name="whyhost_msg3">"&appname; provides tips and help along the way. From getting your home ready to choosing a price—we’ve got tools for you."</string>
+
+    <!-- Why Host end-->
+
+    <!-- Settings Start-->
+    <string name="notification">"Notifications"</string>
+    <string name="payoutmethod">"Payout Methods"</string>
+    <string name="term">Terms of Service</string>
+    <!-- setting end-->
+
+    <!-- Payout Page Start-->
+    <string name="payouts">"Payouts"</string>
+    <string name="payout_title">"Set up your &appname; payout method"</string>
+
+    <string name="payout_msg">Your payout is what you earn from hosting a guest. Payouts are sent 14 days after each check-out.</string>
+    <string name="payout_link">"Learn more about payouts"</string>
+    <string name="payout_address">"Address of Payout"</string>
+    <string name="submit">Submit</string>
+    <string name="paypal_email">"PayPal Email ID"</string>
+    <string name="addpayout">Add Payout Method</string>
+    <string name="delete">Delete</string>
+    <string name="delete_msg">"Are you sure you want to \n delete "</string>
+    <string name="defaults"> Default</string>
+    <string name="makedefault">Make Default</string>
+    <!-- Payout Page end-->
+
+    <!-- Profile page  Start-->
+    <string name="membersince">"Member since "</string>
+    <string name="verifiedinfo">"Verified info"</string>
+    <string name="phonenumberemail">"Phone number, Email address"</string>
+    <string name="phonenumber">"Phone number"</string>
+    <string name="editprofile">"Edit Profile"</string>
+    <string name="editname">"Edit name"</string>
+    <string name="editaboutme">"Edit about me"</string>
+    <string name="aboutme">"About me"</string>
+    <string name="privatedetails">"Private Details"</string>
+    <string name="gender">"Gender"</string>
+    <string name="birthdate">"Birth Date"</string>
+    <string name="email">"Email"</string>
+    <string name="email_msg">"This is used for login and emails from &appname;, and is not shared with other users."</string>
+    <string name="phone">"Phone"</string>
+    <string name="send">"Send"</string>
+    <string name="phone_msg">"Please enter your phone number and we'll send you a confirmation code. You may need to enter your phone number including a '+' and the country code."</string>
+    <string name="school">"School"</string>
+    <string name="work">"Work"</string>
+    <string name="languages">"Languages"</string>
+    <string name="firstname">"First Name"</string>
+    <string name="lastname">"Last Name"</string>
+    <string name="editaboutme_msg">"&appname; is built on relationships. Help other people get to know you.\n\nTell them about the things you like: Share your favorite travel destinations, books, movies, shows, music, food.\n\nTell them what it's like to have you as a guest or host: What's your style of travelling? Of &appname;
+        hosting?\n\nTell them about you: Do you have a life motto?"</string>
+
+    <string name="gender_male">"Male"</string>
+    <string name="gender_female">"Female"</string>
+    <string name="gender_other">"Other"</string>
+    <string name="okay">"OKAY"</string>
+    <string name="ok">"Ok"</string>
+    <string name="location_hint">"e.g. Paris, FR / Brooklyn, NY/ \nChicago, IL"</string>
+    <string name="school_hint">"Your schools"</string>
+    <string name="work_hint">"e.g &appname; / Apple / Taco Stand"</string>
+
+    <string name="facebookconnect">"Facebook"</string>
+    <string name="emailconnect">"Email"</string>
+    <string name="googleconnect">"Google +"</string>
+    <string name="twitterconnect">"Twitter</string>
+    <string name="connect">"Connect</string>
+    <!-- Profile page end-->
+
+    <!-- Contact Host start -->
+    <string name="messagehost_title">"Message host"</string>
+    <string name="edit">"Edit"</string>
+    <string name="change">"Change"</string>
+    <string name="yourmessage">"Your message"</string>
+    <string name="yourmessage_msg">"Hosts appreciate thoughtful hello..."</string>
+    <string name="title_activity_cancellation_policy">CancellationPolicyActivity</string>
+    <!-- Contact Host start -->
+
+
+    <!-- Pre Accept start -->
+    <string name="preacceptrequest">"Pre-Accept this request"</string>
+    <string name="preapproverequest">"Pre-Approve this request"</string>
+    <string name="preacceptrequest_msg">"Type optional message to guest..."</string>
+    <!-- Pre Accept End -->
+
+
+    <!-- Cancel Reservation start -->
+    <string name="cancel_this_reservation">"Cancel this Reservation"</string>
+    <string name="cancel_reservation">"Cancel Reservation"</string>
+
+    <string-array name="cancel_types">
+        <item>"Why are you declining?"</item>
+        <item>I no longet need accommodations</item>
+        <item>"My travel dates changed"</item>
+        <item>I made the reservation by accident</item>
+        <item>I have an extenuating circumstance</item>
+        <item>My host needs to cancel</item>
+        <item>"I'm uncomforable with the host"</item>
+        <item>"The place isn't what I was expecting"</item>
+        <item>"Other"</item>
+    </string-array>
+
+    <string-array name="cancel_types_host">
+
+        <item>"Why are you declining?"</item>
+        <item>"Dates are not available"</item>
+        <item>"I do not feel comfortable with this guest"</item>
+        <item>"My listing is not a good to fit for the guest's needs (children, pets, etc.)"</item>
+        <item>"I'm waiting for a more attractive reservation"</item>
+        <item>"The guest is asking for different dates than the ones selected in this request"</item>
+        <item>This message is spam</item>
+        <item>"Other"</item>
+    </string-array>
+
+    <!-- Cancel Reservation end -->
+
+    <!-- Cancellation policyList start -->
+    <string name="cancellation_title">"Cancellation policy"</string>
+    <string name="cancellation_type1">"Strict"</string>
+    <string name="cancellation_msg1">"50% refund up until 1 week prior to arrival, except fees
+
+\nCleaning fees are always refunded if the guest did not check in.
+\nThe &appname; service fee is non-refundable.
+\nIf there is a complaint from either party, notice must be given to &appname; within 24 hours of check-in.
+\n&appname; will mediate when necessary, and has the final say in all disputes.
+\nA reservation is officially canceled when the guest clicks the cancellation button on the cancellation confirmation page, which they can find in Dashboard > Your Trips > Change or Cancel.
+\nCancellation policies may be superseded by the Guest Refund Policy, safety cancellations, or extenuating circumstances. Please review these exceptions.
+\nApplicable taxes will be retained and remitted."</string>
+
+    <string name="cancellation_type2">"Moderate"</string>
+    <string name="cancellation_msg2">"Full refund 5 days prior to arrival, except fees
+
+\nCleaning fees are always refunded if the guest did not check in.
+\nThe &appname; service fee is non-refundable.
+\nIf there is a complaint from either party, notice must be given to &appname; within 24 hours of check-in.
+\n&appname; will mediate when necessary, and has the final say in all disputes.
+\nA reservation is officially canceled when the guest clicks the cancellation button on the cancellation confirmation page, which they can find in Dashboard > Your Trips > Change or Cancel.
+\nCancellation policies may be superseded by the Guest Refund Policy, safety cancellations, or extenuating circumstances. Please review these exceptions.
+\nApplicable taxes will be retained and remitted."</string>
+
+    <string name="cancellation_type3">"Flexible"</string>
+    <string name="cancellation_msg3">"Full refund 1 day prior to arrival, except fees
+
+\nCleaning fees are always refunded if the guest did not check in.
+\nThe &appname; service fee is non-refundable.
+\nIf there is a complaint from either party, notice must be given to &appname; within 24 hours of check-in.
+\n&appname; will mediate when necessary, and has the final say in all disputes.
+\nA reservation is officially canceled when the guest clicks the cancellation button on the cancellation confirmation page, which they can find in Dashboard > Your Trips > Change or Cancel.
+\nCancellation policies may be superseded by the Guest Refund Policy, safety cancellations, or extenuating circumstances. Please review these exceptions.
+\nApplicable taxes will be retained and remitted."</string>
+
+    <!-- Cancellation policyList start -->
+
+
+    <!-- Create Wish List start -->
+    <string name="createlist">"Create a list"</string>
+    <string name="create">"Create"</string>
+    <string name="privacy">"Privacy"</string>
+    <string name="s_public">"Public"</string>
+    <string name="s_private">"Private"</string>
+    <string name="everyone_msg">"Visible to everyone and included on \nyour public &appname;\tprofile."</string>
+    <string name="sharefriends">"Share with friends +"</string>
+    <string name="inviteonly_msg">Visible only to you and any friends you invite.</string>
+    <string name="chooselist">"Choose a list"</string>
+    <string name="saved">"Saved"</string>
+    <string name="saved_msg">"When you see something you like, tap on the heart to save it. If you're planning a trip with others, invite them so they can saved and vote on their favorites."</string>
+    <string name="availablehome">"available home"</string>
+    <string name="availablehomes">"available homes"</string>
+    <string name="dates">"Dates"</string>
+    <!-- Create Wish List End -->
+
+    <!-- Tips details Start-->
+    <string name="totalcost">"Total Cost"</string>
+    <string name="help">"Help"</string>
+    <string name="write_msgs">Write a message</string>
+    <string name="messagehistory">"Message History"</string>
+    <string name="discuss">"Discuss"</string>
+    <!-- Trips details end-->
+
+    <!-- Error page Start-->
+    <string name="interneterror">"No Internet Connection"</string>
+    <string name="date_error">"Please select date"</string>
+    <string name="editaddress">Edit Address</string>
+    <string name="pin">Pin on Map</string>
+
+    <string name="tiltledialog">Exact Location Not Found</string>
+    <string name="tiltledialog1">Exact Location Found</string>
+    <string name="tiltledialogtwo">Would you like to manually pin this listing location on a map?</string>
+    <string name="Interneterror">No Internet Connection</string>
+    <string name="no_lastmin_discounts_found">No Last Minute Discounts Found</string>
+    <string name="no_length_discounts_found">No Length Of Stay Discounts Found</string>
+    <string name="no_early_discounts_found">No Early Bird Discount Found</string>
+
+    <!-- Error page End-->
+    <string name="legal_document">Legal Document</string>
+    <string name="additional_document">Addtional Document</string>
+    <string name="address_kanji">Address Kanji</string>
+    <string name="address_kana">Address Kana</string>
+    <string name="postal_code">Postal code</string>
+    <string name="city">City</string>
+    <string name="address_2">Address 2</string>
+    <string name="gender1">Gender</string>
+    <string name="account_holder_name">Account Holder Name</string>
+    <string name="iban_number">IBAN Number</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="account_owner_name">Account Owner Name</string>
+    <string name="account_number">Account Number</string>
+    <string name="sort_code">Sort Code</string>
+    <string name="institute_number">Institute Number</string>
+    <string name="transit_number">Transit Number</string>
+    <string name="bsb">BSB</string>
+    <string name="branch_code">Branch code</string>
+    <string name="bank_code">Bank code</string>
+    <string name="branch_name">Branch Name</string>
+    <string name="bank_name">Bank name</string>
+    <string name="clearing_code">Clearing Code</string>
+    <string name="routing_number">Routing Number</string>
+    <string name="currency1">Currency</string>
+    <string name="stripe_details">Stripe Details</string>
+    <string name="address_1">Address 1</string>
+    <string name="address_kana2">Address 2</string>
+    <string name="city_kana">City</string>
+    <string name="state_province">State/Province</string>
+    <string name="postal_code_kana">Postal code</string>
+    <string name="address_kanji1">Address 1</string>
+    <string name="address_kanji2">Address 2</string>
+    <string name="kanji_city">City</string>
+    <string name="state_province_kanji">State/Province</string>
+    <string name="postal_code_kanji">Postal code</string>
+    <string name="penalty_amount">Penalty Amount</string>
+    <string name="coupon_amount">Coupon Amount</string>
+    <string name="ssn">SSN</string>
+
+
+    <string name="network_failure">Please check your Internet Connection</string>
+    <string name="internal_server_error">Please try again after sometimes.</string>
+    <string name="updatedob">Please update the DOB In EditProfile</string>
+    <string name="updategender">Please update the gender In EditProfile</string>
+    <string name="no_token_saved">Collect places to stay and things to do by tapping the heart icon</string>
+    <string name="no_token_trips">You\'ll find your trip itineraries here</string>
+    <string name="no_token_inbox">Messages from your host will appear here</string>
+    <string name="blocked_date_toast">This date is not available</string>
+    <string name="per_person">per person</string>
+    <string name="total_hours"> hours total</string>
+    <string name="notes">Notes</string>
+    <string name="confirem_booking">Confirm booking</string>
+    <string name="next">Next</string>
+    <string name="you_don_t_have_to_fill_all_of_them_experiences_are_meant_to_be_social_so_other_travelers_could_join_too">You don\'t have to fill all of them. Experiences are meant to be social,so other travelers could join too</string>
+    <string name="free_for_guests_under_age_2">Free for guests under age 2</string>
+    <string name="what_we_ll_do">what we\'ll do</string>
+    <string name="where_we_ll_be">Where we\'ll be</string>
+    <string name="who_can_come">Who can come</string>
+    <string name="meet_host">Meet Your Host,</string>
+    <string name="what_we_do">what we\'ll do</string>
+    <string name="start_date">Start date</string>
+    <string name="end_date">End date</string>
+    <string name="decline">decline</string>
+    <string name="guest_g">Guests</string>
+    <string name="filter">Filter</string>
+    <string name="language">Language</string>
+    <string name="select_language">Select language</string>
+    <string name="default_language">English</string>
+    <string name="per_night">Per Night</string>
+    <string name="explore_app">Explore &appname;</string>
+
+    <string-array name="languages">
+        <item>English</item>
+        <item>عربى</item>
+    </string-array>
+    <string-array name="languageCode" translatable="false">
+        <item>en</item>
+        <item>ar</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="PendingTrip">Pending Bookings</string>
+    <string name="CurrentTrips">Current Bookings</string>
+    <string name="PreviousTrips">Previous Bookings</string>
+    <string name="UpcomingTrips">Upcoming Bookings</string>
+
+    <string name="cancelled">Cancelled</string>
+    <string name="declined">Declined</string>
+    <string name="expire">Expired</string>
+    <string name="accepted">Accepted</string>
+    <string name="preApproved">Pre-Approved</string>
+    <string name="preAccepted">Pre-Accepted</string>
+    <string name="inquiry">Inquiry</string>
+    <string name="pending">Pending</string>
+    <string name="addstripepayout">Add Stripe Payout</string>
+
+    <string name="Experiencecancellationpolicy">Experience cancellation policy</string>
+    <string name="Guestrequirements">Guest requirements</string>
+    <string name="Groupsizeupto">Group size up to</string>
+    <string name="Seedates">See dates</string>
+    <string name="Whocancome">Who can come</string>
+    <string name="Rooms">1 Rooms</string>
+    <string name="Experiences">1 Experiences</string>
+    <string name="Hostedby">Hosted by</string>
+    <string name="readmore">read more</string>
+    <string name="BedTypes">Bed Type</string>
+    <string name="select_beds_type">"Select your bed types and count..."</string>
+    <string name="Lenghtofstaydiscounts">Lenght of stay discounts</string>
+    <string name="Earlybirddiscounts">Early bird discounts</string>
+    <string name="Lastmindiscounts">Last min discounts</string>
+    <string name="ReservationSettings">Reservation Settings</string>
+    <string name="ADD">ADD</string>
+    <string name="selectnights">Select nights</string>
+    <string name="percentage">Percentage</string>
+    <string name="lastmindiscount">Last Minute Discounts</string>
+    <string name="add_requirement">Add a requirement for seasons or weekends</string>
+    <string name="start_dates">Start date</string>
+    <string name="end_dates">End date</string>
+    <string name="select_dates">Select Dates</string>
+    <string name="custom">Custom</string>
+    <string name="customdates">Select Custom Dates</string>
+    <string name="select_date_field">The Select Date field is required</string>
+    <string name="cap_rooms">Homes</string>
+    <string name="cap_room">Home</string>
+    <string name="experience">Experiences</string>
+    <string name="experiences">Experience</string>
+    <string name="wish_list">Change your wishlist title here</string>
+    <string name="ok_val">OK</string>
+    <string name="cancel_val">Cancel</string>
+    <string name="there_are">There are</string>
+    <string name="spots_available">spots available on this experience.</string>
+    <string name="group_size">Group size</string>
+    <string name="from_the_host">From the host</string>
+    <string name="alcohol">Alcohol</string>
+    <string name="bringing_guests_under_18">Bringing guests under 18</string>
+    <string name="guests_ages">Guests ages</string>
+    <string name="cancellation_second">Any experience or event cancellation that is 30 days or more before the start date, is eligible for a full refund.</string>
+    <string name="cancellation_third">Cancellations less than 30 days before start date will not be eligible for a refund, unless your spot is booked and completed by another guest.</string>
+    <string name="cancellation_fourth">Should your spot be booked and completed by another guest, a full refund will be processed within 14 days of the experience start date.</string>
+    <string name="cancellation_fifth">However, if your reason for cancellation meets our Extenuating Circumstances policy, you will be refunded in full.</string>
+    <string name="verify_desc">Should any member of your party be unable to complete the account verification process within 3 days of purchase, all portions and spots for the experience or event will be canceled and fully refunded.</string>
+    <string name="account_verification">Account Verification</string>
+    <string name="weather">Weather</string>
+    <string name="weather_desc">Hosts make every effort to continue, as scheduled, with experiences or events. Should bad weather conditions create an unsafe scenario for guests or hosts, a change or partial cancellation of an itinerary or activity may be the result. Should an individual experience or event be canceled by host or guest, or should an itinerary substantially change or result in a cessation of the trip, Makent will work with your host to provide an appropriate refund.   To officially request a cancellation of your experience or event, please contact us.</string>
+    <string name="general_cancellation">General Cancellation</string>
+    <string name="send_message">Send Message</string>
+    <string name="need_more_about">Need more info about</string>
+    <string name="faq_desc">If you have general questions about how experiences work, visit our FAQ</string>
+    <string name="who_s_coming">Who\'s coming?</string>
+    <string name="edit_val">Edit</string>
+    <string name="guest_val">Guest</string>
+    <string name="add_guest_desc">Keep your guests in the loop. Add their email and we\'ll send them the itineary.</string>
+    <string name="first_name_val">First name</string>
+    <string name="last_name_val">Last name</string>
+    <string name="email_address_optional">Email address (optional)</string>
+    <string name="remove">Remove</string>
+    <string name="save_val">Save</string>
+    <string name="hosted_by_name">Hosted by</string>
+    <string name="hours">Hours</string>
+    <string name="home_val">Homes</string>
+    <string name="experience_val">Experiences</string>
+    <string name="city_val">City</string>
+    <string name="add_another_guest">Add another guest</string>
+    <string name="other_reasons">Other reasons</string>
+    <string name="guest_access_val">Guest Access</string>
+    <string name="the_neighborhood">The Neighborhood</string>
+    <string name="getting_around">Getting Around</string>
+    <string name="house_rules_val">House Rules</string>
+    <string name="select_bed_type">Select Bed Type</string>
+    <string name="select_property_type">Select Property Type</string>
+    <string name="select_room_type">Select Room Type</string>
+    <!-- Error page End-->
+
+
+    <!-- Stripe Error Messages-->
+    <string name="s_error_currency">Please choose a currency</string>
+    <string name="s_error_iban">Please enter IBAN number</string>
+    <string name="s_error_name">Please enter account holder name</string>
+    <string name="s_error_address">Please enter address 1</string>
+    <string name="s_error_city">Please enter city</string>
+    <string name="s_error_state">Please enter state</string>
+    <string name="s_error_post">Please enter postal code</string>
+    <string name="s_error_legal">Please upload legal document</string>
+    <string name="s_error_acc">Please enter account number</string>
+    <string name="s_error_bsb">Please enter BSB</string>
+    <string name="s_error_transit">Please enter transit number</string>
+    <string name="s_error_institution">Please enter institution number</string>
+    <string name="s_error_routing">Please enter routing number</string>
+    <string name="s_error_bank">Please enter Bank Code</string>
+    <string name="s_error_branch_code">Please enter Branch Code</string>
+    <string name="s_error_sort">Please enter sort code</string>
+    <string name="s_error_ssn">Please enter SSN number</string>
+    <string name="s_error_clearing_code">Please enter clearing code</string>
+    <string name="s_error_bank_name">Please enter bank name</string>
+    <string name="s_error_branch_name">Please enter branch name</string>
+    <string name="s_error_acc_owner_name">Please enter account owner name</string>
+    <string name="s_error_phone">Please enter phone number</string>
+    <string name="s_error_acc_name">Please enter account holder name</string>
+    <string name="s_error_gender">Please choose gender</string>
+    <string name="s_error_address_kana">Please enter address 1 of kana</string>
+    <string name="s_error_address2_kana">Please enter address 2 of kana</string>
+    <string name="s_error_city_kana">Please enter city of kana</string>
+    <string name="s_error_state_kana">Please enter state of kana</string>
+    <string name="s_error_post_kana">Please enter postal code of kana</string>
+    <string name="s_error_address1_kanji">Please enter address 1 of kanji</string>
+    <string name="s_error_address2_kanji">Please enter address 2 of kanji</string>
+    <string name="s_error_city_kanji">Please enter city of kanji</string>
+    <string name="s_error_state_kanji">Please enter state of kanji</string>
+    <string name="s_error_post_kanji">Please enter postal code of kanji</string>
+    <string name="s_error_country">Please choose country</string>
+    <string name="s_add_photo">Add Photo!</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_from_library">Choose from Library</string>
+    <!--Stripe Error Message Ends-->
+
+    <!--WishList Message Starts-->
+    <string name="wish_private">The list is now visible to you only.</string>
+    <string name="wish_public">The list is now visible to everyone.</string>
+    <!--WishList Message Ends-->
+
+    <string name="loading">Loading …</string>
+
+    <string name="press_again_to_exit">Press back again to exit.</string>
+    <string name="add_guest">Add guest</string>
+
+    <string name="filters_s">Filters</string>
+    <string name="picture_select">Take a new photo or select one from your existing library</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="gallery">GALLERY</string>
+    <string name="camera">CAMERA</string>
+    <string name="upload_failed">Image upload failed...</string>
+    <string name="connection_msg">You need internet connection for this app. Please turn on mobile network or Wi-Fi in Settings.</string>
+    <string name="connect_error">Unable to connect</string>
+    <string name="setting">Settings</string>
+    <string name="date">Date</string>
+    <string name="kindly_leave_message">Kindly leave a message</string>
+    <string name="offer_in">Offered in</string>
+    <string name="experience_head">experience</string>
+    <string name="additional_price">Room and Additional Prices changed to Minimun Price</string>
+    <string name="more_data">No more data available...</string>
+    <string name="unable_get_details">Unable to get account details</string>
+    <string name="total">Total</string>
+    <string name="steps_remain">Steps remaining</string>
+    <string name="step_remain">Step remaining</string>
+    <string name="invalid_title">Invalid title...</string>
+    <string name="categories">Categories</string>
+    <string name="undo">Undo</string>
+    <string name="removefrom">Removed from </string>
+    <string name="unable_get_location">Unable to get location please try again...</string>
+    <string name="see_result">See Results</string>
+
+    <string name="sunday">"S"</string>
+    <string name="monday">"M"</string>
+    <string name="Tuesday">"T"</string>
+    <string name="Wednesday">"W"</string>
+    <string name="Thursday">"T"</string>
+    <string name="Friday">"F"</string>
+    <string name="Saturday">"S"</string>
+    <string name="get_exp">Experiences</string>
+    <string name="get_host_exp">Host Experiences</string>
+    <string name="invalid_room">Invalid Room Id</string>
+    <string name="bedroom_count">Bedroom &#160;</string>
+    <string name="beds_count">beds</string>
+    <string name="rooms_and_beds">Rooms and Beds</string>
+    <string name="common_space">Common Space</string>
+    <string name="select_dotted">Select..</string>
+    <string name="add_beds">Add Beds</string>
+
+    <string name="edit_bed">Edit beds</string>
+    <string name="available_exp">available experiences</string>
+    <string name="explore_exp">Explore experiences</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="bedroom_1">Bedroom 1</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="where_we_meet">Where we\'ll meet</string>
+    <string name="weekendfee">Weekend Price</string>
+    <string name="step_left">1 Step left to book</string>
+    <string name="bed_room">Bedrooms</string>
+    <string name="add_paypal_payout">Add PayPal Payout</string>
+    <string name="add_stripe_payout">Add Stripe Payout</string>
+    <string name="resubmit">Resubmit</string>
+
+
+    <string-array name="cancel_policy">
+        <item>"Flexible: Full Refund 1 day prior to arrival, except fees"</item>
+        <item>"Moderate: Full Refund 5 days prior to arrival, except fees"</item>
+        <item>"Strict: 50% refund up until 1 week prior to arrival, except fees"</item>
+    </string-array>
+
+
+    <string-array name="booking_type">
+        <item>"Instant Book"</item>
+        <item>"Request to Book"</item>
+    </string-array>
+
+    <string-array name="hour">
+    <item>Select</item>
+    <item>"12:00 AM"</item>
+    <item>"01:00 AM"</item>
+    <item>"02:00 AM"</item>
+    <item>"03:00 AM"</item>
+    <item>"04:00 AM"</item>
+    <item>"05:00 AM"</item>
+    <item>"06:00 AM"</item>
+    <item>"07:00 AM"</item>
+    <item>"08:00 AM"</item>
+    <item>"09:00 AM"</item>
+    <item>"10:00 AM"</item>
+    <item>"11:00 AM"</item>
+    <item>"12:00 PM"</item>
+    <item>"01:00 PM"</item>
+    <item>"02:00 PM"</item>
+    <item>"03:00 PM"</item>
+    <item>"04:00 PM"</item>
+    <item>"05:00 PM"</item>
+    <item>"06:00 PM"</item>
+    <item>"07:00 PM"</item>
+    <item>"08:00 PM"</item>
+    <item>"09:00 PM"</item>
+    <item>"10:00 PM"</item>
+    <item>"11:00 PM"</item>
+    <item>"11:59 PM"</item>
+
+</string-array>
+
+    <string-array name="endhour">
+        <item>Select</item>
+        <item>"12:00 AM"</item>
+        <item>"01:00 AM"</item>
+        <item>"02:00 AM"</item>
+        <item>"03:00 AM"</item>
+        <item>"04:00 AM"</item>
+        <item>"05:00 AM"</item>
+        <item>"06:00 AM"</item>
+        <item>"07:00 AM"</item>
+        <item>"08:00 AM"</item>
+        <item>"09:00 AM"</item>
+        <item>"10:00 AM"</item>
+        <item>"11:00 AM"</item>
+        <item>"12:00 PM"</item>
+        <item>"01:00 PM"</item>
+        <item>"02:00 PM"</item>
+        <item>"03:00 PM"</item>
+        <item>"04:00 PM"</item>
+        <item>"05:00 PM"</item>
+        <item>"06:00 PM"</item>
+        <item>"07:00 PM"</item>
+        <item>"08:00 PM"</item>
+        <item>"09:00 PM"</item>
+        <item>"10:00 PM"</item>
+        <item>"11:00 PM"</item>
+        <item>"11:59 PM"</item>
+
+    </string-array>
+
+    <string name="add_more">"You can add more"</string>
+
+    <string name="time_taken">Time already taken</string>
+    <string name="help_travelers_find_the_right_fit">Help Travelers Find the Right Fit</string>
+    <string name="people_searching_on_makent_space">People searching on Makent Space can filter by listing basics to find a space that matches their needs.</string>
+    <string name="guest_access_your_space">How can guests access your space *</string>
+    <string name="what_type_of_space_do_you_have">What type of space do you have? *</string>
+    <string name="sq_ft">Sq ft</string>
+    <string name="acres">Acres</string>
+    <string name="additional_information">Additional information about services, packages and rates:</string>
+    <string name="what_services">What services and extras do you offer?</string>
+    <string name="street_city_state_country">Street, City, State, Country</string>
+    <string name="apt_floor_etc">Apt #, Floor #, etc.</string>
+    <string name="what_is_the_full_address_of_your_space">What is the full address of your space?</string>
+    <string name="house_name_number_street_road">House name/number + street/road</string>
+    <string name="share_any_special">Share any special instructions needed for organizers to access the space. e.g. door lock code, on-site manager.</string>
+    <string name="this_information">This information will only be shared upon booking confirmation.</string>
+    <string name="what_amenities">What amenities does your space offer?</string>
+    <string name="check_in_guidance">Check-In Guidance</string>
+    <string name="choose_on_map">Choose on Map</string>
+    <string name="pricing">Pricing</string>
+    <string name="hourly_rate">Hourly Rate:</string>
+    <string name="Full_day_rate">Full Day Price:</string>
+    <string name="Minimum_booking_hour">Minimum booking hours:</string>
+    <string name="service_offer">Services Offered</string>
+    <string name="other_serivce">Other Services</string>
+    <string name="special_feature">Special Features</string>
+    <string name="space_style">Space Style</string>
+    <string name="event_type">Event Type</string>
+    <string name="maximum_number_of_guests">Maximum number of guests *</string>
+    <string name="photos_can_bring_your_space_to_life">Photos Can Bring Your Space to Life</string>
+    <string name="add_photos_of_areas_guests_have_access_to_you_can_always_come_back_later_and_add_more">Add photos of areas guests have access to. You can always come back later and add more.</string>
+    <string name="what_are_the_highlights_of_this_photo">What are the highlights of this photo?</string>
+    <string name="add_photos">Add Photos</string>
+    <string name="the_style_of_your_space_can_be_described_as">The style of your space can be described as</string>
+    <string name="tell_us_about_space">%s, tell us about your space</string>
+    <string name="the_more_you_share">The more you share, the faster you can get a booking</string>
+    <string name="your_listing_is_100_done">Your listing is 0% done.</string>
+    <string name="space_details_guests">Space details, guests</string>
+    <string name="_2_setup">2. Setup</string>
+    <string name="_1_the_basics">1. The Basics</string>
+    <string name="photos_space_description">Photos, space description</string>
+    <string name="_3_get_ready_to_host">3. Preparing to host</string>
+    <string name="pricing_availability_booking_settings">Pricing, availability, booking settings</string>
+    <string name="what_special_features_does_your_space_have">What special features does your space have ?</string>
+    <string name="set_your_space_rules">Set your Space Rules</string>
+    <string name="tell_travelers_about_your_space">Tell Travelers About Your Space</string>
+    <string name="every_space_on_makent_space">Every space on Makent Space is unique. Highlight what makes your listing welcoming so that it stands out to guests who want to stay in your area.</string>
+    <string name="listing_name">Listing Name</string>
+    <string name="the_space">The Space</string>
+    <string name="be_clear_and_descriptive">Be clear and descriptive</string>
+    <string name="tell_travelers_what_you_love">Tell travelers what you love about the space . You can include details about the decor the amenities it includes, and the neighborhood.</string>
+    <string name="you_can_add_more">You can add more information about what makes your space unique.</string>
+    <string name="let_travelers_know">Let travelers know if there are other details that will impact their stay.</string>
+    <string name="foot">Foot4</string>
+    <string name="space_rule">Space Rules</string>
+    <string name="smoke">No Smoking</string>
+    <string name="cook">No Cooking</string>
+    <string name="intimate">Intimate</string>
+    <string name="see_styles">See all Space Style</string>
+    <string name="services">Services</string>
+    <string name="light_sys">Lighting System</string>
+    <string name="fur_rent">Furniture Rental</string>
+    <string name="see_services">See all services</string>
+    <string name="loud_mus">No Loud Music</string>
+    <string name="see_space">See all space rules</string>
+    <string name="classic">Classic</string>
+    <string name="industrial">Industrial</string>
+    <string name="art">Art</string>
+    <string name="dining">Dining Table</string>
+    <string name="fire_bit">Fire Pit</string>
+    <string name="see_special">See all Special Features</string>
+    <string name="essential">Essentials1</string>
+    <string name="tv">TV</string>
+    <string name="listings">Listings</string>
+    <string name="no_token_listing">Your Listings will appear here</string>
+
+    <string name="cable_tv">Cable TV</string>
+    <string name="select_services">Select Services</string>
+    <string name="select_styles">Select Space Styles</string>
+    <string name="select_special">Select Special Features</string>
+    <string name="select_space">Select Space Rules</string>
+    <string name="space_type">Space Type</string>
+    <string name="select_space_type">Select Space Type</string>
+    <string name="select_event_type">Select Event Type</string>
+    <string name="per_hour">per hour</string>
+    <string name="you_can_add_more_details">You can add more details to tell travelers about your space and hosting style.</string>
+    <string name="how_do_you_expect_your_guests_to_behave">how do you expect your guests to behave?</string>
+    <string name="space_rules">Space Rules</string>
+    <string name="other_things_to_note">Other Things to Note</string>
+    <string name="tell_guest_if_you_ll_be">Tell guest if you\'ll be available to offer help throughout their stay.</string>
+    <string name="interaction_with_guests">Interaction with Guests</string>
+    <string name="let_travelers">Let Travelers know what part of space they\'ll be able to access.</string>
+    <string name="the_trip">The Trip</string>
+    <string name="selected">Selected</string>
+    <string name="start_time">Start time</string>
+    <string name="end_time">End time</string>
+    <string name="add_note">Add note</string>
+    <string name="set_your_space_availability">Set your space availability</string>
+    <string name="which_activities_in_your_space">Which activities are welcome in your space?</string>
+    <string name="show_travelers_when_they_can_book">Show Travelers When They Can Book</string>
+    <string name="please_select_any_one_event">"Please select any one event or activity"</string>
+    <string name="set_your_price">"Set your price"</string>
+    <string name="minimum_hourly_rate">"Minimum Hourly Rate"</string>
+    <string name="hourly_rates">"Hourly Rate"</string>
+    <string name="min_ours">"Min. Hours"</string>
+    <string name="full_day_rate">"Full day rate"</string>
+
+    <string name="all_hours">All Hours</string>
+    <string name="set_hours">Set Hours</string>
+    <string name="validate_minhour">Min hour range is </string>
+    <string name="validate_amount">Please enter amount greater than or equal to minimum amount</string>
+    <string name="weeklyvalidate_amount">Please enter weekly amount greater than or equal to minimum amount</string>
+    <string name="monthlyvalidate_amount">Please enter monthly amount greater than or equal to minimum amount</string>
+    <string name="fulldayvalidate_amount">Please enter full day amount greater than or equal to minimum amount</string>
+    <string name="starttime_lesser_error_msg">Start time Should be lesser than end time</string>
+    <string name="end_time_greater_error_msg">End time Should be greater than start time</string>
+    <string name="internet_connection_error">No internet connection</string>
+    <string name="close">Close</string>
+    <string name="openss">Open</string>
+    <string name="your_listing_txt">Your listing is &#160;</string>
+    <string name="percentage_done">% done</string>
+    <string name="more_steps_to_complete">%s More Steps to Complete</string>
+    <string name="more_step_to_complete">%s More Step to Complete</string>
+    <string name="step_completed">You are %s of the way there.</string>
+    <string name="space_remaining_steps">%s steps to list</string>
+    <string name="space_remaining_step">%s step to list</string>
+    <string name="finish_your_listing">Finish Your Listing</string>
+    <string name="booking">Booking</string>
+    <string name="check_in_check_out">Check in / Check out</string>
+    <string name="req_total_hours">Total Hours</string>
+    <string name="choose_timings">Choose Timings</string>
+    <string name="selected_dates">Selected Dates</string>
+    <string name="selected_timings">Selected Timings</string>
+    <string name="space_availability">Space Availability</string>
+    <string name="error_start_time">Please Choose the StartTime</string>
+    <string name="choose_activity">Please choose your Activity</string>
+    <string name="choose_dates">Please choose your dates</string>
+    <string name="choose_guest">Please add your guest count</string>
+    <string name="max_guest">Maximum guest count should be %s</string>
+    <string name="max_guest1">(Maximum guest count within %s)</string>
+    <string name="valid_time">Please choose a valid time</string>
+    <string name="error_contact_host">Please enter a message for host</string>
+    <string name="total_hour_txt">Total Hours</string>
+    <string name="billing_information">Billing Information</string>
+    <string name="credit_card">Credit Card</string>
+    <string name="payment_name">&appname; Payment</string>
+    <string name="choose_country">Choose your country</string>
+    <string name="valid_firstname">Please enter your firstname</string>
+    <string name="valid_lastname">Please enter your lastname</string>
+    <string name="valid_postal">Please enter your postal code</string>
+    <string name="payment_success">Payment completed successfully</string>
+    <string name="payment_failure">Payment failure,Please try again later</string>
+    <string name="cap_spaces">Spaces</string>
+    <string name="cap_space">Space</string>
+    <string name="remove_coupon">Remove coupon</string>
+    <string name="apply_coupon">Apply coupon</string>
+    <string name="availablespace">"Available Space"</string>
+    <string name="availablespaces">"Available Spaces"</string>
+    <string name="your_resevation">Your Resevation</string>
+    <string name="wishlisttab">Wish List</string>
+    <string name="please_choose_valid_time">Please choose valid time</string>
+    <string name="wishlisted">Wishlist</string>
+    <string name="people">People</string>
+    <string name="estimated_square_footage_of_the_available_space">Estimated square footage of the available Space *</string>
+    <string name="address_space">Address *</string>
+    <!--<string name="fullday_price">Full day price = Above 8 hours</string>-->
+    <string name="fullday_price">Above 8 hours for full  day price</string>
+    <string name="reservation_sent_successfully">Reservation sent successfully</string>
+    <string name="map_error">Please choose exact location on map</string>
+    <string name="select_end_time">Select the end time</string>
+    <string name="select_start_time">Select the start time</string>
+    <string name="end_time_greater_than_start_time">End time must be greater than start time</string>
+    <string name="numberofroom">Number of Rooms</string>
+    <string name="floornumber">Floor Number(if applicable)</string>
+    <string name="numberofrestroom">Number of Restrooms</string>
+
+    <string name="setyourcancelpolicy">Set your cancellation policy</string>
+    <string name="bookingtype">Booking Type</string>
+    <string name="security">Security Deposit</string>
+    <string name="secure_makentspace">Secure &appname;</string>
+
+    <string name="translate_english">Translate To English</string>
+    <string name="show_original_txt">Show Original text</string>
+    <string name="weekly_rate_optional">Weekly Rate</string>
+    <string name="monthly_rate_optional">Monthly Rate</string>
+    <string name="need_to_make_a_change">Need to make a change?</string>
+    <string name="last_step_to_complete">%s Last step to complete</string>
+    <string name="last_steps_to_complete">%s Last steps to complete</string>
+    <string name="makentspace_we_are_almost_done">MakentSpace, we’re almost done.</string>
+    <string name="spotlight_header">Ready to place your space in the spotlight?</string>
+    <string name="people_all_over_the_country">People all over the country are searching for a space like yours! When they use &appname; to find you, they’ll have the option to filter search results by listing basic information to find a match. By carefully completing the questions in this section, you can help them achieve their goals and, in turn, maximize your chances of being found!</string>
+    <string name="let_get_down">Let’s get down to business.</string>
+    <string name="please_complete_the_following">Please complete the following information as accurately as possible to help people find your space.</string>
+    <string name="is_your_space_fully_furnished">Is your space fully furnished? *</string>
+    <string name="how_many_working_stations_are_available_in_your_space">How many working stations are available in your space? *</string>
+    <string name="are_your_working_stations_desks_shared_or_private">Are your working stations/desks shared or private? *</string>
+    <string name="shared">Shared</string>
+    <string name="privatee">Private</string>
+    <string name="have_you_ever_hosted_your_venue_with_a_website_like_makentspace_before">Have you ever hosted your venue with a website like &appname; before? *</string>
+    <string name="no_i_m_new_to_all_this">No, I’m new to all this!</string>
+    <string name="yes_i_m_experienced_with_space_hosting">Yes, I’m experienced with space hosting.</string>
+    <string name="how_big_your_space">How big is your space (in square feet)? *</string>
+    <string name="let_get_started">Lets get started listing your space</string>
+    <string name="people_searching_on_makentspace">People searching on &appname; can filter by listing basics to find a space that matches their needs.</string>
+    <string name="address_line_2">Address Line #2:</string>
+    <string name="mark_exact_geo">** Note: Please mark your exact geo location in map</string>
+    <string name="approved">Approved</string>
+    <string name="request_book_sent">Request Booking Send to Host</string>
+
+
+    <!--Delete account flow-->
+    <string name="delete_account">Delete Account</string>
+    <string name="delete_success">Account deleted successfully</string>
+    <string name="confirm">Confirm</string>
+    <string name="delete_account_msg">All your trips, reservation, transaction history, listing will be deleted permanently</string>
+    <string name="payout_refund_msg">Your pending payout or refund is yet to be collected. Are you sure you want to delete this account?</string>
+    <string name="oh_no">Oh No! This is annoying - Sorry for the inconvenience! This could because</string>
+    <string name="user_deleted">The user you’re looking for is deleted </string>
+    <string name="room_deleted">The room you’re looking for is deleted </string>
+    <string name="contact_admin">For more Information, Kindly contact admin.</string>
+
+</resources>

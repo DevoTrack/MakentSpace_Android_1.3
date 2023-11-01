@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    android:layoutDirection="@string/layout_direction"
+    android:layout_marginBottom="20dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_gray"/>
+
+    <com.makent.trioangle.palette.TextView.MakentTextView
+        android:id="@+id/tvTitle"
+        android:textSize="@dimen/bigi"
+        android:text="@string/showall"
+        android:textStyle="bold"
+        android:layout_marginStart="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_shadow"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvItemList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+    <com.makent.trioangle.palette.Button.MakentBookButton
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnShowAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/d_blue_line_color"
+        android:text="@string/showall"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:minHeight="50dp"
+        android:textColor="@color/guestButton"
+        />
+
+</LinearLayout>

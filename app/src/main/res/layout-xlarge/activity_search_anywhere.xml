@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    android:background="@drawable/d_gradient_background"
+    tools:context="com.makent.trioangle.travelling.Search_Guest_Bed">
+
+    <com.makent.trioangle.palette.Button.MakentAwesomeButton
+        android:background="@android:color/transparent"
+        android:text="&#xF138;"
+        android:textAlignment="textStart"
+        android:textSize="@dimen/mid"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/title_text_color"
+        android:id="@+id/search_where_close"/>
+
+    <com.makent.trioangle.palette.Button.MakentBookButton
+        android:text="@string/reset"
+        android:textAlignment="textEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/transparent"
+        android:textAllCaps="false"
+        android:textColor="@color/title_text_color"
+        android:textSize="@dimen/midi"
+        android:id="@+id/guestbed_reset"
+
+        />
+
+    <ImageView
+        android:id="@+id/room_details_hrline"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height=".2dp"
+        android:layout_below="@+id/search_anywhere"
+        android:background="@drawable/d_blueline_bottom"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/whereto"
+        android:textColorHint="@color/light_blue_disable"
+        android:textSize="@dimen/bigb"
+        android:fontFamily="@string/fonts_Bold"
+        android:textCursorDrawable="@null"
+        android:background="@color/transparent"
+        android:textColor="@color/title_text_color"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:id="@+id/search_anywhere"
+        android:layout_below="@+id/search_where_close"
+        android:layout_alignStart="@+id/search_where_close" />
+<!--<LinearLayout
+    trioangle:layout_width="match_parent"
+    trioangle:layout_height="wrap_content"
+    trioangle:background="@trioangle:color/transparent">-->
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.makent.trioangle.travelling.Nested_search.ParentFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:layout="@layout/nested_search_fragment_parent"
+        android:layout_below="@+id/room_details_hrline"/>
+
+<!--
+</LinearLayout>
+-->
+</RelativeLayout>

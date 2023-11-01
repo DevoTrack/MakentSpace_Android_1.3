@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/title_text_color"
+    android:layoutDirection="@string/layout_direction">
+
+    <RelativeLayout
+        android:id="@+id/chooselist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_text_color"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/big"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_shadow"
+            android:text="@string/chooselist"/>
+        <ImageView
+            android:id="@+id/createwishlist"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:tint="@color/guestButton"
+            android:src="@drawable/ic_action_new"/>
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:id="@+id/chooselist_dot_loader"
+        android:src="@drawable/dot_loading"
+        android:layout_gravity="center_horizontal"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/chooselist"
+        android:background="@color/title_text_color"
+        android:id="@+id/wishlist_list"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scrollbars="none"
+        android:paddingBottom="20dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:clipToPadding="false"
+        android:layout_alignParentStart="true" />
+
+
+</LinearLayout>

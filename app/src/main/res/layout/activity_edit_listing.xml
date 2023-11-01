@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.makent.trioangle.createspace.EditListingActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/lltSpaceSteps"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/midb" />
+
+            <com.makent.trioangle.palette.TextView.MakentLightTextView
+                android:id="@+id/tv_title_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/the_more_you_share"
+                android:textAlignment="textStart"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/midb" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="20dp"
+                >
+
+                <ProgressBar
+                    android:id="@+id/pb"
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp"
+                    android:progress="0"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:progressDrawable="@drawable/custom_progressbar"
+                    />
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:id="@+id/tv_pb_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/your_listing_is_100_done"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/mid"
+
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="15dp"
+                android:background="@drawable/d_bottom_line"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+
+                    >
+                    <com.makent.trioangle.palette.TextView.MakentBookTextView
+                        android:id="@+id/tv_basic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_1_the_basics"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/midb" />
+
+                    <com.makent.trioangle.palette.TextView.MakentBookTextView
+                        android:id="@+id/tv_basic_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/need_to_make_a_change"
+                        android:textAlignment="textStart"
+                        android:layout_marginEnd="5dp"
+                        android:layout_below="@+id/tv_basic"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/midi"
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_basic_tick"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="visible"
+
+                        />
+                </RelativeLayout>
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:id="@+id/tv_basic_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/space_details_guests"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/midb" />
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:id="@+id/tv_basic_remainingsteps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/midb" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:background="@drawable/d_bottom_line"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+
+                    >
+                    <com.makent.trioangle.palette.TextView.MakentBookTextView
+                        android:id="@+id/tv_setup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_2_setup"
+                        android:layout_centerVertical="true"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/midb" />
+
+                    <com.makent.trioangle.palette.TextView.MakentBookTextView
+                        android:id="@+id/tv_setup_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/edit"
+                        android:layout_centerVertical="true"
+                        android:textAlignment="textStart"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/tv_setup"
+                        android:layout_alignTop="@+id/tv_setup"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/midi"/>
+
+                    <ImageView
+                        android:id="@+id/iv_setup_tick"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="visible"
+
+                        />
+
+                </RelativeLayout>
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:id="@+id/tv_setup_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/photos_space_description"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/midb" />
+
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:id="@+id/tv_setup_remainingsteps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/midb" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:background="@drawable/d_bottom_line"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+
+                    >
+                    <com.makent.trioangle.palette.TextView.MakentBookTextView
+                        android:id="@+id/tv_get_ready"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_3_get_ready_to_host"
+                        android:layout_centerVertical="true"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/midb" />
+
+                    <com.makent.trioangle.palette.TextView.MakentBookTextView
+                        android:id="@+id/tv_get_ready_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/edit"
+                        android:layout_centerVertical="true"
+                        android:textAlignment="textStart"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/tv_get_ready"
+                        android:layout_alignTop="@+id/tv_get_ready"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/midi"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_readyTohost_tick"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="visible"
+
+                        />
+                </RelativeLayout>
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:id="@+id/tv_get_ready_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/pricing_availability_booking_settings"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/midb" />
+
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:id="@+id/tv_RTH_remainingsteps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/midb" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="40dp"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/preview"
+                    android:backgroundTint="@color/colorAccent"
+                    android:id="@+id/btn_preview"
+                    android:background="@drawable/d_redbutton_enable_disable"
+                    android:textColor="@color/white"
+                    android:visibility="visible"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/approved"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/rect_noborder"
+                    android:id="@+id/btnStatus"
+                    android:textColor="@color/text_shadow"
+                    android:visibility="visible"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GIFView">
+        <attr name="src" format="reference" />
+    </declare-styleable>
+
+    <!-- Calender Library-->
+<declare-styleable name="CalendarPickerView">
+    <attr name="android:background"/>
+    <attr name="tsquare_dividerColor" format="color"/>
+    <attr name="tsquare_dayBackground" format="reference"/>
+    <attr name="tsquare_dayTextColor" format="color"/>
+    <attr name="tsquare_titleTextColor" format="color"/>
+    <attr name="tsquare_displayHeader" format="boolean"/>
+    <attr name="tsquare_headerTextColor" format="color"/>
+  </declare-styleable>
+
+  <declare-styleable name="calendar_cell">
+    <attr name="tsquare_state_selectable" format="boolean" />
+    <attr name="tsquare_state_current_month" format="boolean" />
+    <attr name="tsquare_state_today" format="boolean" />
+    <attr name="tsquare_state_range_first" format="boolean" />
+    <attr name="tsquare_state_range_middle" format="boolean" />
+    <attr name="tsquare_state_range_last" format="boolean" />
+    <attr name="tsquare_state_highlighted" format="boolean" />
+    <attr name="tsquare_state_blocked" format="boolean" />
+  </declare-styleable>
+
+    <!--Range Seek bar attr-->
+
+        <declare-styleable name="RangeSeekbar">
+            <attr name="seekbarHeight" format="dimension" />
+            <attr name="textSize" format="dimension" />
+            <attr name="spaceBetween" format="dimension" />
+
+            <attr name="leftCursorBackground" format="reference" />
+            <attr name="rightCursorBackground" format="reference" />
+            <attr name="markTextArray" format="reference" />
+
+            <attr name="textColorNormal" format="color" />
+            <attr name="textColorSelected" format="color" />
+            <attr name="seekbarColorNormal" format="color" />
+            <attr name="seekbarColorSelected" format="color" />
+
+            <attr name="autoMoveDuration" format="integer" />
+
+        </declare-styleable>
+
+
+        <declare-styleable name="RangeSeekBar">
+            <!-- the minimum of the range -->
+            <attr name="absoluteMinValue" format="integer|float"/>
+
+            <!-- the maximum of the range -->
+            <attr name="absoluteMaxValue" format="integer|float"/>
+
+            <!-- show a single slider -->
+            <attr name="singleThumb" format="boolean"/>
+
+            <!-- show the labels on the right and left-->
+            <attr name="showLabels" format="boolean"/>
+
+            <!-- alwaysActive will make the buttons and bar always draw as the activeColor (the default is false) -->
+            <attr name="alwaysActive" format="boolean"/>
+
+            <!-- show the currently selected value above each thumb (defaults to true) -->
+            <attr name="valuesAboveThumbs" format="boolean"/>
+
+            <!-- padding on either side on the slider -->
+            <attr name="internalPadding" format="dimension"/>
+
+            <!-- the height of the bar -->
+            <attr name="barHeight" format="dimension"/>
+
+            <!-- the color of the bar that is not selected -->
+            <attr name="defaultColor" format="color"/>
+
+            <!-- the color of the bar that is selected -->
+            <attr name="activeColor" format="color"/>
+
+            <!-- the color of the text above thumbs -->
+            <attr name="textAboveThumbsColor" format="color"/>
+
+            <!-- set drawables for thumb handles -->
+            <attr name="thumbNormal" format="reference"/>
+            <attr name="thumbPressed" format="reference"/>
+            <attr name="thumbDisabled" format="reference"/>
+
+            <!-- thumb shadow specifications -->
+            <attr name="thumbShadow" format="boolean"/>
+            <attr name="thumbShadowColor" format="color"/>
+            <attr name="thumbShadowXOffset" format="dimension"/>
+            <attr name="thumbShadowYOffset" format="dimension"/>
+            <attr name="thumbShadowBlur" format="dimension"/>
+
+            <attr name="minDefValue" format="integer|float"/>
+
+            <!-- the maximum of the range -->
+            <attr name="maxDefValue" format="integer|float"/>
+        </declare-styleable>
+
+    <!-- Status view-->
+    <declare-styleable name="StoriesProgressView">
+        <attr name="progressCount" format="integer|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ActionSheets">
+        <attr name="actionSheetStyle" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="ActionSheet">
+        <attr name="actionSheetBackground" format="color|reference"/>
+        <attr name="cancelButtonBackground" format="color|reference"/>
+        <attr name="otherButtonTopBackground" format="color|reference"/>
+        <attr name="otherButtonMiddleBackground" format="color|reference"/>
+        <attr name="otherButtonBottomBackground" format="color|reference"/>
+        <attr name="otherButtonSingleBackground" format="color|reference"/>
+        <attr name="cancelButtonTextColor" format="color|reference"/>
+        <attr name="otherButtonTextColor" format="color|reference"/>
+        <attr name="actionSheetPadding" format="dimension|reference"/>
+        <attr name="otherButtonSpacing" format="dimension|reference"/>
+        <attr name="cancelButtonMarginTop" format="dimension|reference"/>
+        <attr name="actionSheetTextSize" format="dimension|reference"/>
+    </declare-styleable>
+
+</resources>

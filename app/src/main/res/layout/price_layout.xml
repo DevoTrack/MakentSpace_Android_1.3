@@ -1,0 +1,296 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:minWidth="50dp"
+            android:text="@string/hourly_rates"
+            android:textAlignment="center"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/midb" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp">
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/tvHourCurrency"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@drawable/curve_grary"
+                android:gravity="center"
+                android:minWidth="50dp"
+                android:text="$"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/midv" />
+
+            <com.makent.trioangle.palette.EditText.MakentLightEditText
+                android:id="@+id/etHourAmount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/tvHourCurrency"
+                android:background="@drawable/curve_outline_gray"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:hint="0"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/midv" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.makent.trioangle.palette.TextView.MakentLightTextView
+        android:id="@+id/tvMinHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:minWidth="50dp"
+        android:text="@string/min_ours"
+        android:textAlignment="center"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/midb" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/curve_full_gray"
+        android:divider="@drawable/divider_app_color"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:showDividers="middle"
+        android:weightSum="4">
+
+        <ImageView
+            android:id="@+id/ivMinus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:src="@drawable/icon_minus"
+            android:tint="@color/colorAccent" />
+
+        <com.makent.trioangle.palette.EditText.MakentLightEditText
+            android:enabled="false"
+            android:id="@+id/etMinHour"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="2"
+            android:background="@android:color/transparent"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@color/text_light_shadow"
+            android:textSize="@dimen/midv"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivPlus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:src="@drawable/icon_plus"
+            android:tint="@color/colorAccent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:id="@+id/tvDayHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:minWidth="50dp"
+            android:text="@string/full_day_rate"
+            android:textAlignment="center"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/midb" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/tvDayCurrency"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@drawable/curve_grary"
+                android:gravity="center"
+                android:minWidth="50dp"
+                android:text="$"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/midv" />
+
+            <com.makent.trioangle.palette.EditText.MakentLightEditText
+                android:id="@+id/etDayAmount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/tvDayCurrency"
+                android:background="@drawable/curve_outline_gray"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:hint="0"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/midv" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:id="@+id/tvWeeklyHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:minWidth="50dp"
+            android:text="@string/weekly_rate_optional"
+            android:textAlignment="center"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/midb" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp">
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/tvWeeklyCurrency"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@drawable/curve_grary"
+                android:gravity="center"
+                android:minWidth="50dp"
+                android:text="$"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/midv" />
+
+            <com.makent.trioangle.palette.EditText.MakentLightEditText
+                android:id="@+id/etWeeklyAmount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/tvWeeklyCurrency"
+                android:background="@drawable/curve_outline_gray"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:hint="0"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/midv" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:id="@+id/tvMonthlyHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:minWidth="50dp"
+            android:text="@string/monthly_rate_optional"
+            android:textAlignment="center"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/midb" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp">
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/tvMonthlyCurrency"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@drawable/curve_grary"
+                android:gravity="center"
+                android:minWidth="50dp"
+                android:text="$"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/midv" />
+
+            <com.makent.trioangle.palette.EditText.MakentLightEditText
+                android:id="@+id/etMonthlyAmount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/tvMonthlyCurrency"
+                android:background="@drawable/curve_outline_gray"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:hint="0"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/midv" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

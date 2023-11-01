@@ -1,0 +1,1266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE resources [<!ENTITY appname "Makent Space">
+    <!ENTITY facebook_key "XXXXXX">
+    <!ENTITY google_maps_key "XXXXXX">
+    <!ENTITY google_key_url "XXXXXX">
+    <!ENTITY baseUrl "https://makentspace.trioangle.com/">]>
+
+<resources>
+    <string name="app_name">&appname;</string>
+
+    <string name="sigin_terms1">" من خلال التوقيع، أنا أوافق على، &appname;   الصورة "</string>
+    <string name="sigin_terms7">"  "</string>
+    <string name="sigin_terms2">" شروط الخدمة "</string>
+    <string name="sigin_terms3">"سياسة عدم التمييز"</string>
+    <string name="sigin_terms4">"سياسة خاصة "</string>
+    <string name="sigin_terms5">"سياسة رد الضيف"</string>
+    <string name="sigin_terms6">"شروط ضمان المضيف"</string>
+    <string name="anim_speed">"50"</string>
+    <string name="menudelete">"حذف"</string>
+    <string name="menuarchive">"أرشيف"</string>
+    <string name="menueveryone">"اجعل الجمهور"</string>
+    <string name="menuonlyme">"اجعلها شخصيه"</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="welcome">.&appname; مرحبا بك في  </string>
+    <string name="createaccount">إنشاء حساب</string>
+    <string name="continue_google">تواصل مع جوجل</string>
+    <string name="continue_facebook">تواصل مع الفيسبوك</string>
+    <string name="name_title">"ما هو اسمك؟"</string>
+    <string name="first_name">الاسم الاول</string>
+    <string name="last_name">الكنية</string>
+    <string name="email_title">"والبريد الإلكتروني الخاص بك؟"</string>
+    <string name="email_address">عنوان بريد الكتروني</string>
+    <string name="emailalreadyexits">
+"لديك بالفعل حساب بهذه الرسالة الإلكترونية. \n حاول تسجيل الدخول بدلاً من ذلك."
+</string>
+    <string name="emailalreadyuse1">خطأ في تسجيل الدخول</string>
+    <string name="password_title">أنشئ كلمة مرور</string>
+    <string name="password_msg">
+يجب أن تتضمن كلمة المرور الخاصة بك رمزًا واحدًا على الأقل وطول 8 أحرف أو أكثر.
+</string>
+
+    <string name="request_book_to_host">طلب حجز إرسال إلى المضيف</string>
+    <string name="payment_successfull_paid">دفعت بنجاح</string>
+    <string name="success_completed">تمت عملية الدفع بنجاح.</string>
+    <string name="sign_apple">تواصل مع أبل</string>
+
+    <string name="password">كلمه السر</string>
+    <string name="show">تبين</string>
+    <string name="hide">إخفاء</string>
+    <string name="hours_total">مجموع الساعات</string>
+    <string name="meet_your_host">قابل مضيفك ،</string>
+    <string name="reviewss">استعراض</string>
+    <string name="guest_age">الضيوف الأعمار</string>
+    <string name="can_attend">ويمكن أن يحضر.</string>
+    <string name="facebook_title">"تبدو جيدا؟"</string>
+    <string name="facebook_msg">"تأكد من صحة المعلومات الخاصة بك قبل المتابعة."</string>
+    <string name="birth_day">عيد الميلاد</string>
+    <string name="availableexperience">"تجربة متاحة"</string>
+    <string name="availableexperiences">"الخبرات المتاحة"</string>
+    <string name="forgot_password">هل نسيت كلمة المرور؟</string>
+    <string name="login_title">تسجيل الدخول</string>
+    <string name="showpassword">عرض كلمة المرور</string>
+    <string name="retry">إعادة المحاولة</string>
+    <string name="invalidelogin">تفاصيل تسجيل الدخول غير صالحة</string>
+    <string name="invalidesignup">تفاصيل التسجيل غير صالحة</string>
+    <string name="datesnotavailable">"هذه التواريخ غير متوفرة ..."</string>
+    <string name="forgot_title">"نسيت رقمك السري؟"</string>
+    <string name="forgot_msg">أدخل بريدك الإلكتروني للعثور على حسابك.</string>
+    <string name="forgot_email_send">
+تم إرسال رابط لإعادة تعيين كلمة المرور الخاصة بك إلى
+</string>
+    <string name="forgot_invalid_mail">لا يوجد حساب لعنوان البريد الإلكتروني المطلوب</string>
+    <string name="dob_title">"متى يحين عيد ميلادك؟"</string>
+    <string name="dob_msg">
+"يجب أن يكون عمرك 18 عامًا على الأقل حتى تتمكن من استخدام Makent. لن يرى الآخرون عيد ميلادك."
+</string>
+    <string name="version">"الإصدار 1.7"</string>
+
+    <string name="layout_direction">1</string>
+    <string name="dob">"عيد الميلاد"</string>
+    <string name="setdob">حدد تاريخ ميلادك</string>
+    <string name="cancelc">إلغاء</string>
+    <string name="view_edit">عرض وتحرير الملف الشخصي</string>
+    <string name="invite_friends">ادعو أصدقاء</string>
+    <string name="switch_to">التبديل إلى استضافة</string>
+    <string name="switch_to_t">التبديل إلى السفر</string>
+    <string name="settings">الإعدادات</string>
+    <string name="Help">"مساعدة</string>
+    <string name="whyhost">لماذا المضيف</string>
+    <string name="logout">الخروج</string>
+    <string name="logout_msg">هل أنت متأكد أنك تريد \n تسجيل الخروج؟</string>
+    <string name="terms">
+عندما تقوم بالحجز ، فإنك توافق على شروط الخدمة الإضافية لـ Makent وإصدار الضيف وإلغاء الخدمة وسياسة الإلغاء
+</string>
+    <string name="review_guest_requirment">مراجعة متطلبات الضيف</string>
+    <string name="guest_reqr">متطلبات الضيف</string>
+    <string name="explore">يكتشف</string>
+    <string name="bookings">حجوزات</string>
+    <string name="inbox">صندوق الوارد</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="choose">أختر</string>
+    <string name="wishlist">"تم الحفظ"</string>
+    <string name="review">التعليقات</string>
+    <string name="review_s">استعراض</string>
+    <string name="where">"أين"</string>
+    <string name="anywhere">"في أى مكان</string>
+    <string name="nearby">"مجاوز</string>
+    <string name="whereto">"ألى أين؟"</string>
+
+    <string name="booking_title">الحجز</string>
+    <string name="makent_hosts_experience_event_cancellation_policy">Makent تستضيف الخبرة</string>
+    <string name="u2022_any_experience">
+ أي تجربة أو حدث ، تم إلغاؤه خلال 24 ساعة من الحجز ، مؤهل لاسترداد الأموال بالكامل.
+</string>
+    <string name="when">"متى"</string>
+    <string name="guest">"واحد ضيف"</string>
+    <string name="read_more">قراءة المزيد</string>
+    <string name="pets">"الحيوانات الأليفة</string>
+    <string name="what_i_ll_provide">ما سأقدم</string>
+    <string name="clear">امسح الكل</string>
+    <string name="map">خريطة</string>
+    <string name="filters">مرشحات</string>
+    <string name="nodata_msg">"لم نتمكن من العثور على أي قوائم بيانات. حاول \n إزالة عوامل التصفية"</string>
+    <string name="removefilter">"إزالة جميع المرشحات"</string>
+    <string name="guests">"ضيوف"</string>
+    <string name="rooms">"غرف نوم"</string>
+    <string name="beds">"سرير"</string>
+    <string name="bath">"حمام"</string>
+    <string name="s_guest">"زائر"</string>
+    <string name="is_shared">"ملاحظة: هذه غرفة مشتركة"</string>
+    <string name="bedroom">"غرفة نوم"</string>
+    <string name="s_bedroom">"غرف نوم"</string>
+    <string name="bed">"السرير"</string>
+    <string name="bathroom">"حمام"</string>
+    <string name="s_bathroom">"الحمامات"</string>
+    <string name="about_home">عن هذا المنزل</string>
+    <string name="about_listing">حول هذه القائمة</string>
+    <string name="checkin">تحقق في الوقت</string>
+    <string name="guide">عرض الدليل</string>
+    <string name="checkout">تحقق من الوقت</string>
+    <string name="chin">تحقق في</string>
+    <string name="chout">الدفع</string>
+    <string name="exp_cal_title">متى تريد ان تذهب؟</string>
+    <string name="houserules">قواعد المنزل</string>
+    <string name="cancelpolicy">سياسة الإلغاء</string>
+    <string name="availability">توفر</string>
+    <string name="contacthost">الاتصال بالمضيف</string>
+    <string name="triplength">طول الرحلة</string>
+    <string name="contacthost_msg">"تم إرسال طلب الاتصال إلى"</string>
+    <string name="similarlisting">قوائم مماثلة</string>
+    <string name="checkavailability">التحقق من الصلاحية</string>
+    <string name="booknow">احجز الآن</string>
+    <string name="requestbook">طلب الحجز</string>
+    <string name="instantbook">كتاب فوري</string>
+    <string name="request_book">request_to_book</string>
+    <string name="instant_book">instant_book</string>
+    <string name="pernight">لليلة الواحدة</string>
+    <string name="check">التحقق من</string>
+    <string name="read">اقرأ</string>
+    <string name="flexible">مرن</string>
+    <string name="datedialog1">"هل تريد أن تضيف"</string>
+    <string name="datedialog2">"إلى بحثك؟"</string>
+    <string name="no">لا</string>
+    <string name="and">"و"</string>
+    <string name="in">في</string>
+    <string name="yes">نعم فعلا</string>
+    <string name="hosted_by">برعاية</string>
+    <string name="no_internet_available">لا يوجد الإنترنت المتاحة</string>
+    <string name="message_s">رسالة</string>
+    <string name="inbox_msg">ليس لديك رسائل غير مقروءة</string>
+    <string name="start_exploring">ابدأ الاستكشاف</string>
+    <string name="trips_details">"ماذا سيكون أول مغامرة \n؟"</string>
+    <string name="startexploring">البدء في استكشاف</string>
+    <string name="listview_footer_hint_normal">اسحب لتحميل المزيد من العناصر</string>
+    <string name="listview_footer_hint_ready">جار التحميل</string>
+    <string name="addlistprepared">"أعدت!"</string>
+    <string name="addlistmsg">"فقط ثلاثة خطوات أخرى للإدراج"</string>
+    <string name="addlisting">"أضف قائمة"</string>
+    <string name="yourlisting">"قائمتك"</string>
+    <string name="nights">ليالي</string>
+    <string name="Guests">ضيوف</string>
+    <string name="price_breakdown">انظر انهيار الأسعار</string>
+    <string name="req_msg">
+"هذه الدفعة تتعامل بالدولار الأمريكي. يبلغ إجمالي الرسوم 470 دولارًا. يبلغ سعر صرف حجز هذه القائمة دولارًا واحدًا إلى CLP667.783 (بما في ذلك Makent 3٪)         رسوم التحويل). "
+</string>
+    <string name="coupon">كود القسيمة</string>
+    <string name="add">إضافة</string>
+    <string name="steps">الخطوات المتبقية للحجز</string>
+    <string name="payment">"1. في"</string>
+    <string name="messagehost">" مضيف الرسائل"</string>
+    <string name="houserule">" قواعد المنزل"</string>
+    <string name="agree">يوافق على</string>
+    <string name="agreed">متفق عليه</string>
+    <string name="setps_left">"لديك ثلاثة خطوات اليسار"</string>
+    <string name="setps_left1">"لديك واحد خطوات اليسار"</string>
+    <string name="setps_left2">"لديك إثنان خطوات اليسار"</string>
+    <string name="setps_left3">"لديك ثلاثة خطوات اليسار"</string>
+    <string name="youhave">"عندك"</string>
+    <string name="add_payment">إضافة الدفع</string>
+    <string name="payments">دفع</string>
+    <string name="save">"حفظ"</string>
+    <string name="showall">"عرض الكل"</string>
+    <string name="select">"يختار"</string>
+    <string name="select_payment_title">إختر طريقة الدفع</string>
+    <string name="selectcountry">حدد الدولة</string>
+    <string name="creditcard">بطاقة الائتمان</string>
+    <string name="paypal">باي بال</string>
+    <string name="introduce">عرفنى بنفسك</string>
+    <string name="done">فعله</string>
+    <string name="msg_host">"أخبر جناح ميرادور عن نفسك وعن رحلتك."</string>
+    <string name="write_msg">اكتب رسالة...</string>
+    <string name="house_title">"قواعد منزل ميرادور"</string>
+    <string name="msg_house_rules">"عندما تبقى في Makent ، فأنت في منزل شخص ما. ستحتاج إلى الموافقة على وضع قواعد منزل Mirador قبل أن تتمكن من الحجز."</string>
+    <string name="other_rules">قواعد أخرى</string>
+    <string name="other_rules_msg">"اشعر وكأنك في المنزل بعيدًا عن المنزل: \n أنت تحترم جيرانك وتحافظ على هدوئك بعد حلول الظلام من فضلك! \n أنت تحترم المنزل لأنه سيكون لك!! هيكتور كهف البيت. "</string>
+    <string name="nosmoking">ممنوع التدخين</string>
+    <string name="notsutable_for_pers">"غير مناسب للحيوانات الأليفة"</string>
+    <string name="noparties">لا الأحزاب أو الأحداث</string>
+    <string name="infants">"قد لا تكون آمنة أو مناسبة للأطفال الرضع (أقل من عامين)"</string>
+    <string name="additionalprices">"أسعار إضافية"</string>
+    <string name="extrapeople">"الناس اضافية"</string>
+    <string name="securitydeposit">"مبلغ التأمين"</string>
+    <string name="cleaningfee">"رسوم التنظيف"</string>
+    <string name="discout_message">"يمكنك إعطاء خصومات لقائمتك من موقعنا."</string>
+    <string name="lengthofstay">"تخفيضات مدة الإقامة"</string>
+    <string name="earlybird">"خصومات الطيور المبكرة"</string>
+    <string name="lastmin">"آخر دقيقة خصومات"</string>
+    <string name="hostfee">"رسوم مضيف ماكينت"</string>
+    <string name="minimum_stay">"الحد الأدنى للإقامة"</string>
+    <string name="maximum_stay">"الحد الأقصى للإقامة"</string>
+    <string name="pricebreakdown">"انهيار الدفع"</string>
+    <string name="customerreceipt">"استلام العميل"</string>
+    <string name="night">"ليل"</string>
+    <string name="day">"يوم"</string>
+    <string name="days">"أيام"</string>
+    <string name="Days">"أيام"</string>
+    <string name="nightc">"ليل"</string>
+    <string name="nightss">"ليالي"</string>
+    <string name="servicefee">"رسوم الخدمة"</string>
+    <string name="servicefee_msg">"هذا يساعدنا على تشغيل منصتنا وتقديم \n خدمات مثل دعم 24/7 في رحلتك."</string>
+    <string name="additionalfee">"رسوم ضيف إضافية"</string>
+    <string name="foreachguestafter">"لكل ضيف بعد"</string>
+    <string name="securityfee">"الأمن رسوم"</string>
+    <string name="reset_all">"إعادة ضبط الجميع"</string>
+    <string name="reset">"إعادة تعيين"</string>
+    <string name="instant_book_only">"كتاب فوري فقط"</string>
+    <string name="instant_book_msg">"كتاب دون انتظار المضيف للرد"</string>
+    <string name="avg_price">متوسط سعر 87 دولار في الليلة</string>
+    <string name="room_type">نوع الغرفة</string>
+    <string name="bed_type">نوع السرير</string>
+    <string name="entire_place">مكان كامل</string>
+    <string name="private_room">غرفة خاصة</string>
+    <string name="shared_room">غرفة مشتركة</string>
+    <string name="anybed">أي أسرة</string>
+    <string name="anybedrooms">أي غرف نوم</string>
+    <string name="anybathrooms">أي حمامات</string>
+    <string name="bedss">"سرير"</string>
+    <string name="bedrooms">" غرف نوم"</string>
+    <string name="bathrooms">"الحمامات"</string>
+    <string name="wifi">واي فاي</string>
+    <string name="pool">حوض السباحة</string>
+    <string name="kitchen">مطبخ</string>
+    <string name="see_amenities">انظر جميع وسائل الراحة</string>
+    <string name="test">اختبار</string>
+    <string name="title_activity_request">RequestActivity</string>
+    <string name="amenities">وسائل الراحة</string>
+    <string name="select_amenities">اختر وسائل الراحة</string>
+    <string name="select_categories">اختر الفئات</string>
+    <string name="reviews">التعليقات</string>
+    <string name="accuracy">"صحة"</string>
+    <string name="arrival">"وصول"</string>
+    <string name="cleanliness">"النظافة"</string>
+    <string name="comminication">الاتصالات</string>
+    <string name="location">موقعك</string>
+    <string name="value">القيمة</string>
+    <string name="title_activity_search__guest__bed">Search_Guest_Bed</string>
+    <string name="day_name_format">EEE</string>
+    <string name="invalid_date">يجب أن يكون التاريخ بين٪ 1 $ s و٪ 2 $ s.</string>
+    <string name="invalid_country">يرجى تقديم بلدك</string>
+    <string name="invalid_state">يرجى تقديم ولايتك</string>
+    <string name="invalid_city">يرجى تقديم مدينتك</string>
+    <string name="month_name_format">MMMM yyyy</string>
+    <string name="switchhost">"التبديل إلى الاستضافة"</string>
+    <string name="switchtravel">"التحول إلى السفر"</string>
+    <string name="reservation">"حجز"</string>
+    <string name="reservations">"حجز"</string>
+    <string name="reservationss">"تحفظات"</string>
+    <string name="preaccept">"قبل قبول"</string>
+    <string name="preapprove">"قبل الموافقة"</string>
+    <string name="calendar">"التقويم"</string>
+    <string name="calendars">"التقويم"</string>
+    <string name="listing">"القوائم"</string>
+    <string name="profilec">"الملف الشخصي"</string>
+    <string name="expires">"ينتهي في "</string>
+    <string name="expired">"منتهية الصلاحية "</string>
+    <string name="no_reservation">"لا طلبات للحجز"</string>
+    <string name="no_listing">"لا توجد قائمة"</string>
+    <string name="no_listing_msg">"ليس لديك بطاقة بيانات \n الآن."</string>
+    <string name="host_home_meg">"ليس لديك أي طلبات حجز \ أو حجز استفسارات للرد \n الآن."</string>
+    <string name="complete">"اكتمال"</string>
+    <string name="incomplete">"غير مكتمل"</string>
+    <string name="lys">"اذكر مساحتك"</string>
+    <string name="lys_msg">"ما نوع المساحة التي تريد إدراجها؟"</string>
+    <string name="entirehome_msg">"منزلك بالكامل"</string>
+    <string name="privateroom_msg">"غرفة واحدة في منزلك"</string>
+    <string name="sharedroom_msg">"أريكة ، وسادة هوائية ، إلخ"</string>
+    <string name="property_type">"نوع الملكية"</string>
+    <string name="property_type_msg1">"ما هو نوع المكان \n منزلك بالكامل؟"</string>
+    <string name="apartment">"شقة"</string>
+    <string name="house">"منزل"</string>
+    <string name="home">"قائمة"</string>
+    <string name="homes">"القوائم"</string>
+    <string name="nothing">"لم يتم حفظ شيء بعد"</string>
+    <string name="bedbreak">"السرير</string>
+    <string name="more">أكثر من</string>
+    <string name="more_c">أكثر من</string>
+    <string-array name="property_type_more">
+        <item>دور علوي</item>
+        <item>تاون هاوس</item>
+        <item>سيادة مشتركة</item>
+        <item>جناح صغير</item>
+        <item>الطائرة</item>
+        <item>فيلا</item>
+        <item>قلعة</item>
+        <item>المسكن</item>
+        <item>تريسي</item>
+        <item>قارب</item>
+        <item>طائرة</item>
+        <item>"كامبر / RV"</item>
+        <item>Lgloo</item>
+        <item>منارة</item>
+        <item>النوم</item>
+        <item>أنواع</item>
+        <item>كهف</item>
+        <item>جزيرة</item>
+        <item>الشاليه</item>
+        <item>Earthhouse</item>
+        <item>كوخ</item>
+        <item>قطار</item>
+        <item>خيمة</item>
+        <item>آخر</item>
+    </string-array>
+    <string name="locaiton">"موقعك"</string>
+    <string name="location_msg">"ما المدينة التي يقع فيها منزلك؟"</string>
+    <string name="locaiton_next">التالى</string>
+    <string name="editlocaiton">"عدل الموقع"</string>
+    <string name="editlocation_msg">"عنوانك بالضبط ، والموقع ، والاتجاهات مرئية فقط للضيوف الذين لديهم حجز مؤكد."</string>
+    <string name="editlocaiton_law">إشعار حول القوانين المحلية الخاصة بك</string>
+    <string name="editlocaiton_law_msg">ملاحظة ودية حول الاستضافة على Makent</string>
+    <string name="roombed">"غرف</string>
+    <string name="roombed_msg">"أكثر قليلاً عن \n المقصورة الخاصة بك ..."</string>
+    <string name="roombed_max">ماكس الضيوف</string>
+    <string name="roombed_bed">سرير</string>
+    <string name="roombed_bedrooms">غرف نوم</string>
+    <string name="roombed_bath">الحمامات</string>
+    <string name="roombed_type">سرير ونوع</string>
+    <string name="select_bed_type">"Select your bed count and types..."</string>
+    <string name="steps_left6">"6 خطوات للإدراج"</string>
+    <string name="preview">"معاينة"</string>
+    <string name="add_photo">"إضافة الصور"</string>
+    <string name="photo">"صورة فوتوغرافية"</string>
+    <string name="photos">"الصور"</string>
+    <string name="describeyourspace">"صف مساحتك"</string>
+    <string name="describeyourspace_msg">"لخص أبرز قائمتك"</string>
+    <string name="setprice">"ضع سعر"</string>
+    <string name="setprice_msg">"جرب السعر المقترح للبدء"</string>
+    <string name="setaddress">"تعيين العنوان"</string>
+    <string name="setaddress_msg">"الضيوف المؤكدين فقط هم الذين يرون عنوانك"</string>
+    <string name="sethouserules">"تعيين قواعد المنزل"</string>
+    <string name="sethouserules_msg">"يوافق الضيوف على القواعد قبل الحجز"</string>
+    <string name="setbooksetting">"ضبط إعدادات الحجز"</string>
+    <string name="setbooksetting_msg">"كيف يمكن للضيوف الحجز"</string>
+    <string name="booksetting">"إعدادات الحجز"</string>
+    <string name="optionaldetails">"تفاصيل اختيارية"</string>
+    <string name="selectcurrency">"اختر العملة"</string>
+    <string name="changecurrency">"تغيير العملة"</string>
+    <string name="setpstolist">"خطوات الإدراج"</string>
+    <string name="setptolist">"خطوة إلى القائمة"</string>
+    <string name="photo_msg">"إضافة صور إلى \n قائمتك"</string>
+    <string name="addtitle">"إضافة عنوان"</string>
+    <string name="addtitle_msg">"امنح مكانك عنوانًا وصفيًا"</string>
+    <string name="addsummary">"لخص الموضوع"</string>
+    <string name="addsummary_msg">"كن واضحًا وصفيًا".</string>
+    <string name="title">"عنوان"</string>
+    <string name="title_msg">"كن واضحًا وصفيًا".</string>
+    <string name="summary">"ملخص"</string>
+    <string name="summary_msg">"أخبر المسافرين بما تحبه في المساحة. يمكنك تضمين تفاصيل حول الديكور ووسائل الراحة التي يتضمنها والحي".</string>
+    <string name="characters">"شخصيات تركت"</string>
+    <string name="price_msg">السعر الثابت هو المعدل الافتراضي ليلا.</string>
+    <string name="price_tip">"نصيحة السعر:"</string>
+    <string name="price_tip1">"إثنان و عشرون"</string>
+    <string name="price_tip2">"في الليلة بناءً على \n الطلب والسمات في بطاقة بياناتك"</string>
+    <string name="search">"بحث..."</string>
+    <string name="addressnot_see">"ألا ترى عنوانك؟ استخدم العنوان \n بدلاً من ذلك."</string>
+    <string name="street_hint">"اسم الشارع / الطريق"</string>
+    <string name="apt_hint">"شقة / جناح / مبنى"</string>
+    <string name="city_hint">"المدينة / البلدة / الحي"</string>
+    <string name="state_hint">"الدولة / الإقليم / مقاطعة"</string>
+    <string name="pin_hint">"الرمز البريدي / الرمز البريدي"</string>
+    <string name="country_hint">"بلد"</string>
+    <string name="house_rules1">"مناسبة للأطفال (عمر 2-12)"</string>
+    <string name="house_rules2">"مناسبة للرضع (أقل من 2)"</string>
+    <string name="house_rules3">"مناسبة للحيوانات الأليفة"</string>
+    <string name="house_rules4">"مسموح التدخين"</string>
+    <string name="house_rules5">"الأحداث أو الأطراف المسموح بها"</string>
+    <string name="house_rules6">"هل قائمتي مناسبة للأطفال؟"</string>
+    <string name="additional_rules">"قواعد إضافية"</string>
+    <string name="house_rules">"قواعد المنزل"</string>
+    <string name="words">"كلمات"</string>
+    <string name="word">"كلمة"</string>
+    <string name="house_rules_msg">"كيف تتوقع أن يتصرف ضيوفك؟"</string>
+    <string name="house_rules_tip">"يمكنك إلغاء عقوبة خالية إذا خرق الضيوف الذين \n حجزوا قواعد منزلك على الفور".</string>
+    <string name="price">السعر</string>
+    <string name="currency">"دقة"</string>
+    <string name="usd">"USD"</string>
+    <string name="symbol">($)</string>
+    <string name="details">"تفاصيل"</string>
+    <string name="description">"وصف"</string>
+    <string name="roomsbeds">"غرف</string>
+    <string name="none">"لا شيء"</string>
+    <string name="deactivatelist">"إلغاء تنشيط الإدراج"</string>
+    <string name="enable_permissions">يرجى تمكين أذونات</string>
+    <string name="longterm">"الأسعار طويلة الأجل"</string>
+    <string name="longterm_msg">"يمكنك تحديد سعر لتعكس المساحة والمرافق والضيافة التي ستوفرها."</string>
+    <string name="weeklyprice">"السعر الأسبوعي"</string>
+    <string name="weekly">"أسبوعي"</string>
+    <string name="monthly">"شهريا"</string>
+    <string name="weekendprice">"التسعير في عطلة نهاية الأسبوع"</string>
+    <string name="monthlyprice">"سعر شهري"</string>
+    <string name="guest_stay_minimum">"الضيوف البقاء لمدة الحد الأدنى"</string>
+    <string name="guest_stay_maximum">"الضيوف يقيمون لأقصى حد"</string>
+    <string name="length_of_stay_discount">"خصم مدة الإقامة"</string>
+    <string name="last_min_discount">"آخر دقيقة خصم"</string>
+    <string name="early_bird_discount">"خصم الطيور في وقت مبكر"</string>
+    <string name="during">"أثناء"</string>
+    <string name="space">"الفضاء"</string>
+    <string name="space_msg">"ما الذي يجعل مساحتك فريدة من نوعها؟"</string>
+    <string name="guest_access">"مدخل للضيوف"</string>
+    <string name="guest_access_msg">"ما الذي يمكن للضيوف الوصول إليه؟"</string>
+    <string name="interaction_guest">"التفاعل مع الضيوف"</string>
+    <string name="guest_interaction">"تفاعل الضيف"</string>
+    <string name="interaction_guest_msg">"كم مرة تتفاعل مع ضيوفك؟"</string>
+    <string name="neighborhood">"الجوار"</string>
+    <string name="overview">"نظرة عامة"</string>
+    <string name="overview_msg">"ماذا تحب عن حيك؟"</string>
+    <string name="gettingaround">"التجوال حول"</string>
+    <string name="gettingaround_msg">"هل هناك وسائل النقل العام مريحة؟"</string>
+    <string name="extradetails">"تفاصيل اضافية"</string>
+    <string name="otherthing">"أشياء أخرى يجب ملاحظتها"</string>
+    <string name="otherthing_msg">"هل هناك أي تفاصيل أخرى ترغب في مشاركتها؟"</string>
+    <string name="des_houserules_msg">"كيف تتوقع أن يتصرف ضيوفك؟"</string>
+    <string name="des_houserules_msg1">"يمكنك الإلغاء بدون عقوبة إذا خرق الضيوف الذين حجزوا قواعد منزلك على الفور."</string>
+    <string name="listinginfo">"معلومات الإدراج"</string>
+    <string name="selectlistingtype">حدد نوع القائمة</string>
+    <string-array name="amenities_type">
+        <item>الاكثر انتشارا</item>
+        <item>إضافات</item>
+        <item>مميزات خاصة</item>
+        <item>السلامة المنزلية</item>
+    </string-array>
+    <string-array name="amenities_mostcommon">
+        <item>أساسيات</item>
+        <item>شامبو</item>
+        <item>تلفزيون</item>
+        <item>تدفئة</item>
+        <item>مطبخ</item>
+        <item>تكييف</item>
+        <item>الإنترنت</item>
+        <item>واي فاي</item>
+    </string-array>
+    <string-array name="amenities_extra">
+        <item>حوض استحمام ساخن</item>
+        <item>حوض السباحة</item>
+        <item>وجبة افطار</item>
+        <item>نادي رياضي</item>
+        <item>مدفأة داخلية</item>
+        <item>غسالة</item>
+        <item>مجفف</item>
+        <item>موقف سيارات مجاني</item>
+        <item>"مصعد في المبنى</item>
+    </string-array>
+    <string-array name="amenities_special_Features">
+        <item>صديقة للأسرة</item>
+        <item>مناسبة للأحداث</item>
+        <item>تسهيلات لدخول المعاقين</item>
+        <item>مسموح التدخين</item>
+        <item>مسموح بدخول الحيوانات الأليفة</item>
+        <item>الحيوانات الأليفة تعيش على هذا العقار</item>
+    </string-array>
+    <string-array name="amenities_home_safety">
+        <item>كاشف الدخان</item>
+        <item>كاشف أول أكسيد الكربون</item>
+        <item>حقيبة إسعاف أولي</item>
+        <item>بطاقة السلامة</item>
+        <item>طفاية حريق</item>
+    </string-array>
+    <string name="cancel">"إلغاء"</string>
+    <string name="cancelrequest">"إلغاء الطلب"</string>
+    <string name="savechanges">"حفظ التغييرات"</string>
+    <string name="available">"متاح"</string>
+    <string name="blocked">مسدود</string>
+    <string name="nightlyPrice">سعر ليلي</string>
+    <string name="whyhost_title">"كسب المال كمضيف Makent"</string>
+    <string name="whyhost_msg">
+"من الادخار للإصلاحات المنزلية إلى القيام برحلة الأحلام ، يستخدم المضيفون دخلًا إضافيًا لتمويل عواطفهم."
+</string>
+    <string name="whyhost_title1">"ما هو في القائمة؟"</string>
+    <string name="whyhost_msg1">
+"ستملأ وصفًا وتلتقط الصور وتحميلها وتختار السعرًا. تساعد قائمتك الضيوف في التعرف على شكل موقعك."
+</string>
+    <string name="whyhost_title2">"من يستطيع الكتاب"</string>
+    <string name="whyhost_msg2">
+"أنت تضع القواعد الخاصة بمن يبقى ومتى. تفضيلات الحجز والضيف تساعد على استضافة أسلوب حياتك."
+</string>
+    <string name="whyhost_title3">"نحن هنا للمساعدة"</string>
+    <string name="whyhost_msg3">
+"تقدم Makent النصائح والمساعدة على طول الطريق. من إعداد منزلك إلى اختيار السعر - لدينا أدوات من أجلك."
+</string>
+    <string name="notification">"الإخطارات"</string>
+    <string name="payoutmethod">"طرق الدفع"</string>
+    <string name="term">شروط الخدمة</string>
+    <string name="payouts">"الدفعات"</string>
+    <string name="payout_title">"قم بإعداد طريقة دفع Makent"</string>
+    <string name="payout_msg">
+"دفعتك هي ما تكسبه من استضافة ضيف. يتم إرسال الدفعات بعد 14 يوما من كل تسجيل وصول.
+</string>
+    <string name="payout_link">"تعرف على المزيد حول الدفعات"</string>
+    <string name="payout_address">"عنوان الدفع"</string>
+    <string name="submit">خضع</string>
+    <string name="paypal_email">"معرف بريد PayPal"</string>
+    <string name="addpayout">إضافة طريقة الدفع</string>
+    <string name="delete">حذف</string>
+    <string name="delete_msg">"هل أنت متأكد أنك تريد حذف \n"</string>
+    <string name="defaults"> افتراضي</string>
+    <string name="makedefault">جعل الافتراضي</string>
+    <string name="membersince">"عضو منذ"</string>
+    <string name="verifiedinfo">"معلومات تم التحقق منها"</string>
+    <string name="phonenumberemail">"رقم الهاتف ، عنوان البريد الإلكتروني"</string>
+    <string name="phonenumber">"رقم الهاتف"</string>
+    <string name="editprofile">"تعديل الملف الشخصي"</string>
+    <string name="editname">"تعديل الاسم"</string>
+    <string name="editaboutme">"تحرير عني"</string>
+    <string name="aboutme">"عني"</string>
+    <string name="privatedetails">"التفاصيل الخاصة"</string>
+    <string name="gender">"جنس"</string>
+    <string name="birthdate">"تاريخ الولادة"</string>
+    <string name="email">"البريد الإلكتروني"</string>
+    <string name="email_msg">
+"يستخدم هذا لتسجيل الدخول ورسائل البريد الإلكتروني من Makent ، ولا تتم مشاركته مع مستخدمين آخرين."
+</string>
+    <string name="phone">"هاتف"</string>
+    <string name="send">"إرسال"</string>
+    <string name="phone_msg">
+"الرجاء إدخال رقم هاتفك وسنرسل لك رمز تأكيد. قد تحتاج إلى إدخال رقم هاتفك بما في ذلك الرمز" "ورمز البلد."
+</string>
+    <string name="school">"مدرسة"</string>
+    <string name="work">"عمل"</string>
+    <string name="languages">"اللغات"</string>
+    <string name="firstname">"الاسم الاول"</string>
+    <string name="lastname">"الكنية"</string>
+    <string name="editaboutme_msg">
+"Makent مبني على العلاقات. ساعد الآخرين على التعرف عليك. \n \n أخبرهم عن الأشياء التي تحبها: شارك وجهات السفر المفضلة لديك ، والكتب ، والأفلام ، والعروض ، والموسيقى ، والغذاء. \n \n أخبرهم بما يشبه لجعلك ضيفًا أو مضيفًا: ما أسلوبك في السفر؟         استضافة؟ \n \n أخبرهم عنك: هل لديك شعار حياة؟ "
+</string>
+    <string name="gender_male">"الذكر"</string>
+    <string name="gender_female">"إناثا"</string>
+    <string name="gender_other">"آخر"</string>
+    <string name="okay">"حسنا"</string>
+    <string name="ok">"حسنا"</string>
+    <string name="location_hint">
+"على سبيل المثال ، باريس ، FR / بروكلين ، نيويورك / \n شيكاغو ، IL"
+</string>
+    <string name="school_hint">"مدارسك"</string>
+    <string name="work_hint">على  سبيل المثال " &appname;؛" / أبل / تاكو ستاند</string>
+
+    <string name="facebookconnect">"فيس بوك"</string>
+    <string name="emailconnect">"البريد الإلكتروني"</string>
+    <string name="googleconnect">"جوجل "</string>
+    <string name="twitterconnect">"تغريد</string>
+    <string name="connect">"الاتصال</string>
+    <string name="messagehost_title">"مضيف الرسائل"</string>
+    <string name="edit">"تصحيح"</string>
+    <string name="change">"يتغيرون"</string>
+    <string name="yourmessage">"رسالتك"</string>
+    <string name="yourmessage_msg">"المضيفين يقدرون مرحبا ..."</string>
+    <string name="title_activity_cancellation_policy">CancellationPolicyActivity</string>
+    <string name="preacceptrequest">"قبل قبول هذا الطلب"</string>
+    <string name="preapproverequest">"الموافقة المسبقة على هذا الطلب"</string>
+    <string name="preacceptrequest_msg">"اكتب رسالة اختيارية للضيف ..."</string>
+    <string name="cancel_this_reservation">"إلغاء هذا الحجز"</string>
+    <string name="cancel_reservation">"إلغاء الحجز"</string>
+    <string-array name="cancel_types">
+        <item>"لماذا تتراجع؟"</item>
+        <item>أنا لست بحاجة إلى أماكن إقامة</item>
+        <item>"تغيرت تواريخ سفري"</item>
+        <item>لقد قمت بالحجز عن طريق الصدفة</item>
+        <item>لدي ظرف مخفف</item>
+        <item>يحتاج مضيفي إلى الإلغاء</item>
+        <item>"أنا غير قابل للتوافق مع المضيف"</item>
+        <item>"المكان ليس ما كنت أتوقعه"</item>
+        <item>"آخر"</item>
+    </string-array>
+    <string-array name="cancel_types_host">
+        <item>"لماذا تتراجع؟"</item>
+        <item>"التواريخ غير متوفرة"</item>
+        <item>"لا أشعر بالراحة مع هذا الضيف"</item>
+        <item>
+"بطاقة بياناتي ليست جيدة لتناسب احتياجات الضيف (الأطفال ، الحيوانات الأليفة ، إلخ)"
+</item>
+        <item>"أنا في انتظار حجز أكثر جاذبية"</item>
+        <item>
+"يطلب الضيف تواريخ مختلفة عن التواريخ المحددة في هذا الطلب"
+</item>
+        <item>هذه الرسالة هي البريد المزعج</item>
+        <item>"آخر"</item>
+    </string-array>
+    <string name="cancellation_title">"سياسة الإلغاء"</string>
+    <string name="cancellation_type1">"صارم"</string>
+    <string name="cancellation_msg1">
+"استرداد 50 ٪ حتى أسبوع واحد قبل الوصول ، باستثناء الرسوم \n يتم دائمًا استرداد رسوم التنظيف إذا لم يقم الضيف بتسجيل الوصول. \n رسوم خدمة Makent غير قابلة للاسترداد. \n إذا كانت هناك شكوى من أي من الطرفين ، فيجب إرسال إشعار إلى Makent خلال 24 ساعة من تسجيل الوصول. \n سيتوسط العنصر عند الضرورة ، ويكون له القول الفصل في جميع النزاعات. \n يتم إلغاء الحجز رسميًا عندما ينقر الضيف على زر الإلغاء في صفحة تأكيد الإلغاء ، والتي يمكن العثور عليها في لوحة المعلومات> رحلاتك> تغيير أو إلغاء. \n قد يتم استبدال سياسات الإلغاء بسياسة رد الضيف أو إلغاء السلامة أو الظروف المخففة. يرجى مراجعة هذه الاستثناءات. \n سيتم الاحتفاظ بالضرائب القابلة للتطبيق وتحويلها. "
+</string>
+    <string name="cancellation_type2">"معتدل"</string>
+    <string name="cancellation_msg2">
+"استرداد كامل 5 أيام قبل الوصول ، باستثناء الرسوم \n يتم دائمًا استرداد رسوم التنظيف إذا لم يقم الضيف بتسجيل الوصول. \n رسوم خدمة Makent غير قابلة للاسترداد. \n إذا كانت هناك شكوى من أي من الطرفين ، فيجب إرسال إشعار إلى Makent خلال 24 ساعة من تسجيل الوصول. \n سيتوسط العنصر عند الضرورة ، ويكون له القول الفصل في جميع النزاعات. \n يتم إلغاء الحجز رسميًا عندما ينقر الضيف على زر الإلغاء في صفحة تأكيد الإلغاء ، والتي يمكن العثور عليها في لوحة المعلومات> رحلاتك> تغيير أو إلغاء. \n قد يتم استبدال سياسات الإلغاء بسياسة رد الضيف أو إلغاء السلامة أو الظروف المخففة. يرجى مراجعة هذه الاستثناءات. \n سيتم الاحتفاظ بالضرائب القابلة للتطبيق وتحويلها. "
+</string>
+    <string name="cancellation_type3">"مرنة"</string>
+    <string name="cancellation_msg3">
+"كامل المبلغ قبل يوم واحد من الوصول ، باستثناء الرسوم \n يتم دائمًا استرداد رسوم التنظيف إذا لم يقم الضيف بتسجيل الوصول. \n رسوم خدمة Makent غير قابلة للاسترداد. \n إذا كانت هناك شكوى من أي من الطرفين ، فيجب إرسال إشعار إلى Makent خلال 24 ساعة من تسجيل الوصول. \n سيتوسط العنصر عند الضرورة ، ويكون له القول الفصل في جميع النزاعات. \n يتم إلغاء الحجز رسميًا عندما ينقر الضيف على زر الإلغاء في صفحة تأكيد الإلغاء ، والتي يمكن العثور عليها في لوحة المعلومات> رحلاتك> تغيير أو إلغاء. \n قد يتم استبدال سياسات الإلغاء بسياسة رد الضيف أو إلغاء السلامة أو الظروف المخففة. يرجى مراجعة هذه الاستثناءات. \n سيتم الاحتفاظ بالضرائب القابلة للتطبيق وتحويلها. "
+</string>
+    <string name="createlist">"انشئ قائمة"</string>
+    <string name="create">"خلق"</string>
+    <string name="privacy">"الإجمالية"</string>
+    <string name="s_public">"عامة"</string>
+    <string name="s_private">"نشر"</string>
+    <string name="everyone_msg">
+مرئي للجميع ومضمّن في \n جمهورك   &appname; الملف الشخصي.
+</string>
+    <string name="sharefriends">"شارك مع الاصدقاء "</string>
+    <string name="inviteonly_msg">مرئي فقط لك وأي أصدقاء تدعوهم.</string>
+    <string name="chooselist">"اختر قائمة"</string>
+    <string name="saved">"تم الحفظ"</string>
+    <string name="saved_msg">
+"عندما ترى شيئًا يعجبك ، اضغط على القلب لحفظه. إذا كنت تخطط لرحلة مع الآخرين ، فدعاهم حتى يتمكنوا من الحفظ والتصويت على مفضلاتهم."
+</string>
+    <string name="availablehome">"المنزل متاح"</string>
+    <string name="availablehomes">"المنازل المتاحة"</string>
+    <string name="dates">"تواريخ"</string>
+    <string name="totalcost">"التكلفة الإجمالية"</string>
+    <string name="help">"مساعدة"</string>
+    <string name="write_msgs">اكتب رسالة</string>
+    <string name="messagehistory">"تاريخ الرسالة"</string>
+    <string name="discuss">"مناقشة"</string>
+    <string name="interneterror">"لا يوجد اتصال إنترنت"</string>
+    <string name="date_error">"الرجاء تحديد التاريخ"</string>
+    <string name="editaddress">تعديل العنوان</string>
+    <string name="pin">دبوس على الخريطة</string>
+    <string name="tiltledialog">الموقع الدقيق غير موجود</string>
+    <string name="tiltledialog1">تم العثور على الموقع بالضبط</string>
+    <string name="tiltledialogtwo">
+هل ترغب في تثبيت موقع القائمة هذا يدويًا على الخريطة؟
+</string>
+    <string name="Interneterror">لا يوجد اتصال إنترنت</string>
+    <string name="no_lastmin_discounts_found">لم يتم العثور على خصومات اللحظة الأخيرة</string>
+    <string name="no_length_discounts_found">لم يتم العثور على تخفيضات مدة الإقامة</string>
+    <string name="no_early_discounts_found">لم يتم العثور على خصم الطيور المبكر</string>
+    <string name="legal_document">وثيقة قانونية</string>
+    <string name="address_kanji">العنوان كانجي</string>
+    <string name="address_kana">Address Kana</string>
+    <string name="postal_code">الكود البريدى</string>
+    <string name="city">مدينة</string>
+    <string name="address_2">العنوان 2</string>
+    <string name="gender1">جنس</string>
+    <string name="account_holder_name">اسم صاحب الحساب</string>
+    <string name="iban_number">رقم الآيبان</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="account_owner_name">اسم مالك الحساب</string>
+    <string name="account_number">رقم حساب</string>
+    <string name="sort_code">الكود البنكى</string>
+    <string name="institute_number">رقم المعهد</string>
+    <string name="transit_number">رقم العبور</string>
+    <string name="bsb">BSB</string>
+    <string name="branch_code">رمز الفرع</string>
+    <string name="bank_code">رمز بنكي</string>
+    <string name="branch_name">اسم الفرع</string>
+    <string name="bank_name">اسم البنك</string>
+    <string name="clearing_code">مسح الكود</string>
+    <string name="routing_number">رقم التوصيل</string>
+    <string name="currency1">دقة</string>
+    <string name="stripe_details">تفاصيل الشريط</string>
+    <string name="address_1">العنوان 1</string>
+    <string name="address_kana2">العنوان 2</string>
+    <string name="city_kana">مدينة</string>
+    <string name="state_province">الدولة / مقاطعة</string>
+    <string name="postal_code_kana">الكود البريدى</string>
+    <string name="address_kanji1">العنوان 1</string>
+    <string name="address_kanji2">العنوان 2</string>
+    <string name="kanji_city">مدينة</string>
+    <string name="state_province_kanji">الدولة / مقاطعة</string>
+    <string name="postal_code_kanji">الكود البريدى</string>
+    <string name="penalty_amount">مبلغ العقوبة</string>
+    <string name="coupon_amount">مبلغ القسيمة</string>
+    <string name="ssn">SSN</string>
+    <string name="network_failure">الرجاء التحقق من اتصال الانترنت الخاص بك</string>
+    <string name="internal_server_error">يرجى المحاولة مرة أخرى بعد في بعض الأحيان.</string>
+    <string name="updatedob">يرجى تحديث DOB في EditProfile</string>
+    <string name="updategender">يرجى تحديث الجنس في EditProfile</string>
+    <string name="no_token_saved">
+جمع أماكن للبقاء وأشياء للقيام بها من خلال النقر على أيقونة القلب
+</string>
+    <string name="no_token_trips">ستجد مسارات رحلتك هنا</string>
+    <string name="no_token_inbox">ستظهر الرسائل من مضيفك هنا</string>
+    <string name="blocked_date_toast">هذا التاريخ غير متاح</string>
+    <string name="per_person">للشخص الواحد</string>
+    <string name="total_hours"> مجموع الساعات</string>
+    <string name="notes">ملاحظات</string>
+    <string name="confirem_booking">تأكيد الحجز</string>
+    <string name="next">التالى</string>
+    <string name="you_don_t_have_to_fill_all_of_them_experiences_are_meant_to_be_social_so_other_travelers_could_join_too">
+ليس لديك لملء كل منهم. تهدف التجارب إلى أن تكون اجتماعية ، بحيث يمكن للمسافرين الآخرين الانضمام أيضًا
+</string>
+    <string name="free_for_guests_under_age_2">مجانًا للضيوف دون سن الثانية</string>
+    <string name="what_we_ll_do">ماذا سنفعل</string>
+    <string name="where_we_ll_be">حيث سنكون</string>
+    <string name="who_can_come">من يستطيع المجيء</string>
+    <string name="meet_host">قابل مضيفك ،</string>
+    <string name="what_we_do">ماذا سنفعل</string>
+    <string name="start_date">تاريخ البدء</string>
+    <string name="end_date">تاريخ الانتهاء</string>
+    <string name="decline">انخفاض</string>
+    <string name="guest_g">ضيوف</string>
+    <string name="filter">منقي</string>
+    <string name="language">لغة</string>
+    <string name="select_language">اختار اللغة</string>
+    <string name="default_language">الإنجليزية</string>
+    <string name="per_night">لليلة الواحدة</string>
+    <string name="explore_app">&appname;يكتشف </string>
+    <string-array name="languages">
+        <item>English</item>
+        <item>عربى</item>
+    </string-array>
+    <string-array name="languageCode" translatable="false">
+        <item>en</item>
+        <item>ar</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>الذكر</item>
+        <item>إناثا</item>
+        <item>آخر</item>
+    </string-array>
+
+    <string name="sunday">"الأحَد"</string>
+    <string name="monday">"الإثنين"</string>
+    <string name="Tuesday">"الثلاثاء"</string>
+    <string name="Wednesday">"الأربعاء"</string>
+    <string name="Thursday">"الخميس"</string>
+    <string name="Friday">"الجمعة"</string>
+    <string name="Saturday">"السبت"</string>
+
+
+    <string name="PendingTrip">في انتظار الرحلات</string>
+    <string name="CurrentTrips">الرحلات الحالية</string>
+    <string name="PreviousTrips">الرحلات السابقة</string>
+    <string name="UpcomingTrips">الرحلات القادمة</string>
+    <string name="g_guest">"ضيوف</string>
+
+
+    <string name="cancelled">ألغيت</string>
+    <string name="declined">رفض</string>
+    <string name="expire">منتهية الصلاحية</string>
+    <string name="accepted">وافقت</string>
+    <string name="preApproved">موافقة مسبقة</string>
+    <string name="preAccepted">قبل المقبولة</string>
+    <string name="inquiry">تحقيق</string>
+    <string name="pending">قيد الانتظار</string>
+    <string name="addstripepayout">إضافة دفع تعويضات</string>
+
+    <string name="Experiencecancellationpolicy">تجربة سياسة الإلغاء</string>
+    <string name="Guestrequirements">متطلبات الضيف</string>
+    <string name="Groupsizeupto">حجم المجموعة يصل إلى</string>
+    <string name="Seedates">انظر التواريخ</string>
+    <string name="Whocancome">من يستطيع المجيء</string>
+    <string name="Rooms">1 غرف</string>
+    <string name="Experiences">1 تجارب</string>
+    <string name="Hostedby">برعاية</string>
+    <string name="readmore">قراءة المزيد</string>
+    <string name="BedTypes">نوع السرير</string>
+    <string name="Lenghtofstaydiscounts">طول الإقامة خصومات</string>
+    <string name="Earlybirddiscounts">خصومات الطيور في وقت مبكر</string>
+    <string name="Lastmindiscounts">خصومات دقيقة الأخيرة</string>
+    <string name="ReservationSettings">إعدادات الحجز</string>
+    <string name="ADD">أضف</string>
+    <string name="selectnights">اختر ليال</string>
+    <string name="percentage">النسبة المئوية</string>
+    <string name="lastmindiscount">خصومات اللحظة الأخيرة</string>
+    <string name="add_requirement">إضافة شرط لموسم أو عطلة نهاية الأسبوع</string>
+    <string name="start_dates">تاريخ البدء</string>
+    <string name="end_dates">تاريخ الانتهاء</string>
+    <string name="select_dates">اختر التواريخ</string>
+    <string name="custom">العادة</string>
+    <string name="customdates">حدد التواريخ المخصصة</string>
+    <string name="select_date_field">حقل تحديد التاريخ مطلوب</string>
+    <string name="cap_rooms">منازل</string>
+    <string name="cap_room">الصفحة الرئيسية</string>
+    <string name="experience">خبرة</string>
+    <string name="experiences">تجربة</string>
+    <string name="wish_list">تغيير عنوان قائمة الامنيات الخاصة بك هنا</string>
+    <string name="ok_val">حسنا</string>
+    <string name="cancel_val">إلغاء</string>
+    <string name="there_are">هناك</string>
+    <string name="spots_available">البقع المتاحة في هذه التجربة.</string>
+    <string name="group_size">حجم المجموعة</string>
+    <string name="from_the_host">من المضيف</string>
+    <string name="alcohol">كحول</string>
+    <string name="bringing_guests_under_18">جلب الضيوف تحت سن 18</string>
+    <string name="guests_ages">الضيوف الأعمار</string>
+    <string name="cancellation_second">أي تجربة أو إلغاء حدث قبل 30 يومًا أو أكثر من تاريخ البدء ، تكون مؤهلة لاسترداد الأموال بالكامل.</string>
+    <string name="cancellation_third">لن يكون الإلغاء قبل أقل من 30 يومًا من تاريخ البدء مؤهلاً لاسترداد الأموال ، ما لم يتم حجز مكانك وإتمامه بواسطة ضيف آخر.</string>
+    <string name="cancellation_fourth">إذا تم حجز مكانك واستكماله من قبل ضيف آخر ، فستتم معالجة استرداد كامل المبلغ خلال 14 يومًا من تاريخ بدء التجربة.</string>
+    <string name="cancellation_fifth">ومع ذلك ، إذا كان سبب الإلغاء يفي بسياسة ظروف التخفيف الخاصة بنا ، فسيتم ردك بالكامل.</string>
+    <string name="verify_desc">إذا تعذر على أي عضو في حزبك إكمال عملية التحقق من الحساب خلال 3 أيام من الشراء ، فسيتم إلغاء جميع الأجزاء والنقاط الخاصة بالتجربة أو الحدث واسترداد المبلغ بالكامل.</string>
+    <string name="account_verification">تأكيد الحساب</string>
+    <string name="weather">طقس</string>
+    <string name="weather_desc">يبذل المضيفون قصارى جهدهم للاستمرار ، كما هو مقرر ، مع الخبرات أو الأحداث. إذا كانت الظروف الجوية السيئة تخلق سيناريو غير آمن للضيوف أو المضيفين ، فقد يكون التغيير أو الإلغاء الجزئي لمسار أو نشاط ما هو النتيجة. في حالة إلغاء تجربة أو حدث فردي بواسطة المضيف أو الضيف ، أو في حالة تغيير مسار الرحلة بشكل كبير أو نتج عنه توقف الرحلة ، ستعمل Makent مع مضيفك على تقديم رد مناسب. لطلب إلغاء تجربة أو حدث رسميًا ، يرجى الاتصال بنا.</string>
+    <string name="general_cancellation">الإلغاء العام</string>
+    <string name="send_message">إرسال رسالة</string>
+    <string name="need_more_about">بحاجة الى مزيد من المعلومات حول</string>
+    <string name="faq_desc">إذا كانت لديك أسئلة عامة حول كيفية عمل التجارب ، فتفضل بزيارة الأسئلة الشائعة</string>
+
+    <string name="who_s_coming">من قادم؟</string>
+    <string name="edit_val">تصحيح</string>
+    <string name="guest_val">زائر</string>
+    <string name="add_guest_desc">الحفاظ على ضيوفك في الحلقة. أضف بريدهم الإلكتروني وسنرسل لهم الخطية.</string>
+    <string name="first_name_val">الاسم الاول</string>
+    <string name="last_name_val">الكنية</string>
+    <string name="email_address_optional">عنوان البريد الإلكتروني (اختياري)</string>
+    <string name="remove">إزالة</string>
+    <string name="save_val">حفظ</string>
+    <string name="hosted_by_name">برعاية</string>
+    <string name="hours">ساعات</string>
+    <string name="home_val">منازل</string>
+    <string name="experience_val">خبرة</string>
+    <string name="city_val">مدينة</string>
+    <string name="add_another_guest">إضافة ضيف آخر</string>
+    <string name="other_reasons">اسباب اخرى</string>
+    <string name="the_space">الفضاء</string>
+    <string name="guest_access_val">مدخل للضيوف</string>
+    <string name="interaction_with_guests">التفاعل مع الضيوف</string>
+    <string name="the_neighborhood">الجوار</string>
+    <string name="getting_around">التجوال حول</string>
+    <string name="other_things_to_note">أشياء أخرى لملاحظة</string>
+    <string name="house_rules_val">قواعد المنزل</string>
+    <string name="select_beds_type">حدد أنواع سريرك وعد ...</string>
+    <string name="select_property_type">Select Property Type</string>
+    <string name="select_room_type">Select Room Type</string>
+
+
+    <!--Stripe Error Message Starts-->
+    <string name="s_error_currency">يرجى اختيار العملة</string>
+    <string name="s_error_iban">الرجاء إدخال رقم الآيبان</string>
+    <string name="s_error_name">الرجاء إدخال اسم صاحب الحساب</string>
+    <string name="s_error_address">الرجاء إدخال العنوان 1</string>
+    <string name="s_error_city">من فضلك ادخل المدينة</string>
+    <string name="s_error_state">الرجاء إدخال الدولة</string>
+    <string name="s_error_post">الرجاء إدخال الرمز البريدي</string>
+    <string name="s_error_legal">يرجى تحميل وثيقة قانونية</string>
+    <string name="s_error_acc">الرجاء إدخال رقم الحساب</string>
+    <string name="s_error_bsb">الرجاء إدخال BSB</string>
+    <string name="s_error_transit">الرجاء إدخال رقم العبور</string>
+    <string name="s_error_institution">الرجاء إدخال رقم المؤسسة</string>
+    <string name="s_error_routing">الرجاء إدخال رقم التوجيه</string>
+    <string name="s_error_bank">الرجاء إدخال رمز البنك</string>
+    <string name="s_error_branch_code">الرجاء إدخال رمز الفرع</string>
+    <string name="s_error_sort">الرجاء إدخال كود الفرز</string>
+    <string name="s_error_ssn">الرجاء إدخال رقم SSN</string>
+    <string name="s_error_clearing_code">الرجاء إدخال رمز المقاصة</string>
+    <string name="s_error_bank_name">الرجاء إدخال اسم البنك</string>
+    <string name="s_error_branch_name">الرجاء إدخال اسم الفرع</string>
+    <string name="s_error_acc_owner_name">الرجاء إدخال اسم صاحب الحساب</string>
+    <string name="s_error_phone">الرجاء إدخال رقم الهاتف</string>
+    <string name="s_error_acc_name">الرجاء إدخال اسم صاحب الحساب</string>
+    <string name="s_error_gender">يرجى اختيار الجنس</string>
+    <string name="s_error_address_kana">الرجاء إدخال عنوان 1 من قانا</string>
+    <string name="s_error_address2_kana">الرجاء إدخال عنوان 2 من قانا</string>
+    <string name="s_error_city_kana">الرجاء إدخال مدينة قانا</string>
+    <string name="s_error_state_kana">الرجاء إدخال ولاية قانا</string>
+    <string name="s_error_post_kana">الرجاء إدخال الرمز البريدي لكانا</string>
+    <string name="s_error_address1_kanji">الرجاء إدخال عنوان 1 من كانجي</string>
+    <string name="s_error_address2_kanji">الرجاء إدخال عنوان 2 من كانجي</string>
+    <string name="s_error_city_kanji">الرجاء إدخال مدينة كانجي</string>
+    <string name="s_error_state_kanji">الرجاء إدخال حالة كانجي</string>
+    <string name="s_error_post_kanji">الرجاء إدخال الرمز البريدي لكانجي</string>
+    <string name="s_error_country">يرجى اختيار البلد</string>
+    <string name="s_add_photo">إضافة صورة!</string>
+    <string name="take_photo">تصوير</string>
+    <string name="choose_from_library">اختر من المكتبة</string>
+    <!--Stripe Error Message Ends-->
+
+    <!--Wishlist Message Starts-->
+    <string name="wish_private">القائمة الآن مرئية لك فقط.</string>
+    <string name="wish_public">القائمة الآن مرئية للجميع.</string>
+    <!--Wishlist Message Ends-->
+
+    <string name="loading">جار التحميل …</string>
+
+    <string name="press_again_to_exit">اضغط مرة أخرى للخروج.</string>
+    <string name="add_guest">إضافة ضيف</string>
+
+
+    <string name="filters_s">مرشحات</string>
+
+    <string name="picture_select">التقط صورة جديدة أو اختر صورة من مكتبتك الحالية</string>
+    <string name="take_picture">التقاط صورة</string>
+    <string name="gallery">صالة عرض</string>
+    <string name="camera">الة تصوير</string>
+    <string name="upload_failed">أخفق تحميل الصورة ...</string>
+    <string name="connection_msg">تحتاج إلى اتصال بالإنترنت لهذا التطبيق. يرجى تشغيل شبكة الهاتف المحمول أو Wi-Fi في الإعدادات.</string>
+    <string name="connect_error">غير قادر على الاتصال</string>
+    <string name="setting">الإعدادات</string>
+    <string name="date">تاريخ</string>
+    <string name="kindly_leave_message">يرجى ترك رسالة</string>
+
+    <string name="unlisted">غير مدرج</string>
+    <string name="listed">المدرج</string>
+
+    <string name="offer_in">عرضت في</string>
+    <string name="experience_head">تجربة</string>
+    <string name="additional_price">تتغير أسعار الغرف والإضافات إلى الحد الأدنى للسعر</string>
+    <string name="more_data">لا مزيد من البيانات المتاحة ...</string>
+    <string name="unable_get_details">غير قادر على الحصول على تفاصيل الحساب</string>
+    <string name="total">مجموع</string>
+    <string name="steps_remain">الخطوات المتبقية</string>
+    <string name="step_remain">الخطوة المتبقية</string>
+    <string name="invalid_title">عنوان غير صالح ...</string>
+    <string name="categories">الاقسام</string>
+    <string name="undo">فك</string>
+    <string name="removefrom">تمت إزالته من</string>
+    <string name="unable_get_location">يتعذر الحصول على الموقع ، يرجى المحاولة مرة أخرى ...</string>
+    <string name="see_result">انظر النتائج</string>
+    <string name="get_exp">تجربة</string>
+    <string name="get_host_exp">تجارب المضيف</string>
+
+    <string name="invalid_room">معرف غرفة غير صالح</string>
+
+    <string name="pleasepickpreviousdate">يرجى اختيار التاريخ السابق</string>
+    <string name="available_exp">الخبرات المتاحة</string>
+    <string name="explore_exp">استكشاف التجارب</string>
+
+
+    <string name="bedroom_count">غرفة نوم &#160; </string>
+    <string name="beds_count">سرير</string>
+    <string name="rooms_and_beds">الغرف والأسرة</string>
+    <string name="common_space">الفضاء المشترك</string>
+    <string name="select_dotted">تحديد..</string>
+    <string name="add_beds">إضافة سرير</string>
+    <string name="edit_bed">تحرير الأسرة</string>
+    <string name="bedroom_1">تحرير الأسرة 1</string>
+    <string name="select_gender">حدد نوع الجنس</string>
+    <string name="where_we_meet">أين سنلتقي</string>
+
+    <string name="step_left">خطوة 1 اليسار للحجز</string>
+
+    <string name="continue_">استمر</string>
+    <string name="alter_title">البقع المتاحة اليسار </string>
+    <string name="spotsleft_alert">"  هل تريد المتابعة مع البقع المتاحة اليسار "</string>
+    <string name="weekendfee">سعر عطلة نهاية الاسبوع</string>
+    <string name="bed_room">غرف نوم</string>
+    <string name="review_one">إعادة النظر</string>
+    <string name="hello_blank_fragment">مرحبا شظية فارغة</string>
+    <string name="add_paypal_payout">إضافة دفع PayPal</string>
+    <string name="add_stripe_payout">إضافة شريط دفع تعويضات</string>
+    <string name="resubmit">إعادة</string>
+    <string name="per_hour">في الساعة</string>
+
+    <string name="review_s_one">إعادة النظر</string>
+
+    <string name="hourly_rate">"المعدل بالساعة : "</string>
+    <string name="Full_day_rate">" سعر يوم كامل : "</string>
+    <string name="Minimum_booking_hour">" الحد الأدنى لساعات الحجز : "</string>
+
+    <string name="pricing">" التسعير "</string>
+
+<!--
+    /// Added new string datas ///
+-->
+
+    <string name="add_more">"يمكنك إضافة المزيد"</string>
+    <string name="time_taken">الوقت المستغرق بالفعل</string>
+    <string name="help_travelers_find_the_right_fit">مساعدة المسافرين العثور على الحق في صالح</string>
+    <string name="people_searching_on_makent_space">يمكن للأشخاص الذين يبحثون عن Makent Space التصفية من خلال سرد أساسيات للعثور على مساحة تتناسب مع احتياجاتهم.</string>
+    <string name="guest_access_your_space">كيف يمكن للضيوف الوصول إلى مساحتك *</string>
+    <string name="what_type_of_space_do_you_have">أي نوع من الفضاء لديك؟ *</string>
+    <string name="sq_ft">قدم مربع</string>
+    <string name="acres">فدان</string>
+    <string name="additional_information">معلومات إضافية حول الخدمات والحزم والأسعار:</string>
+    <string name="what_services">ما هي الخدمات والإضافات التي تقدمها؟</string>
+    <string name="street_city_state_country">الشارع ، المدينة ، الولاية ، البلد</string>
+    <string name="apt_floor_etc">Apt #, Floor #, etc.</string>
+    <string name="what_is_the_full_address_of_your_space">ما هو العنوان الكامل للمساحة الخاصة بك؟</string>
+    <string name="house_name_number_street_road">اسم المنزل / الرقم + الشارع / الطريق</string>
+    <string name="share_any_special">شارك أي تعليمات خاصة يحتاجها المنظمون للوصول إلى المساحة. مثلا رمز قفل الباب ، مدير الموقع.</string>
+    <string name="this_information">سيتم مشاركة هذه المعلومات فقط عند تأكيد الحجز.</string>
+    <string name="what_amenities">ما هي وسائل الراحة التي توفرها مساحتك؟</string>
+    <string name="check_in_guidance">تحقق في التوجيه</string>
+    <string name="choose_on_map">اختر على الخريطة</string>
+    <string name="service_offer">الخدمات المقدمة</string>
+    <string name="other_serivce">خدمات أخرى</string>
+    <string name="special_feature">مميزات خاصة</string>
+    <string name="space_style">نمط الفضاء</string>
+    <string name="maximum_number_of_guests">الحد الأقصى لعدد الضيوف *</string>
+    <string name="photos_can_bring_your_space_to_life">الصور يمكن أن تجعل الفضاء الخاص بك في الحياة</string>
+    <string name="add_photos_of_areas_guests_have_access_to_you_can_always_come_back_later_and_add_more">إضافة صور للمناطق التي يمكن للضيوف الوصول إليها. يمكنك دائمًا العودة لاحقًا وإضافة المزيد.</string>
+    <string name="what_are_the_highlights_of_this_photo">ما هي أبرز هذه الصورة؟</string>
+    <string name="add_photos">إضافة الصور</string>
+    <string name="the_style_of_your_space_can_be_described_as">يمكن وصف نمط المساحة الخاصة بك</string>
+    <string name="tell_us_about_space">٪ s ، أخبرنا عن مساحتك</string>
+    <string name="the_more_you_share">كلما قمت بمشاركته ، زادت سرعة الحصول على الحجز</string>
+    <string name="your_listing_is_100_done">قائمتك هي 0 ٪ القيام به.</string>
+    <string name="space_details_guests">تفاصيل الفضاء ، الضيوف</string>
+    <string name="_2_setup">2. اقامة</string>
+    <string name="_1_the_basics">1. أساسيات</string>
+    <string name="photos_space_description">الصور ، وصف الفضاء</string>
+
+    <string name="_3_get_ready_to_host">3. التحضير لاستضافة</string>
+    <string name="pricing_availability_booking_settings">التسعير ، التوافر ، إعدادات الحجز</string>
+    <string name="what_special_features_does_your_space_have">ما هي الميزات الخاصة لا مساحتك؟</string>
+    <string name="set_your_space_rules">وضع قواعد الفضاء الخاصة بك</string>
+    <string name="tell_travelers_about_your_space">أخبر المسافرين عن الفضاء الخاص بك</string>
+    <string name="every_space_on_makent_space">كل مساحة في Makent Space فريدة من نوعها. قم بتمييز ما يجعل قائمتك الترحيبية بحيث تبرز للضيوف الذين يرغبون في البقاء في منطقتك.</string>
+    <string name="listing_name">اسم القائمة</string>
+    <string name="be_clear_and_descriptive">أن تكون واضحة وصفي</string>
+    <string name="tell_travelers_what_you_love">أخبر المسافرين بما تحبه في الفضاء. يمكنك تضمين تفاصيل حول الديكور ووسائل الراحة التي يتضمنها والحي.</string>
+    <string name="you_can_add_more">يمكنك إضافة المزيد من المعلومات حول ما الذي يجعل مساحتك فريدة من نوعها.</string>
+    <string name="let_travelers_know">أخبر المسافرين ما إذا كانت هناك تفاصيل أخرى ستؤثر على إقامتهم.</string>
+    <string name="foot">Foot4</string>
+    <string name="space_rule">قواعد الفضاء</string>
+    <string name="smoke">ممنوع التدخين</string>
+    <string name="cook">لا طبخ</string>
+    <string name="intimate">حميم</string>
+    <string name="see_styles">رؤية كل نمط الفضاء</string>
+    <string name="services">خدمات</string>
+    <string name="light_sys">نظام الانارة</string>
+    <string name="fur_rent">تأجير أثاث</string>
+    <string name="see_services">انظر جميع الخدمات</string>
+    <string name="loud_mus">لا موسيقى صاخبة</string>
+    <string name="see_space">رؤية جميع قواعد الفضاء</string>
+    <string name="classic">كلاسيكي</string>
+    <string name="industrial">صناعي</string>
+    <string name="art">فن</string>
+    <string name="dining">طاولة الطعام</string>
+    <string name="fire_bit">حفرة الحريق</string>
+    <string name="see_special">انظر جميع الميزات الخاصة</string>
+    <string name="essential">Essentials1</string>
+    <string name="tv">تلفزيون</string>
+    <string name="listings">قوائم</string>
+    <string name="no_token_listing">القوائم الخاصة بك سوف تظهر هنا</string>
+
+    <string name="cable_tv">الكيبل التلفزيوني</string>
+    <string name="select_services">اختر الخدمات</string>
+    <string name="select_styles">حدد أنماط الفضاء</string>
+    <string name="select_special">حدد الميزات الخاصة</string>
+    <string name="select_space">حدد قواعد الفضاء</string>
+    <string name="space_type">نوع الفضاء</string>
+    <string name="select_space_type">اختر نوع الفضاء</string>
+    <string name="select_event_type">اختر نوع الحدث</string>
+    <string name="you_can_add_more_details">يمكنك إضافة المزيد من التفاصيل لإخبار المسافرين عن مساحتك وأسلوب الاستضافة.</string>
+    <string name="how_do_you_expect_your_guests_to_behave">كيف تتوقع أن يتصرف ضيوفك؟</string>
+    <string name="space_rules">قواعد الفضاء</string>
+    <string name="tell_guest_if_you_ll_be">أخبر الضيف إذا كنت ستكون متوفراً لتقديم المساعدة طوال فترة إقامته.</string>
+    <string name="let_travelers">أخبر المسافرين أي جزء من المساحة يمكنهم الوصول إليه.</string>
+    <string name="the_trip">الرحلة</string>
+    <string name="selected">المحدد</string>
+    <string name="start_time">وقت البدء</string>
+    <string name="end_time">وقت النهاية</string>
+    <string name="add_note">اضف ملاحظة</string>
+    <string name="set_your_space_availability">ضبط توافر المساحة الخاصة بك</string>
+    <string name="which_activities_in_your_space">ما هي الأنشطة التي نرحب بها في مساحتك؟</string>
+    <string name="show_travelers_when_they_can_book">اظهار المسافرين عندما يستطيعون الحجز</string>
+    <string name="please_select_any_one_event">"يرجى تحديد أي حدث أو نشاط واحد"</string>
+    <string name="set_your_price">"حدد السعر الخاص بك"</string>
+    <string name="minimum_hourly_rate">"الحد الأدنى للساعة الواحدة"</string>
+    <string name="hourly_rates">"المعدل بالساعة"</string>
+    <string name="min_ours">"دقيقة. ساعات"</string>
+    <string name="full_day_rate">"معدل يوم كامل"</string>
+
+    <string name="all_hours">كل ساعات</string>
+    <string name="set_hours">ضبط ساعات</string>
+    <string name="validate_minhour">دقيقة ساعة المدى هو</string>
+    <string name="validate_amount">الرجاء إدخال مبلغ أكبر من أو يساوي الحد الأدنى للمبلغ</string>
+    <string name="starttime_lesser_error_msg">يجب أن يكون وقت البدء أقل من وقت الانتهاء</string>
+    <string name="end_time_greater_error_msg">يجب أن يكون وقت الانتهاء أكبر من وقت البدء</string>
+    <string name="internet_connection_error">لا يوجد اتصال بالإنترنت</string>
+    <string name="close">قريب</string>
+    <string name="openss">افتح</string>
+    <string name="your_listing_txt">Yلدينا قائمة هو &#160;</string>
+    <string name="percentage_done">% فعله</string>
+    <string name="reservation_sent_successfully">أرسلت الحجز بنجاح</string>
+
+    <string name="more_steps_to_complete">%s المزيد من الخطوات لإكمال</string>
+    <string name="more_step_to_complete">%s مزيد من الخطوة لإكمال</string>
+    <string name="step_completed">أنت٪ s من الطريق إلى هناك.</string>
+    <string name="space_remaining_steps">خطوات٪ ​​s للإدراج</string>
+    <string name="space_remaining_step">٪ s خطوة إلى القائمة</string>
+    <string name="finish_your_listing">الانتهاء من القائمة الخاصة بك</string>
+    <string name="event_type">نوع الحدث</string>
+    <string name="booking">الحجز</string>
+    <string name="check_in_check_out">تسجيل دخول تسجيل خروج</string>
+    <string name="datedialog3">"هل تريد إضافة٪ s إلى بحثك؟"</string>
+    <string name="wishlisttab">قائمة الرغبات</string>
+
+    <string name="req_total_hours">مجموع الساعات</string>
+    <string name="choose_timings">اختيار توقيت</string>
+    <string name="selected_dates">التواريخ المختارة</string>
+    <string name="selected_timings">توقيت محدد</string>
+    <string name="space_availability">توافر الفضاء</string>
+    <string name="error_start_time">يرجى اختيار StartTime</string>
+    <string name="choose_activity">يرجى اختيار النشاط الخاص بك</string>
+    <string name="choose_dates">يرجى اختيار التواريخ الخاصة بك</string>
+    <string name="choose_guest">يرجى إضافة عدد الضيف الخاص بك</string>
+    <string name="max_guest">يجب أن يكون الحد الأقصى لعدد الضيوف هو٪ s</string>
+    <string name="max_guest1">(الحد الأقصى لعدد الضيوف خلال٪ s)</string>
+    <string name="valid_time">يرجى اختيار وقت صحيح</string>
+    <string name="error_contact_host">الرجاء إدخال رسالة للمضيف</string>
+    <string name="total_hour_txt">مجموع الساعات</string>
+    <string name="billing_information">معلومات الفواتير</string>
+    <string name="credit_card">بطاقة الائتمان</string>
+    <string name="payment_name">&appname; دفع</string>
+    <string name="choose_country">اختر بلدك</string>
+    <string name="valid_firstname">يرجى ادخال الاسم الاول</string>
+    <string name="valid_lastname">الرجاء إدخال اسم العائلة الخاص بك</string>
+    <string name="valid_postal">الرجاء إدخال رمز البريد</string>
+    <string name="payment_success">تم الدفع بنجاح</string>
+    <string name="payment_failure">فشل الدفع ، يرجى المحاولة مرة أخرى في وقت لاحق</string>
+    <string name="cap_spaces">المساحات</string>
+    <string name="cap_space">الفراغ</string>
+    <string name="remove_coupon">إزالة القسيمة</string>
+    <string name="apply_coupon">تطبيق القسيمة</string>
+    <string name="availablespace">"مساحة متاحة"</string>
+    <string name="availablespaces">"المساحات المتاحة"</string>
+    <string name="your_resevation">حجزك</string>
+    <string name="please_choose_valid_time">يرجى اختيار الوقت المناسب</string>
+    <string name="wishlisted">قائمة الرغبات</string>
+    <string name="people">اشخاص</string>
+    <string name="estimated_square_footage_of_the_available_space">لقطات مربعة من المساحة المتاحة *</string>
+    <string name="address_space">عنوان *</string>
+    <string name="fullday_price">فوق 8 ساعات لسعر يوم كامل</string>
+    <string name="map_error">يرجى اختيار الموقع الدقيق على الخريطة</string>
+    <string name="select_end_time">حدد وقت النهاية</string>
+    <string name="select_start_time">حدد وقت البدء</string>
+    <string name="end_time_greater_than_start_time">يجب أن يكون وقت الانتهاء أكبر من وقت البدء</string>
+
+    <string name="details_small">"&#160; تفاصيل &#160;"</string>
+    <string name="tell_travelers">"لتخبر المسافرين عن مساحتك وأسلوب الاستضافة."</string>
+    <string name="numberofroom">عدد الغرف</string>
+    <string name="floornumber">رقم الطابق (إن وجد)</string>
+    <string name="numberofrestroom">عدد الاستراحات</string>
+
+    <string name="setyourcancelpolicy">حدد سياسة الإلغاء</string>
+    <string name="bookingtype">نوع الحجز</string>
+    <string name="security">مبلغ التأمين</string>
+    <string name="secure_makentspace">آمنة &appname;</string>
+
+    <string name="translate_english">ترجمة إلى الإنجليزية</string>
+    <string name="show_original_txt">إظهار النص الأصلي</string>
+    <string name="weekly_rate_optional">معدل الأسبوعية</string>
+    <string name="monthly_rate_optional">المعدل الشهري</string>
+    <string name="need_to_make_a_change">هل تريد أحداث تغيير?</string>
+    <string name="last_step_to_complete">%s الخطوة الأخيرة لإكمال</string>
+    <string name="last_steps_to_complete">%s الخطوات الأخيرة لإكمال</string>
+    <string name="makentspace_we_are_almost_done">MakentSpace ، لقد انتهينا تقريبًا.</string>
+    <string name="spotlight_header">هل أنت مستعد لوضع مساحتك في دائرة الضوء؟</string>
+    <string name="people_all_over_the_country">الناس في جميع أنحاء البلاد يبحثون عن مساحة مثلك! عندما يستخدمون Makentspace للعثور عليك ، فسيكون لديهم خيار تصفية نتائج البحث عن طريق سرد المعلومات الأساسية للعثور على التطابق. من خلال إكمال الأسئلة في هذا القسم بعناية ، يمكنك مساعدتهم في تحقيق أهدافهم ، وبالتالي زيادة فرص العثور عليهم إلى الحد الأقصى!</string>
+    <string name="let_get_down">دعونا ننكب على العمل.</string>
+    <string name="please_complete_the_following">يرجى ملء المعلومات التالية بأكبر قدر ممكن من الدقة لمساعدة الأشخاص في العثور على مساحتك.</string>
+    <string name="is_your_space_fully_furnished">هل مساحتك مفروشة بالكامل؟ *</string>
+    <string name="how_many_working_stations_are_available_in_your_space">كم عدد محطات العمل المتوفرة في مساحتك؟ *</string>
+    <string name="are_your_working_stations_desks_shared_or_private">هل محطات العمل / المكاتب الخاصة بك مشتركة أم خاصة؟ *</string>
+    <string name="shared">المشتركة</string>
+    <string name="privatee">نشر</string>
+    <string name="have_you_ever_hosted_your_venue_with_a_website_like_makentspace_before">هل سبق لك أن استضافت موقعك مع موقع ويب مثل MakentSpace من قبل؟ *</string>
+    <string name="no_i_m_new_to_all_this">لا ، أنا جديد على كل هذا!</string>
+    <string name="yes_i_m_experienced_with_space_hosting">نعم ، لقد مررت باستضافة مساحة.</string>
+    <string name="how_big_your_space">ما حجم المساحة الخاصة بك (بالأقدام المربعة)؟ *</string>
+    <string name="let_get_started">لنبدأ في سرد ​​المساحة الخاصة بك</string>
+    <string name="people_searching_on_makentspace">يمكن للأشخاص الذين يبحثون على Makentspace التصفية من خلال سرد أساسيات للعثور على مساحة تتناسب مع احتياجاتهم.</string>
+    <string name="address_line_2">سطر العنوان 2:</string>
+    <string name="mark_exact_geo">** ملاحظة: يرجى وضع علامة على موقعك الجغرافي الدقيق في الخريطة</string>
+    <string name="weeklyvalidate_amount">الرجاء إدخال مبلغ أسبوعي أكبر من أو يساوي الحد الأدنى للمبلغ</string>
+    <string name="monthlyvalidate_amount">الرجاء إدخال مبلغ شهري أكبر من أو يساوي الحد الأدنى للمبلغ</string>
+    <string name="fulldayvalidate_amount">الرجاء إدخال مبلغ يوم كامل أكبر من أو يساوي الحد الأدنى للمبلغ</string>
+    <string name="additional_document">مستند إضافي</string>
+    <string name="approved">موافقة</string>
+    <string name="request_book_sent">طلب الحجز أرسل إلى المضيف</string>
+
+    <!--Delete account flow-->
+    <string name="delete_account">حذف الحساب</string>
+    <string name="delete_success">تم حذف الحساب بنجاح</string>
+    <string name="confirm">يتأكد</string>
+    <string name="delete_account_msg">سيتم حذف جميع رحلاتك وحجوزاتك وسجل المعاملات والقائمة بشكل دائم</string>
+    <string name="payout_refund_msg">لم يتم بعد تحصيل عائدك المعلق أو رد أموالك. هل أنت متأكد أنك تريد حذف هذا الحساب؟</string>
+    <string name="oh_no">أوه لا! هذا مزعج - آسف للإزعاج! قد يكون هذا بسبب</string>
+    <string name="user_deleted">تم حذف المستخدم الذي تبحث عنه </string>
+    <string name="room_deleted">تم حذف الغرفة التي تبحث عنها</string>
+    <string name="contact_admin">لمزيد من المعلومات ، يرجى الاتصال بالمسؤول.</string>
+
+
+
+    <string-array name="hour">
+        <item>يختار</item>
+        <item>"12:00 صباحا"</item>
+        <item>"01:00 صباحا"</item>
+        <item>"02:00 صباحا"</item>
+        <item>"03:00 صباحا"</item>
+        <item>"04:00 صباحا"</item>
+        <item>"05:00 صباحا"</item>
+        <item>"06:00 صباحا"</item>
+        <item>"07:00 صباحا"</item>
+        <item>"08:00 صباحا"</item>
+        <item>"09:00 صباحا"</item>
+        <item>"10:00 صباحا"</item>
+        <item>"11:00 صباحا"</item>
+        <item>"12:00 مساءا"</item>
+        <item>"01:00 مساءا"</item>
+        <item>"02:00 مساءا"</item>
+        <item>"03:00 مساءا"</item>
+        <item>"04:00 مساءا"</item>
+        <item>"05:00 مساءا"</item>
+        <item>"06:00 مساءا"</item>
+        <item>"07:00 مساءا"</item>
+        <item>"08:00 مساءا"</item>
+        <item>"09:00 مساءا"</item>
+        <item>"10:00 مساءا"</item>
+        <item>"11:00 مساءا"</item>
+        <item>"11:59 مساءا"</item>
+
+    </string-array>
+    <string-array name="endhour">
+        <item>يختار</item>
+        <item>"12:00 صباحا"</item>
+        <item>"01:00 صباحا"</item>
+        <item>"02:00 صباحا"</item>
+        <item>"03:00 صباحا"</item>
+        <item>"04:00 صباحا"</item>
+        <item>"05:00 صباحا"</item>
+        <item>"06:00 صباحا"</item>
+        <item>"07:00 صباحا"</item>
+        <item>"08:00 صباحا"</item>
+        <item>"09:00 صباحا"</item>
+        <item>"10:00 صباحا"</item>
+        <item>"11:00 صباحا"</item>
+        <item>"12:00 مساءا"</item>
+        <item>"01:00 مساءا"</item>
+        <item>"02:00 مساءا"</item>
+        <item>"03:00 مساءا"</item>
+        <item>"04:00 مساءا"</item>
+        <item>"05:00 مساءا"</item>
+        <item>"06:00 مساءا"</item>
+        <item>"07:00 مساءا"</item>
+        <item>"08:00 مساءا"</item>
+        <item>"09:00 مساءا"</item>
+        <item>"10:00 مساءا"</item>
+        <item>"11:00 مساءا"</item>
+        <item>"11:59 مساءا"</item>
+
+    </string-array>
+</resources>

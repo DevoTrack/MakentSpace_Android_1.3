@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/d_bottom"
+    android:layout_marginEnd="20dp"
+    android:layout_marginStart="20dp"
+    tools:context=".travelling.HomeActivity">
+
+
+    <com.makent.trioangle.palette.TextView.MakentLightTextView
+        android:text="TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="@dimen/midb"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/text_shadow"
+        android:id="@+id/amenities" />
+
+    <!--<com.makent.trioangle.palette.TextView.MakentAmenitiesTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/vbigb"
+        android:textStyle="bold"
+        android:text="ab"
+        android:textColor="@color/text_shadow"
+        android:id="@+id/amenities_image"
+        android:layout_alignTop="@+id/amenities"
+        android:layout_alignParentEnd="true" />-->
+
+    <ImageView
+        android:layout_width="@dimen/amenities_size"
+        android:layout_height="@dimen/amenities_size"
+        android:gravity="center_vertical"
+        android:id="@+id/amenities_image"
+        android:layout_alignTop="@+id/amenities"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

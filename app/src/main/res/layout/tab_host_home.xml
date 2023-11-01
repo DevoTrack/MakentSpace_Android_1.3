@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    android:color="#FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:id="@+id/reservationempty"
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_back_reservation"
+        android:layout_width="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingEnd="20dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_grayblack_arrow"
+        app:tint="@color/text_shadow" />
+  <!--  <ImageView
+        android:id="@+id/iv_back_reservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="15dp"
+        android:paddingEnd="20dp"
+        android:scaleY=".8"
+        android:layout_marginTop="20dp"
+        android:scaleX=".8"
+        android:paddingTop="5dp"
+        android:src="@drawable/back_grayblack_arrow"/>-->
+    <com.makent.trioangle.palette.TextView.MakentTextView
+        android:text="@string/reservation"
+        android:textSize="@dimen/bigi"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/pending"
+        android:textColor="@color/switch_thumb_disabled_material_dark"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+
+        android:src="@drawable/d_bottom"
+        android:id="@+id/hrline"
+        android:layout_below="@id/pending"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/no_recent_inquiries"
+        android:id="@+id/no_inquiries"
+        android:layout_below="@id/hrline"
+        android:layout_centerHorizontal="true" />
+
+    <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:text="@string/no_reservation"
+        android:textSize="@dimen/bigi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/no_reservation"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/no_inquiries"
+        android:textColor="@color/switch_thumb_disabled_material_dark"
+        android:layout_centerHorizontal="true" />
+
+    <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:text="@string/host_home_meg"
+        android:textSize="@dimen/midi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/host_home_msg"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/no_reservation"
+        android:textColor="@color/switch_thumb_disabled_material_dark"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:src="@drawable/d_bottom"
+        android:layout_marginTop="10dp"
+        android:id="@+id/hrline1"
+        android:layout_below="@id/host_home_msg"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:id="@+id/listreservation"
+    android:visibility="gone"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/reservationalert"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clipToPadding="false"
+        android:visibility="gone"
+        android:background="@color/title_text_color"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/n2_icon_alert"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlt_reservation_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:clipToPadding="false"
+        android:background="@color/title_text_color"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingEnd="20dp"
+            android:scaleY=".8"
+            android:scaleX=".8"
+            android:paddingTop="5dp"
+            android:src="@drawable/back_grayblack_arrow"/>
+
+
+        <com.makent.trioangle.palette.TextView.MakentTextView
+            android:id="@+id/tv_reservation"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/big"
+            android:visibility="gone"
+            android:textColor="@color/text_light_shadow"
+            android:text="Reservation"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/iv_back" />
+    </RelativeLayout>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlt_reservation_header"
+        android:background="@color/title_text_color"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reservationlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reservationalert"
+            android:clipToPadding="false"
+            android:paddingTop="20dp"></androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reservation_dot_loader"
+        android:src="@drawable/dot_loading"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

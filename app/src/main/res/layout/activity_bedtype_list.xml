@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_amenities"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#ffffff"
+android:layoutDirection="@string/layout_direction"
+tools:context=".host.BedtypeListActivity">
+<com.makent.trioangle.palette.Button.MakentAwesomeButton
+    android:background="@android:color/transparent"
+    android:text="&#xF138;"
+    android:textSize="@dimen/mid"
+    android:textAlignment="center"
+    android:textStyle="bold"
+    android:layout_width="30dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="20dp"
+    android:textColor="@color/text_shadow"
+    android:id="@+id/iv_close" />
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rv_bedroom_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:scrollbars="none"
+    android:layout_marginTop="20dp"
+    android:layout_below="@+id/iv_close" />
+
+<com.makent.trioangle.palette.TextView.MakentBookTextView
+    android:text="Bedroom"
+    android:textSize="@dimen/midb"
+    android:textColor="@color/text_shadow"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv_bedroom"
+    android:layout_marginStart="51dp"
+    android:layout_alignBaseline="@+id/iv_close"
+    android:layout_alignBottom="@+id/iv_close"
+    android:layout_alignStart="@+id/iv_close" />
+
+</RelativeLayout>

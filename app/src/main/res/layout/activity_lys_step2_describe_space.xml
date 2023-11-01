@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lys"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.makent.trioangle.host.LYS_Step2_Describe_Space">
+
+    <RelativeLayout
+        android:id="@+id/describe_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/d_bottom_shadow"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/describe_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingEnd="20dp"
+            android:scaleY=".8"
+            android:scaleX=".8"
+            android:paddingTop="5dp"
+            android:src="@drawable/back_grayblack_arrow"/>
+
+
+        <com.makent.trioangle.palette.TextView.MakentTextView
+            android:id="@+id/describe"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/big"
+            android:textColor="@color/text_light_shadow"
+            android:text="@string/describeyourspace"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/describe_back" />
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/describe_addtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/title_text_color"
+        android:layout_marginEnd="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/describe_title"
+        android:layout_centerHorizontal="true">
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/addtitle"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/text_light_shadow"
+            android:textSize="@dimen/midb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addtitle_txt"/>
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/addtitle_msg"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="@dimen/mid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addtitle_msg"
+            android:layout_below="@+id/addtitle_txt"
+            android:layout_marginEnd="50dp"
+            android:layout_alignStart="@+id/addtitle_txt"/>
+
+        <ImageView
+            android:src="@drawable/n2_standard_row_right_caret_gray"
+            android:tint="@color/text_dark_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX=".8"
+            android:scaleY=".8"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/addtitle_back"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/describe_writesummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:background="@color/title_text_color"
+        android:layout_marginEnd="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/describe_addtitle"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:id="@+id/hrline3"
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/d_bottom"/>
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/addsummary"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/text_light_shadow"
+            android:textSize="@dimen/midb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/writesummary_txt"/>
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/addsummary_msg"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="@dimen/mid"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sum_msg"
+            android:layout_below="@+id/writesummary_txt"
+            android:layout_marginEnd="50dp"
+            android:layout_alignStart="@+id/writesummary_txt"/>
+
+        <ImageView
+            android:src="@drawable/n2_standard_row_right_caret_gray"
+            android:tint="@color/text_dark_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX=".8"
+            android:scaleY=".8"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/addtitle_back1"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+    </RelativeLayout>
+
+    </RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/basic_nav_host_fragment"
+    app:startDestination="@id/spaceTypeFragment">
+
+    <fragment
+        android:id="@+id/spaceTypeFragment"
+        android:name="com.makent.trioangle.createspace.TypeOfSpaceFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/type_of_space_fragment">
+        <action
+            android:id="@+id/action_spaceTypeFragment_to_roomCountFragment"
+            app:destination="@id/roomCountFragment"
+            app:enterAnim="@anim/trans_left_in"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/roomCountFragment"
+        android:name="com.makent.trioangle.createspace.RoomsCountFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/room_count_fragment">
+        <action
+            android:id="@+id/action_roomCountFragment_to_guestNumberFragment3"
+            app:destination="@id/guestNumberFragment"
+            app:enterAnim="@anim/trans_left_in"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/guestNumberFragment"
+        android:name="com.makent.trioangle.createspace.GuestNumberFragment"
+        android:label="fragment_fourth"
+        tools:layout="@layout/guest_number_layout">
+        <action
+            android:id="@+id/action_guestNumberFragment_to_amenitiesFragment"
+            app:destination="@id/amenitiesFragment"
+            app:enterAnim="@anim/trans_left_in"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/amenitiesFragment"
+        android:name="com.makent.trioangle.createspace.AmenistiesFragment"
+        android:label="fragment_five"
+        tools:layout="@layout/amenities_layout" >
+        <action
+            android:id="@+id/action_amenitiesFragment_to_serviceFragment"
+            app:destination="@id/serviceFragment"
+            app:enterAnim="@anim/trans_left_in"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/serviceFragment"
+        android:name="com.makent.trioangle.createspace.ServiceFragment"
+        android:label="fragment_six"
+        tools:layout="@layout/service_layout" >
+        <action
+            android:id="@+id/action_serviceFragment_to_addressFragment"
+            app:destination="@id/addressFragment"
+            app:enterAnim="@anim/trans_left_in"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addressFragment"
+        android:name="com.makent.trioangle.createspace.AddressFragment"
+        android:label="fragment_six"
+        tools:layout="@layout/service_layout">
+        <action
+            android:id="@+id/action_addressFragment_to_guestAccessFragment"
+            app:destination="@id/guestAccessFragment"
+            app:enterAnim="@anim/trans_left_in"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/guestAccessFragment"
+        android:name="com.makent.trioangle.createspace.GuestAccessFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/guest_access_layout" />
+
+</navigation>

@@ -1,0 +1,1441 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:fitsSystemWindows="true"
+    android:layoutDirection="@string/layout_direction"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--<RelativeLayout
+        trioangle:layout_width="match_parent"
+        trioangle:layout_height="wrap_content"
+        trioangle:layout_above="@+id/roomdetails_footer">-->
+
+    <!--</RelativeLayout>-->
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/roomsdetailsnestedscrool"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:layoutDirection="@string/layout_direction"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/rooms_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="80dp"
+            android:background="@color/title_text_color"
+
+            >
+
+            <com.makent.trioangle.palette.TextView.MakentTextView
+                android:id="@+id/room_details_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="The Seashell House ~ Casa Caracol"
+                android:textColor="@color/text_shadow"
+                android:textSize="@dimen/vbigb"
+                android:textStyle="bold"
+                />
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/category_type_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/room_details_title"
+                android:text="The Entertainment"
+                android:textColor="@color/text_shadow"
+                android:textSize="@dimen/midi"
+                />
+
+            <!-- <RatingBar
+                 trioangle:layout_width="wrap_content"
+                 trioangle:layout_height="wrap_content"
+                 trioangle:id="@+id/ratingBar_title"
+                 trioangle:theme="@style/RatingBar"
+                 style="?trioangle:attr/ratingBarStyleSmall"
+                 trioangle:numStars="5"
+                 trioangle:stepSize="5"
+                 trioangle:layout_marginTop="20dp"
+                 trioangle:layout_marginStart="20dp"
+                 trioangle:layout_marginBottom="20dp"
+                 trioangle:layout_below="@+id/room_details_title" />
+
+             <trioanglele.palette.TextView.MakentLightTextView
+                 trioangle:layout_width="wrap_content"
+                 trioangle:layout_height="wrap_content"
+                 trioangle:textSize="@dimen/small"
+                 trioangle:textColor="@color/text_black"
+                 trioangle:text="114"
+                 trioangle:layout_alignTop="@+id/ratingBar_title"
+                 trioangle:layout_toEndOf="@+id/ratingBar_title"
+                 trioangle:id="@+id/room_details_title_txt" />-->
+
+            <RelativeLayout
+                android:id="@+id/loc_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/category_type_txt"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/loc_imag"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/explocation"
+
+                    />
+
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:id="@+id/loc_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_vertical"
+                    android:text="London"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midb" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/hour_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loc_lay"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/hours"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/exptime"
+
+                    />
+
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:id="@+id/hour_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="20dp"
+
+                    android:gravity="center_vertical"
+                    android:text="3 hours total"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midb" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/notes_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hour_lay"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/notes_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/listexp"
+
+                    />
+
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:id="@+id/notes_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="50dp"
+
+                    android:gravity="center_vertical"
+                    android:text="espresso Included"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midb" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/lang_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/notes_lay"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/lang_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/comment"
+
+                    />
+
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:id="@+id/lang_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="50dp"
+
+                    android:gravity="center_vertical"
+                    android:text="London underground ticket"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midb" />
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/hrlin7"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/lang_lay"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/d_bottom" />
+
+            <RelativeLayout
+                android:id="@+id/about_host"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hrlin7"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="start"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/room_details_hostprofile"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/no_profile_photo" />
+
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:id="@+id/meet_your_host_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meet Your Host, Roberta"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midb"
+                    android:textStyle="bold" />
+
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:id="@+id/meet_host_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/meet_your_host_txt"
+                    android:layout_marginTop="30dp"
+                    android:ellipsize="end"
+                    android:maxLines="4"
+                    android:text="Located in the coffee region, a charming cabana made from bambo, with a great view and a sendero or pathway through the bamboo forest which criss-crosses"
+
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midi" />
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:id="@+id/meet_host_readmore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/read_more"
+                    android:layout_below="@+id/meet_host_desc"
+                    android:textColor="@color/background"
+                    android:textSize="@dimen/midi"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/room_details_hrline"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/about_host"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/d_bottom" />
+
+
+            <LinearLayout
+                android:id="@+id/room_details_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/room_details_hrline"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/d_bottom"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="10dp"
+                android:visibility="gone"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_trips_search_bar_guests" />
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:id="@+id/no_of_guest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/guests"
+                        android:textColor="@color/text_shadow"
+                        android:textSize="@dimen/small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/p3_rooms" />
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:id="@+id/no_of_rooms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rooms"
+                        android:textColor="@color/text_shadow"
+                        android:textSize="@dimen/small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/p3_beds" />
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:id="@+id/no_of_beds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/beds"
+                        android:textColor="@color/text_shadow"
+                        android:textSize="@dimen/small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/p3_bathrooms" />
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:id="@+id/no_of_bath"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bath"
+                        android:textColor="@color/text_shadow"
+                        android:textSize="@dimen/small" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/what_wedo_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/room_details_hrline"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/d_bottom"
+                android:gravity="start"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/what_we_ll_do"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midb"
+                    android:textStyle="bold" />
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:id="@+id/what_wedo_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="4"
+                    android:text="Located in the coffee region, a charming cabana made from bambo, with a great view and a sendero or pathway through the bamboo forest which criss-crosses"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midi" />
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:id="@+id/whatwedo_readmore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/read_more"
+                    android:textColor="@color/background"
+                    android:textSize="@dimen/midi"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/whati_provide_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/what_wedo_lay"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/d_bottom"
+                android:gravity="start"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/what_i_ll_provide"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midb"
+                    android:textStyle="bold" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/card_recycler_view"
+                    android:scrollbars="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:id="@+id/whatiprovide_readmore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/read_more"
+                    android:textColor="@color/background"
+                    android:textSize="@dimen/midi"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/note_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/room_details_about"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/d_bottom"
+                android:gravity="start"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/notes"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midb"
+                    android:textStyle="bold" />
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:id="@+id/note_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="4"
+                    android:text="Located in the coffee region, a charming cabana made from bambo, with a great view and a sendero or pathway through the bamboo forest which criss-crosses"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midi" />
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:id="@+id/note_readmore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/read_more"
+                    android:textColor="@color/background"
+                    android:textSize="@dimen/midi"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/room_details_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/whati_provide_lay"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/d_bottom"
+                android:gravity="start"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Whocancome"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midb"
+                    android:textStyle="bold" />
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:id="@+id/whocancome_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="4"
+                    android:text="Located in the coffee region, a charming cabana made from bambo, with a great view and a sendero or pathway through the bamboo forest which criss-crosses"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midi" />
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:id="@+id/whocancome_readmore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/read_more"
+                    android:textColor="@color/background"
+                    android:textSize="@dimen/midi"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wherewewill_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/note_lay"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/d_bottom"
+                android:gravity="start"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/where_we_ll_be"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midb"
+                    android:textStyle="bold" />
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:id="@+id/tvAboutThisHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="4"
+                    android:text="Located in the coffee region, a charming cabana made from bambo, with a great view and a sendero or pathway through the bamboo forest which criss-crosses"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midi" />
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:id="@+id/about_readmore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/read_more"
+                    android:textColor="@color/background"
+                    android:textSize="@dimen/midi"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+
+            <com.makent.trioangle.palette.TextView.MakentLightTextView
+                android:id="@+id/room_details_pet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wherewewill_lay"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/d_bottom"
+                android:gravity="start"
+                android:paddingBottom="20dp"
+                android:paddingStart="10dp"
+                android:text="2 nights min . Pets live on this property"
+                android:textColor="@color/text_shadow"
+                android:textSize="@dimen/midi"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/room_details_amenities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/room_details_pet"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:visibility="gone"
+                android:weightSum="5">
+
+                <com.makent.trioangle.palette.TextView.MakentAmenitiesTextView
+                    android:id="@+id/ame1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/amenities"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="a"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/vbigb"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+                <com.makent.trioangle.palette.TextView.MakentAmenitiesTextView
+                    android:id="@+id/ame2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/amenities"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="a"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/vbigb"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+                <com.makent.trioangle.palette.TextView.MakentAmenitiesTextView
+                    android:id="@+id/ame3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/amenities"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="a"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/vbigb"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+                <com.makent.trioangle.palette.TextView.MakentAmenitiesTextView
+                    android:id="@+id/ame4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/amenities"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="a"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/vbigb"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+                <!--<trioanglele.palette.TextView.MakentAmenitiesTextView
+                        trioangle:layout_width="0dp"
+                        trioangle:layout_weight="1"
+                        trioangle:layout_height="wrap_content"
+                        trioangle:id="@+id/ame1"
+                        trioangle:src="@drawable/ic_trips_search_bar_guests" />
+                <ImageView
+                        trioangle:layout_width="0dp"
+                        trioangle:layout_weight="1"
+                        trioangle:layout_height="wrap_content"
+                        trioangle:id="@+id/ame2"
+                        trioangle:src="@drawable/p3_rooms"
+                        />
+
+                <ImageView
+                        trioangle:layout_width="0dp"
+                        trioangle:layout_weight="1"
+                        trioangle:layout_height="wrap_content"
+                        trioangle:id="@+id/ame3"
+                        trioangle:src="@drawable/p3_beds"
+                        />
+
+                <ImageView
+                        trioangle:layout_width="0dp"
+                        trioangle:layout_weight="1"
+                        trioangle:layout_height="wrap_content"
+                        trioangle:id="@+id/ame4"
+                        trioangle:src="@drawable/p3_bathrooms"
+                        />-->
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:id="@+id/room_details_amenities_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="11+"
+                    android:textAlignment="center"
+                    android:textColor="@color/background"
+                    android:textSize="@dimen/bigi"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/map_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/room_details_amenities">
+
+                <ImageView
+                    android:id="@+id/map"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@color/text_color"
+                    android:gravity="center"
+                    android:scaleType="fitXY" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/map"
+                    android:background="@drawable/marker_white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="20dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="10dp"
+                    >
+
+
+                    <com.makent.trioangle.palette.TextView.MakentBookTextView
+                        android:id="@+id/mapaddress_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Where we'll meet"
+                        android:layout_centerHorizontal="true"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_shadow"
+                        android:textSize="@dimen/midi" />
+
+
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:id="@+id/mapaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Madurai Chennaidskjdjkfh sadjkfh jkasdf jkl sd fhdfgdfsgdfsgdfs dsf gdsfg dsfg dfsg dsfg dsg dsfg dfsg dfsg dfsg dsfg dsfgdsfgdsfg dsfg kladhjs gkl asjkdfhjk,"
+                    android:textAlignment="center"
+                    android:layout_below="@+id/mapaddress_title"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midi" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+            <!--<fragment
+                trioangle:layout_width="match_parent"
+                trioangle:layout_height="250dp"
+                trioangle:name="com.google.trioangle.gms.maps.MapFragment"
+                trioangle:id="@+id/map"
+                trioangle:paddingBottom="20dp"
+                trioangle:paddingTop="20dp"
+                trioangle:gravity="center"
+                trioangle:layout_below="@+id/room_details_amenities"/>-->
+            <LinearLayout
+                android:id="@+id/room_details_checkin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/map_layout"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/d_bottom"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/checkin"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midb"
+                    android:textStyle="bold" />
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Anytime after 1PM"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/background"
+                    android:textSize="@dimen/midb" />
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/room_details_checkout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/room_details_checkin"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/d_bottom"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/checkout"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midb"
+                    android:textStyle="bold" />
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="11AM"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/background"
+                    android:textSize="@dimen/midb" />
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/room_details_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/room_details_checkout"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:gravity="start"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:id="@+id/roomsdetails_review"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/review_user_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="20dp"
+                        android:src="@drawable/no_profile_photo" />
+
+                    <com.makent.trioangle.palette.TextView.MakentBookTextView
+                        android:id="@+id/review_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Test"
+                        android:textColor="@color/text_shadow"
+                        android:textSize="@dimen/midb"
+                        android:textStyle="bold" />
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:id="@+id/review_user_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/review_user_name"
+                        android:layout_below="@+id/review_user_name"
+                        android:layout_centerVertical="true"
+                        android:text="Nov 2016"
+                        android:textColor="@color/text_shadow"
+                        android:textSize="@dimen/midi" />
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:id="@+id/review_user_msg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/review_user_image"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:maxLines="4"
+                        android:scrollbars="vertical"
+                        android:text="The experience was amazing! We'd arraned for a golf cart through Vanessa for our stay. Definitely get the golf card. The house was amazing, the pictures don't do it juestice. Staying on Mujeres.
+                    The experience was amazing! We'd arraned for a golf cart through Vanessa for our stay. Definitely get the golf card. The house was amazing, the pictures don't do it juestice. Staying on Mujeres."
+                        android:textColor="@color/text_shadow"
+                        android:textSize="@dimen/midi"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/exp_reviewlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/review_user_msg"
+                    android:background="@drawable/d_bottom"
+                    android:paddingBottom="20dp"
+                    >
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:id="@+id/exp_review_user_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Read 0 reviews"
+                        android:textColor="@color/background"
+                        android:textSize="@dimen/midb" />
+
+                    <RatingBar
+                        android:id="@+id/exp_review_user_rate"
+                        style="@style/CustomRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:clickable="false"
+                        android:isIndicator="true"
+                        android:maxHeight="12.5dp"
+                        android:minHeight="10.5dp"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="3dp" />
+
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/room_details_guide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/d_bottom"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:visibility="gone"
+                    android:weightSum="2">
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/guide"
+                        android:textColor="@color/text_shadow"
+                        android:textSize="@dimen/midb"
+                        android:textStyle="bold" />
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/read"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/background"
+                        android:textSize="@dimen/midb" />
+                    >
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/room_details_houserules"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/d_bottom"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    >
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/groupsizetxt"
+                        android:text="@string/Groupsizeupto"
+                        android:textColor="@color/text_shadow"
+                        android:textSize="@dimen/midb"
+                        android:textStyle="bold" />
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_toEndOf="@+id/groupsizetxt"
+                        android:text="10"
+                        android:paddingStart="5dp"
+                        android:id="@+id/groupsizenum"
+                        android:textColor="@color/text_shadow"
+                        android:textSize="@dimen/midb"
+                        android:textStyle="bold" />
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_toEndOf="@+id/groupsizenum"
+                        android:text="@string/Guests"
+                        android:paddingStart="5dp"
+                        android:id="@+id/groupsizetxt2"
+                        android:textColor="@color/text_shadow"
+                        android:textSize="@dimen/midb"
+                        android:textStyle="bold" />
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/guest_arrow"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/next"
+                        android:layout_alignParentEnd="true"
+
+                        />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/room_details_additionalprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/d_bottom"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    >
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/Guestrequirements"
+                        android:textColor="@color/text_shadow"
+                        android:textSize="@dimen/midb"
+                        android:textStyle="bold" />
+
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/requiremt_arrow"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/next"
+                        android:layout_alignParentEnd="true"
+
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/room_details_cancelpolicy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/d_bottom"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    >
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="@string/Experiencecancellationpolicy"
+                        android:textColor="@color/text_shadow"
+                        android:textSize="@dimen/midb"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/experience_arrow"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/next"
+                        android:layout_alignParentEnd="true"
+
+                        />
+                    >
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/room_details_availability"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/d_bottom"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20dp"
+                    android:visibility="gone"
+                    android:paddingTop="20dp"
+                    android:weightSum="2">
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/availability"
+                        android:textColor="@color/text_shadow"
+                        android:textSize="@dimen/midb"
+                        android:textStyle="bold" />
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/check"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/background"
+                        android:textSize="@dimen/midb" />
+                    >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/room_details_triplength"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/d_bottom"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:weightSum="2">
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/triplength"
+                        android:textColor="@color/text_shadow"
+                        android:textSize="@dimen/midb"
+                        android:textStyle="bold" />
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/check"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/background"
+                        android:textSize="@dimen/midb" />
+                    >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/exp_details_contacthost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/d_bottom"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    >
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="@string/contacthost"
+                        android:textColor="@color/text_shadow"
+                        android:textSize="@dimen/midb"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/contact_arrow"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/next"
+                        android:layout_alignParentEnd="true"
+
+                        />
+                    >
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/similarlisting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/room_details_profile">
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:id="@+id/room_details_similarlist_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/similarlisting"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midb"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/similar_roomdetail_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/room_details_similarlist_txt"
+                    android:clipToPadding="false"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp"
+                    android:scrollbars="none"></androidx.recyclerview.widget.RecyclerView>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/roomdetails_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/d_tab">
+
+        <com.makent.trioangle.palette.Button.MakentButton
+            android:id="@+id/requestcheck"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="@dimen/midb"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:background="@drawable/d_red_button"
+            android:text="@string/Seedates"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/title_text_color"
+            />
+
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/mid"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/text_shadow"
+            android:text="@string/per_person"
+            android:id="@+id/room_details_pernight_txt"
+            android:layout_toEndOf="@+id/room_details_amount" />
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="10.5dp"
+            android:maxHeight="12.5dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="2dp"
+            android:id="@+id/room_details_rate"
+            android:clickable="false"
+            android:isIndicator="true"
+            style="@style/CustomRatingBar"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/room_details_amount"/>
+
+
+
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small"
+            android:textColor="@color/text_black"
+            android:text="114"
+            android:layout_alignTop="@+id/room_details_rate"
+            android:layout_toEndOf="@+id/room_details_rate"
+            android:id="@+id/room_details_ratecount" />
+
+        <com.makent.trioangle.palette.TextView.MakentTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midb"
+            android:textStyle="bold"
+            android:textColor="@color/text_shadow"
+            android:text="$1500"
+            android:layout_marginStart="20dp"
+            android:id="@+id/room_details_amount"
+            android:layout_alignTop="@+id/room_details_pernight_txt" />
+    </RelativeLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed">
+
+            <FrameLayout
+                android:id="@+id/carouselLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/room_details_viewpager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dp"
+                    android:background="#ccc"
+                    app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+                    android:layout_alignParentTop="true"/>
+            </FrameLayout>
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:contentInsetLeft="0dp"
+                android:contentInsetStart="0dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                android:contentInsetRight="0dp"
+                android:contentInsetEnd="0dp"
+                app:contentInsetRight="0dp"
+                app:contentInsetEnd="0dp"
+                android:layoutDirection="@string/layout_direction"
+                app:contentScrim="@color/title_text_color"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" >
+
+                <RelativeLayout
+                    android:id="@+id/room_details_top"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/room_details_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/back_white_arrow"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"/>
+
+                    <ImageView
+                        android:id="@+id/room_details_wishlist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignParentTop="true"
+                        />
+
+                    <ImageView
+                        android:id="@+id/room_details_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignTop="@+id/room_details_wishlist"
+                        android:layout_toStartOf="@+id/room_details_wishlist"
+                        android:layout_marginEnd="20dp" />
+                    <!-- android:src="@drawable/n2_heart_light_outline"
+                    android:src="@drawable/share"-->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/room_details_dotloader"
+                        android:src="@drawable/dot_loading"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

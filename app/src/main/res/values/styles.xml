@@ -1,0 +1,174 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Launcher" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="TextLimitStyle" parent="TextAppearance.AppCompat.Small">
+    <item name="android:textColor">@color/colorAccent</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextLimitError" parent="TextAppearance.AppCompat.Small">
+    <item name="android:textColor">@color/background</item>
+    </style>
+    <style name="MyAlertTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@drawable/curved_bg</item>
+    </style>
+  <!-- &lt;!&ndash; AlertDialog Style&ndash;&gt;
+    <style name="AlertDialogTheme" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/text_shadow</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/red_text</item>
+    </style>-->
+    <!-- Calendar Lib style -->
+
+    <style name="CalendarTitle">
+        <item name="android:textSize">@dimen/calendar_text_medium</item>
+        <item name="android:fontFamily">"fonts/CircularAir-Light.otf"</item>
+
+        <!--
+    <item name="trioangle:textStyle">bold</item>
+-->
+    </style>
+
+    <style name="SavedWishList">
+        <item name="android:textSize">@dimen/calendar_text_medium</item>
+        <item name="android:fontFamily">"fonts/CircularAir-Light.otf"</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+    <style name="share_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/MyAnimation.Window</item>
+    </style>
+
+    <style name="progress_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="MyAnimation.Window" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/dialog_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_anim_out</item>
+    </style>
+
+    <style name="CalendarCell">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+    </style>
+
+    <style name="CalendarCell.DayHeader">
+        <item name="android:textSize">@dimen/calendar_text_small</item>
+        <item name="android:fontFamily">"fonts/CircularAir-Book.otf"</item>
+        <item name="android:textColor">@color/calendar_bg</item>
+    </style>
+
+    <style name="CalendarCell.DayHeaderhost">
+        <item name="android:textSize">@dimen/calendar_text_small</item>
+        <item name="android:fontFamily">"fonts/CircularAir-Book.otf"</item>
+        <item name="android:textColor">@color/text_shadow</item>
+    </style>
+
+    <style name="CalendarCell.CalendarDate">
+        <item name="android:textSize">@dimen/calendar_text_small</item>
+        <item name="android:fontFamily">"fonts/CircularAir-Book.otf"</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="checkBoxStyle" parent="Base.Theme.AppCompat">
+        <item name="colorAccent">@color/red_text</item>
+        <item name="android:textColorSecondary">@color/text_shadow</item>
+    </style>
+    <style name="checkBoxStyle1" parent="Base.Theme.AppCompat">
+        <item name="colorAccent">@color/text_shadow</item>
+        <item name="android:textColorSecondary">@color/title_text_color</item>
+    </style>
+
+    <style name="BrandedSwitch" parent="AppTheme">
+        <item name="colorAccent">@color/red_text</item>
+    </style>
+    <style name="DialogTheme" parent="android:Theme.Dialog">
+
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+
+
+        <!-- No backgrounds, titles or window float -->
+        <!--<item name="trioangle:windowNoTitle">true</item>
+        <item name="trioangle:windowIsFloating">true</item>
+        <item name="trioangle:windowBackground">@null</item>-->
+
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+
+    </style>
+
+    <style name="CustomRatingBar" parent="@android:style/Widget.Holo.RatingBar" >
+    <item name="android:progressDrawable">@drawable/d_custom_ratingbar</item>
+    <item name="android:numStars">5</item>
+    <item name="android:rating">2.5</item>
+    <item name="android:stepSize">0.5</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="AppThemea" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+
+    </style>
+
+        <style name="DialogAnimation">
+            <item name="android:windowEnterAnimation">@anim/bottomup</item>
+            <item name="android:windowExitAnimation">@anim/bottomdown</item>
+        </style>
+
+
+
+
+</resources>
+

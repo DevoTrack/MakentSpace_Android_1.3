@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/guestBgc"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.makent.trioangle.signup.Signup_NameActivity">
+
+    <com.makent.trioangle.palette.Button.MakentAwesomeButton
+        android:background="@android:color/transparent"
+        android:text="&#xF138;"
+        android:textSize="@dimen/mid"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/title_text_color"
+        android:id="@+id/payment_close"/>
+
+    <com.makent.trioangle.palette.TextView.MakentLightTextView
+        android:text="@string/select_payment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/vbigi"
+        android:textColor="@color/text_color"
+        android:textStyle="bold"
+        android:id="@+id/name_title"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/payment_close"
+        android:layout_alignStart="@+id/payment_close"
+        android:layout_alignEnd="@+id/save_payment" />
+
+    <com.makent.trioangle.palette.Button.MakentBookButton
+        android:text="@string/add_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="@dimen/mid"
+        android:textAllCaps="false"
+        android:layout_marginStart="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/title_text_color"
+        android:background="@drawable/d_oval_background"
+        android:id="@+id/add_payment"
+        android:layout_alignBaseline="@+id/save_payment"
+        android:layout_alignBottom="@+id/save_payment" />
+
+    <com.makent.trioangle.palette.Button.MakentButton
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/midb"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/background"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:background="@drawable/d_map_filter"
+        android:id="@+id/save_payment"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:visibility="invisible"/>
+</RelativeLayout>

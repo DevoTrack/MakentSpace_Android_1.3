@@ -1,0 +1,42 @@
+apply plugin: "com.android.library"
+
+android {
+  compileSdkVersion 23
+  buildToolsVersion '25.0.0'
+
+  defaultConfig {
+    minSdkVersion 19
+    targetSdkVersion 25
+    //versionCode rootProject.ext.android.versionCode
+   // versionName rootProject.ext.android.versionName
+    //consumerProguardFiles "proguard-rules.pro"
+  }
+
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+    }
+  }
+  dexOptions {
+    incremental true
+  }
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
+}
+
+dependencies {
+  compile fileTree(include: ['*.jar'], dir: 'libs')
+  compile 'com.android.support:appcompat-v7:25.0.0'
+  compile 'com.android.support:design:25.0.0'
+  compile 'com.android.support:recyclerview-v7:25.0.0'
+  // for Recycle View
+  //compile rootProject.ext.dependencies["com.android.support:design"]
+  //compile rootProject.ext.dependencies["com.android.support:appcompat-v7"]
+  //compile rootProject.ext.dependencies["com.android.support:recyclerview-v7"]
+}
+
+//apply from: "https://raw.githubusercontent.com/henrytao-me/bintray/master/installv1.gradle"
+//apply from: "https://raw.githubusercontent.com/henrytao-me/bintray/master/bintrayv1.gradle"

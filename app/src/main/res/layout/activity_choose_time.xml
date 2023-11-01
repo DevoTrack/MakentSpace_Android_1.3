@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/title_text_color"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            
+
+            >
+
+
+            <RelativeLayout
+                android:id="@+id/rlt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+
+                >
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="20dp"
+                    android:scaleY=".8"
+                    android:scaleX=".8"
+                    android:paddingTop="20dp"
+                    android:src="@drawable/back_grayblack_arrow"/>
+                <com.makent.trioangle.palette.TextView.MakentTextView
+                    android:id="@+id/tv_choose_time"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    android:textAlignment="textStart"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/big"
+                    android:textColor="@color/text_light_shadow"
+                    android:text="Choose time"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/iv_back" />
+
+               
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlt_open_close"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rlt_title"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/d_bottom"
+                android:paddingBottom="10dp">
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:id="@+id/tvClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/close"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midb" />
+
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/scOpen"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBaseline="@+id/instant_book_msg"
+                    android:layout_alignBottom="@+id/instant_book_msg"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:thumb="@drawable/n2_sheet_switch_thumb"
+                    app:track="@drawable/n2_sheet_switch_track" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlt_hours"
+                android:layout_below="@+id/rlt_open_close"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/d_bottom"
+                android:layout_marginStart="50dp"
+                android:visibility="gone"
+                android:layout_marginEnd="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true">
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:text="@string/all_hours"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midb"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvHourType"/>
+
+
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/scHourType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:minHeight="60dp"
+                    android:paddingBottom="10dp"
+                    android:thumb="@drawable/n2_sheet_switch_thumb"
+                    app:track="@drawable/n2_sheet_switch_track" />
+            </RelativeLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rlt_hours"
+                android:id="@+id/rlt_time"
+                android:visibility="gone"
+                >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_time"
+                android:scrollbars="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/tv_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv_time"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/d_redbutton_enable_disable"
+                android:padding="15dp"
+                android:text="Add"
+                android:textColor="@color/white"
+                android:textSize="@dimen/midi"
+                android:textStyle="bold" />
+
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlt_time"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp">
+
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:id="@+id/tv_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="visible"
+                    android:background="@drawable/d_redbutton_enable_disable"
+                    android:padding="15dp"
+                    android:text="@string/save"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/midi"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
+
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.makent.trioangle.createspace.ChooseTimeActivity">
+
+
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:id="@+id/nsv_setup"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <fragment
+                    android:id="@+id/setup_nav_host_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:name="androidx.navigation.fragment.NavHostFragment"
+                    app:navGraph="@navigation/choose_time_graph"
+                    app:defaultNavHost="true" />
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+
+    </RelativeLayout>
+    -->

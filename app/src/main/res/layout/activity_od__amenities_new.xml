@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_od__amenities_new"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.makent.trioangle.host.optionaldetails.OD_AmenitiesNew">
+
+    <RelativeLayout
+        android:id="@+id/odamenities_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/d_bottom_shadow"
+        android:paddingTop="15dp">
+
+        <RelativeLayout
+            android:id="@+id/odamenitie_title"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <ImageView
+                android:id="@+id/odamenities_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleY=".7"
+                android:scaleX=".7"
+                android:backgroundTint="@color/text_shadow"
+                android:paddingStart="15dp"
+                android:paddingEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/icon_checkmark_black"/>
+
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:layout_width="wrap_content"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/midb"
+                android:textColor="@color/text_light_shadow"
+                android:text="@string/done"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/odamenities_back" />
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:id="@+id/odamenitie_dot_loader"
+            android:src="@drawable/dot_loading"
+            android:layout_gravity="center_horizontal"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/odamenities_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:paddingTop="20dp"
+        android:layout_below="@+id/odamenities_title" >
+</androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lys"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.makent.trioangle.host.LYS_Step2_AddSummary">
+
+    <RelativeLayout
+        android:id="@+id/guest_interaction_title_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/guest_interaction_title"
+        android:layout_centerHorizontal="true">
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/guest_interaction"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/text_light_shadow"
+            android:textSize="@dimen/midb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/the_guest_interaction"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:id="@+id/hrline3"
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_above="@+id/guest_interaction_edittext"
+            android:src="@drawable/d_bottom"/>
+        <EditText
+            android:id="@+id/guest_interaction_edittext"
+            android:layout_below="@+id/the_guest_interaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp"
+            android:textCursorDrawable="@null"
+            android:gravity="top|start"
+            android:textSize="@dimen/midi"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="@color/text_shadow"
+            android:hint="@string/interaction_guest_msg"
+            android:textColorHint="@color/calendar_text_unselectable"
+            android:fontFamily="@string/fonts_Book"
+            android:background="@color/title_text_color"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/guest_interaction_character_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/guest_interaction_character_count_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleY=".6"
+            android:scaleX=".6"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/light_blue_disable"
+            android:background="@drawable/icon_lightbulb_sm_blue"/>
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/words"
+            android:textColor="@color/text_light_shadow"
+            android:textSize="@dimen/midb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guest_interaction_count_txt"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/guest_interaction_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/d_bottom_shadow"
+        android:paddingTop="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:id="@+id/guestinteraction_title"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+        <ImageView
+            android:id="@+id/guest_interaction_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleY=".7"
+            android:scaleX=".7"
+            android:backgroundTint="@color/text_shadow"
+            android:paddingStart="15dp"
+            android:paddingEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/icon_checkmark_black"/>
+
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/guest_interaction"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midb"
+            android:textColor="@color/text_light_shadow"
+            android:text="@string/done"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/guest_interaction_title_back" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:id="@+id/guestinteraction_dot_loader"
+        android:src="@drawable/dot_loading"
+        android:layout_gravity="center_horizontal"/>
+    </RelativeLayout>
+</RelativeLayout>

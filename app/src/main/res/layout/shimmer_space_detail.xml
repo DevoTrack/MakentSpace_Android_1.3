@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:background="@color/shimmer_bg" />
+
+    <com.makent.trioangle.palette.TextView.MakentTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/shimmer_bg"
+        android:layoutDirection="@string/layout_direction"
+        android:textColor="@color/text_shadow"
+        android:textSize="@dimen/vbigb"
+        android:textStyle="bold" />
+
+    <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/shimmer_bg"
+        android:textColor="@color/text_shadow"
+        android:textSize="@dimen/text_18" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shimmer_profile" />
+
+    <com.makent.trioangle.palette.TextView.MakentLightTextView
+        android:layout_width="120dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/shimmer_bg"
+        android:textColor="@color/text_shadow"
+        android:textSize="@dimen/text_18" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/d_bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@color/shimmer_bg" />
+
+            <com.makent.trioangle.palette.TextView.MakentLightTextView
+                android:layout_width="50dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/shimmer_bg"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textColor="@color/text_shadow"
+                android:textSize="@dimen/text_13" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@color/shimmer_bg" />
+
+            <com.makent.trioangle.palette.TextView.MakentLightTextView
+                android:layout_width="50dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/shimmer_bg"
+                android:gravity="center_horizontal"
+                android:textColor="@color/text_shadow"
+                android:textSize="@dimen/text_13" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@color/shimmer_bg" />
+
+            <com.makent.trioangle.palette.TextView.MakentLightTextView
+                android:layout_width="50dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/shimmer_bg"
+                android:gravity="center_horizontal"
+                android:textColor="@color/text_shadow"
+                android:textSize="@dimen/text_13" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/d_bottom"
+        android:gravity="start"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:layout_width="180dp"
+            android:layout_height="15dp"
+            android:background="@color/shimmer_bg"
+            android:textColor="@color/text_shadow"
+            android:textSize="@dimen/text_18"
+            android:textStyle="bold" />
+
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/shimmer_bg"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:textColor="@color/text_shadow"
+            android:textSize="@dimen/text_18" />
+
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:layout_width="120dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/shimmer_bg"
+            android:textColor="@color/guestButton"
+            android:textSize="@dimen/text_18"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_margin="10dp"
+        android:background="@color/shimmer_bg" />
+
+</LinearLayout>

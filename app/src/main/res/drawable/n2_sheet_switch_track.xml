@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:state_checked="true">
+    <shape android:shape="rectangle">
+        <corners android:radius="60dp" />
+        <solid android:color="@color/guestButton" />
+        <stroke android:width="2dp" android:color="@color/guestButton" />
+
+    </shape>
+    </item>
+<item>
+    <shape android:shape="rectangle">
+        <corners android:radius="30dp" />
+        <solid android:color="@color/title_text_color" />
+        <stroke android:width="2dp" android:color="@color/guestButton" />
+
+    </shape>
+    </item>
+</selector>

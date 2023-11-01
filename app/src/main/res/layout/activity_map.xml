@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.makent.trioangle.travelling.MapActivity">
+    <LinearLayout
+        android:id="@+id/map_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/d_bottom"
+        android:paddingBottom="5dp"
+        android:visibility="gone"
+        android:paddingTop="5dp">
+        <com.makent.trioangle.palette.Button.MakentAwesomeButton
+            android:id="@+id/map_close1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:paddingStart="@dimen/small"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="&#xF138;"
+            android:textSize="@dimen/small"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:textColor="@color/text_shadow"/>
+
+
+        <com.makent.trioangle.palette.Button.MakentAwesomeButton
+            android:background="@android:color/transparent"
+            android:text="&#xF138;"
+            android:fontFamily="fonts/CircularAir-Bold.otf"
+            android:textSize="@dimen/mid"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="@dimen/small11"
+            android:textColor="@color/text_shadow"
+            android:id="@+id/map_close"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_host"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/title_text_color"
+        android:contentInsetLeft="0dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetEnd="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.makent.trioangle.palette.Button.MakentAwesomeButton
+                android:id="@+id/contacthost_close"
+                android:layout_width="30dp"
+                android:paddingStart="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="&#xF138;"
+                android:textSize="@dimen/small"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textColor="@color/text_shadow" />
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/map_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_host">
+
+
+        <EditText
+            android:id="@+id/edt"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        tools:context="com.makent.trioangle.travelling.MapActivity"
+        android:id="@+id/mainmap"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:gravity="center"
+        android:layout_above="@+id/vp_layout"/>
+
+    <com.makent.trioangle.palette.Button.MakentButton
+    android:text="@string/filters"
+    android:drawablePadding="5dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:paddingStart="25dp"
+    android:paddingEnd="25dp"
+    android:scaleX=".7"
+    android:scaleY=".7"
+    android:textSize="@dimen/big"
+    android:background="@drawable/d_map_filter"
+    android:textColor="@color/text_bold"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:drawableEnd="@drawable/n2_ic_filters"
+    android:id="@+id/map_filter"
+    android:layout_marginBottom="20dp"
+    android:layout_alignBottom="@+id/mainmap"
+    android:layout_centerHorizontal="true" />
+    <RelativeLayout
+        android:id="@+id/vp_layout"
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:paddingTop="20dp"
+        android:background="@color/title_text_color"
+        android:layout_alignParentBottom="true"
+        tools:ignore="NotSibling">
+        <!--<com.astuetz.PagerSlidingTabStrip
+            trioangle:id="@+id/tabs"
+            app:pstsShouldExpand="true"
+            app:pstsIndicatorColor="@color/background"
+            trioangle:layout_width="match_parent"
+            trioangle:layout_height="5dp" />-->
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_details"
+        android:layout_width="wrap_content"
+        android:layout_height="235dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="12.5dp"
+            android:background="@color/guestButton"/>
+
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_host"
+        android:paddingTop="20dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/map_loader"
+        android:src="@drawable/dot_loading"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

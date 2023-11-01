@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="@string/layout_direction"
+    android:layout_marginStart="7dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginEnd="7dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_explore_image"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        app:cardCornerRadius="7dp"
+        android:layout_height="250dp">
+    <ImageView
+        android:id="@+id/iv_explore_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:background="#9B9898"
+        android:scaleType="fitXY"
+        android:focusableInTouchMode="true"/>
+
+        <ImageView
+            android:id="@+id/iv_explore_wishlist"
+            android:layout_width="30dp"
+            android:layout_gravity="end"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/cv_explore_image"
+            android:layout_alignEnd="@+id/cv_explore_image"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp"
+            android:src="@drawable/n2_heart_light_outline" />
+    </androidx.cardview.widget.CardView>
+    <ProgressBar
+        android:id="@+id/pb_explore"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:visibility="gone" />
+
+
+
+    <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:id="@+id/tv_room_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cv_explore_image"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:singleLine="false"
+        android:textAlignment="viewStart"
+        android:text="Entire place in Burlingame"
+        android:textColor="@color/brown"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <com.makent.trioangle.palette.TextView.MakentTextView
+        android:id="@+id/tv_room_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_room_detail"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:textAlignment="viewStart"
+        android:text="Idle Room space"
+        android:textColor="@color/text_shadow"
+        android:textSize="13sp" />
+
+    <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:id="@+id/tv_room_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_room_name"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="4dp"
+        android:textAlignment="viewStart"
+        android:text="$ 2000 Per Night"
+        android:textColor="@color/text_shadow"
+        android:textSize="13sp" />
+
+
+
+    <com.makent.trioangle.palette.TextView.MakentLogoIcon
+        android:id="@+id/tv_instant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:text="Z"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/tv_room_price"
+        android:layout_below="@+id/tv_room_name"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/mid" />
+
+
+    <RelativeLayout
+        android:id="@+id/rlt_rating"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_room_price">
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="10.5dp"
+            android:maxHeight="12.5dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="2dp"
+            android:id="@+id/rb_rating"
+            android:clickable="false"
+            android:isIndicator="true"
+            android:rating="5"
+            style="@style/CustomRatingBar" />
+
+        <TextView
+            android:id="@+id/tv_explore_review_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/rb_rating"
+            android:text=""
+            android:textAlignment="viewStart"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/text_shadow"
+            android:textSize="13sp" />
+    </RelativeLayout>
+</RelativeLayout>

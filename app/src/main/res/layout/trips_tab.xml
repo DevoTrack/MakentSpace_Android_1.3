@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_text_color"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.makent.trioangle.travelling.HomeActivity">
+
+
+    <!--<pl.droidsonroids.gif.GifTextView
+        trioangle:layout_width="150dp"
+        trioangle:layout_height="150dp"
+        trioangle:background="@drawable/anim_trips"
+        trioangle:id="@+id/gifTextView"
+        trioangle:layout_centerVertical="true"
+        trioangle:layout_centerHorizontal="true" />-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/trips_dot_loader"
+        android:src="@drawable/dot_loading"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+    <RelativeLayout
+        android:id="@+id/emptytrips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/title_text_color"
+        tools:context="com.makent.trioangle.travelling.HomeActivity">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/tripgifImageView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <com.makent.trioangle.palette.Button.MakentButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/guestButton"
+        android:textAlignment="center"
+        android:elevation="0dp"
+        android:textSize="@dimen/midi"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@drawable/d_blue_line_color"
+        android:text="@string/startexploring"
+        android:textAllCaps="false"
+        android:ems="10"
+        android:id="@+id/trips_start_explore"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/tripgifImageView"
+        android:layout_alignStart="@+id/tripgifImageView"
+        android:layout_alignEnd="@+id/tripgifImageView" />
+
+    <ImageView
+        android:layout_width="2dp"
+        android:layout_height="110dp"
+        android:src="@drawable/h_divider"
+        android:id="@+id/imageView4"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@+id/imageView5"
+        android:layout_below="@+id/where" />
+
+    <com.makent.trioangle.palette.TextView.MakentLightTextView
+        android:text="@string/trips_details"
+        android:textSize="@dimen/bigi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/trip_msg_details"
+        android:textColor="@color/primary_dark_material_light"
+        android:layout_above="@+id/tripgifImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+
+    <ImageView
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+        android:src="@drawable/h_divider"
+        android:id="@+id/imageView5"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tripgifImageView"
+        android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/listtrips"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/title_text_color"
+        tools:context="com.makent.trioangle.travelling.HomeActivity">
+        <com.makent.trioangle.palette.TextView.MakentTextView
+            android:id="@+id/trips_title"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"
+            android:paddingStart="20dp"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/bigb"
+            android:background="@color/title_text_color"
+            android:textColor="@color/text_shadow"
+            android:text="@string/bookings"
+            android:layout_alignParentTop="true"/>
+
+        <!--<android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/appbar"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/trips_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:paddingTop="10dp"
+            android:clipToPadding="false"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/tripslist"/>
+      <!--  </android.support.v4.widget.SwipeRefreshLayout>-->
+        </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/viewNotoken"
+        layout="@layout/no_token_layout"/>
+
+</RelativeLayout>

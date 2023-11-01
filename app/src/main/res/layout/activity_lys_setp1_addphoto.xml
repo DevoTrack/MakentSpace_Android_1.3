@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lys"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.makent.trioangle.host.LYS_Setp1_AddPhoto">
+
+    <RelativeLayout
+        android:id="@+id/addphoto_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/d_bottom_shadow"
+        >
+
+        <ImageView
+            android:id="@+id/addphoto_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:src="@drawable/back_grayblack_arrow"/>
+
+
+        <com.makent.trioangle.palette.TextView.MakentTextView
+            android:id="@+id/addphoto"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/big"
+            android:textColor="@color/text_light_shadow"
+            android:text="@string/photos"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/addphoto_back" />
+
+        <ImageView
+            android:id="@+id/addphoto_galary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/icon_browse_gallery"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:id="@+id/addphoto_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/icon_take_photo"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/addphoto_galary"/>
+        <ImageView
+            android:id="@+id/delete_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/icon_delete"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/addphoto_camera"/>
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/lys_center_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/addphoto"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="95dp"
+            android:text="@string/lys_msg"
+            android:textAlignment="center"
+            android:textColor="@color/calendar_text_active"
+            android:textSize="@dimen/bigi"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:id="@+id/addphoto_title_show"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/addphoto_title">
+        <GridView
+            android:id="@+id/gridGallery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="110dp"
+            android:gravity="center"
+            android:horizontalSpacing="5dip"
+            android:numColumns="3"
+            android:stretchMode="spacingWidthUniform"
+            android:verticalSpacing="5dip"
+            android:scrollbars="none"
+            >
+        </GridView>
+        <!--<android.support.v7.widget.RecyclerView
+            android:id="@+id/grid_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:elevation="@dimen/vbig"
+            android:background="@color/text_color"/>-->
+        </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/addphoto_title_hide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/addphoto_title"
+        android:layout_alignParentStart="true">
+    <ImageView
+        android:id="@+id/addphoto_back_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/icon_indicator_arrow_up" />
+    <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/photo_msg"
+        android:textAlignment="center"
+        android:layout_marginTop="80dp"
+        android:textSize="@dimen/vbig1"
+        android:textColor="@color/calendar_text_unselectable"
+        android:layout_below="@+id/addphoto_back_img"/>
+
+   </RelativeLayout>
+    </RelativeLayout>
+

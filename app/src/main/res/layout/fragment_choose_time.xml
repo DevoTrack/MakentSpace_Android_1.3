@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rlt_open_close"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="20dp"
+                >
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:id="@+id/radioGroup">
+
+                    <RadioButton
+                        android:id="@+id/radioMale"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="  All Hours"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:checked="false"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioFemale"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="   Set Hours"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:checked="false"
+                        android:gravity="center_vertical"
+                        android:textSize="20dp" />
+                </RadioGroup>
+
+            </RelativeLayout>
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_time"
+                android:scrollbars="vertical"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@+id/rlt_open_close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/tv_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv_time"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/d_green_border"
+                android:padding="15dp"
+                android:text="Add"
+                android:textColor="@color/button_border_green"
+                android:textSize="@dimen/midv"
+                android:textStyle="bold" />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_add"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp">
+
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:id="@+id/tv_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+
+                    android:background="@drawable/d_green_border"
+                    android:padding="15dp"
+                    android:text="@string/save"
+                    android:textColor="@color/button_border_green"
+                    android:textSize="@dimen/midv"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

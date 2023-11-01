@@ -1,0 +1,365 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.makent.trioangle.travelling.HomeActivity"
+    android:id="@+id/rootLayout"
+    android:layoutDirection="@string/layout_direction"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/d_gradient_background"
+        app:elevation="0dp"
+        >
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="@color/g_start"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            >
+
+            <FrameLayout
+                android:id="@+id/exploreframe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:layout_collapseMode="parallax"
+                app:contentScrim="?attr/colorPrimary"
+                android:background="@drawable/d_gradient_background">
+                <LinearLayout
+                    android:id="@+id/exploreserarch_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center"
+                    app:layout_collapseMode="parallax"
+                    android:orientation="vertical"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_collapseMode="parallax"
+                        android:minHeight="40dp">
+
+                        <com.makent.trioangle.palette.Button.MakentAwesomeButton
+                            android:background="@android:color/transparent"
+                            android:text="&#xF136;"
+                            android:textAllCaps="false"
+                            android:textAlignment="textStart"
+                            android:textSize="@dimen/bigi"
+                            android:textColor="@color/title_text_color"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/explore_collapse" />
+                        <com.makent.trioangle.palette.Button.MakentBookButton
+                            android:text="@string/clear"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/midb"
+                            android:textColor="@color/title_text_color"
+                            android:layout_alignParentEnd="true"
+                            android:background="@android:color/transparent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/explore_clearall" />
+
+                    </RelativeLayout>
+                    <!--
+                     android:drawableLeft="@drawable/earth_globe_w"
+                     android:drawableLeft="@drawable/calendar_outline_w"
+                     android:drawableLeft="@drawable/users_w"
+                     android:drawableRight="@drawable/n2_ic_map"-->
+                    <com.makent.trioangle.palette.Button.MakentBookButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:drawablePadding="10dip"
+                        app:layout_collapseMode="parallax"
+                        android:paddingStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/title_text_color"
+                        android:textColorHint="@color/title_text_color"
+                        android:textStyle="bold"
+                        android:textAlignment="textStart"
+                        android:textSize="@dimen/midb"
+                        android:singleLine="true"
+                        android:background="@drawable/d_light_blue_button"
+                        android:text="@string/whereto"
+                        android:textAllCaps="false"
+                        android:ems="10"
+                        android:id="@+id/where" />
+
+                    <com.makent.trioangle.palette.Button.MakentBookButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dip"
+                        app:layout_collapseMode="parallax"
+                        android:drawableTint="@color/title_text_color"
+                        android:paddingStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/title_text_color"
+                        android:textColorHint="@color/title_text_color"
+                        android:textStyle="bold"
+                        android:textAlignment="textStart"
+                        android:textSize="@dimen/midb"
+                        android:background="@drawable/d_light_blue_button"
+                        android:text="@string/when"
+                        android:textAllCaps="false"
+                        android:ems="10"
+                        android:id="@+id/when" />
+
+                    <com.makent.trioangle.palette.Button.MakentBookButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dip"
+                        app:layout_collapseMode="parallax"
+                        android:paddingStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/title_text_color"
+                        android:textColorHint="@color/title_text_color"
+                        android:textStyle="bold"
+                        android:textAlignment="textStart"
+                        android:textSize="@dimen/midb"
+                        android:background="@drawable/d_light_blue_button"
+                        android:text="@string/guests"
+                        android:textAllCaps="false"
+                        android:ems="10"
+                        android:id="@+id/guest" />
+
+
+                </LinearLayout>
+            </FrameLayout>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:contentInsetLeft="0dp"
+                android:contentInsetStart="0dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                android:contentInsetRight="0dp"
+                android:contentInsetEnd="0dp"
+                app:contentInsetRight="0dp"
+                app:contentInsetEnd="0dp"
+                app:layout_collapseMode="pin"
+                android:background="@android:color/transparent"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <LinearLayout
+                    android:id="@+id/exploreserarch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/d_light_blue_button"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/search_w"
+                        android:id="@+id/imageView2" />
+
+                    <com.makent.trioangle.palette.TextView.MakentBookTextView
+                        android:text="@string/where"
+                        android:textSize="@dimen/mid"
+                        android:textColor="@color/title_text_color"
+                        android:textStyle="bold"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:layout_gravity="center"
+                        android:id="@+id/where_txt" />
+
+
+
+                    <com.makent.trioangle.palette.TextView.MakentBookTextView
+                        android:text="@string/when"
+                        android:layout_marginStart="10dp"
+                        android:textSize="@dimen/mid"
+                        android:textColor="@color/title_text_color"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/when_txt" />
+                    <com.makent.trioangle.palette.TextView.MakentBookTextView
+                        android:text="@string/guest"
+                        android:textSize="@dimen/mid"
+                        android:textColor="@color/title_text_color"
+                        android:textStyle="bold"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/guest_txt" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+        <!--  ***Experience Start***  -->
+        <!-- make visibility as gone -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_below="@+id/exploreserarch_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:minHeight="?attr/actionBarSize"
+            app:tabTextColor="@color/text_light_blue"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:tabIndicatorColor="@color/title_text_color"
+            app:tabSelectedTextColor="@color/title_text_color" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+   <!-- <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity=""
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+-->
+
+
+    <!--  ***Exp***  -->
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/appbar"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+
+
+   <!-- <android.support.v7.widget.RecyclerView
+    android:id="@+id/explore_room_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    android:paddingBottom="80dp"
+    android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_below="@+id/appbar">
+</android.support.v7.widget.RecyclerView>
+
+    &lt;!&ndash;</android.support.v4.widget.SwipeRefreshLayout>&ndash;&gt;
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/explore_nodata"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_below="@+id/appbar">
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/nodata_msg"
+            android:textColor="@color/text_light_shadow"
+            android:textSize="@dimen/midb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/explore_nodata_txt"/>
+        <com.makent.trioangle.palette.Button.MakentBookButton
+            android:text="@string/removefilter"
+            android:textColor="@color/background"
+            android:textAllCaps="false"
+            android:textSize="@dimen/midb"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:id="@+id/explore_remove"
+            android:background="@drawable/d_blue_line_color"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mapfilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/d_map_filter"
+        android:layout_gravity="center_horizontal|bottom"
+        android:divider="@drawable/divider"
+        android:dividerPadding="10dp"
+        android:showDividers="middle"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true">
+        <com.makent.trioangle.palette.Button.MakentButton
+            android:text="@string/map"
+            android:textSize="@dimen/big"
+            android:background="@android:color/transparent"
+            android:drawablePadding="10dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:textColor="@color/text_bold"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/explore_map"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:id="@+id/explore_filter" >
+            <com.makent.trioangle.palette.TextView.MakentTextView
+                android:text="@string/filters"
+
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/small11"
+                android:textAlignment="textEnd"
+                android:textColor="@color/text_bold"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/explore_filter_txt"
+                android:layout_centerVertical="true"/>
+
+            <com.makent.trioangle.palette.TextView.MakentTextView
+                android:textColor="@color/title_text_color"
+                android:textSize="@dimen/midv"
+                android:textAlignment="textStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="0.55"
+                android:scaleY="0.55"
+                android:background="@drawable/n2_ic_filters"
+                android:id="@+id/explore_filter_count"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/explore_filter_txt"/>
+        </RelativeLayout>
+    </LinearLayout>-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,129 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.makent.trioangle.travelling.HomeActivity"
+    android:id="@+id/rootLayout"
+    android:layoutDirection="@string/layout_direction"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <!-- <ImageView
+        android:visibility="gone"
+        android:id="@+id/list_dot_loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/dot_loading"
+        app:layout_anchor="@+id/listing_room_list"
+        app:layout_anchorGravity="top|center" />-->
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/listswipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/appbar"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listing_room_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" android:layout_below="@+id/appbar">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inbox_dot_loader"
+        android:src="@drawable/dot_loading"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true" />
+    <RelativeLayout
+        android:id="@+id/emptylisting"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.makent.trioangle.palette.TextView.MakentTextView
+            android:text="@string/yourlisting"
+            android:textSize="@dimen/bigi"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:id="@+id/pending"
+            android:textColor="@color/switch_thumb_disabled_material_dark"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+
+            android:src="@drawable/d_bottom"
+            android:id="@+id/hrline"
+            android:layout_below="@id/pending"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/no_recent_inquiries"
+            android:id="@+id/no_inquiries"
+            android:layout_below="@id/hrline"
+            android:layout_centerHorizontal="true" />
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/no_listing"
+            android:textSize="@dimen/bigi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:id="@+id/no_reservation"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/no_inquiries"
+            android:textColor="@color/switch_thumb_disabled_material_dark"
+            android:layout_centerHorizontal="true" />
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/no_listing_msg"
+            android:textSize="@dimen/midi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:id="@+id/host_home_msg"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/no_reservation"
+            android:textColor="@color/switch_thumb_disabled_material_dark"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:src="@drawable/d_bottom"
+            android:layout_marginTop="10dp"
+            android:id="@+id/hrline1"
+            android:layout_below="@id/host_home_msg"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/red_text"
+        android:tint="@color/title_text_color"
+        android:src="@drawable/ic_action_new" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

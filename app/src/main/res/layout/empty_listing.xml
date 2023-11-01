@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/emptylisting"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/listing"
+            android:textSize="@dimen/midb"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:id="@+id/pending"
+            android:textColor="@color/text_black"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+
+            android:src="@drawable/d_bottom"
+            android:id="@+id/hrline"
+            android:layout_below="@id/pending"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/no_recent_inquiries"
+            android:id="@+id/no_inquiries"
+            android:layout_below="@id/hrline"
+            android:layout_centerHorizontal="true" />
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/no_listing"
+            android:textSize="@dimen/bigi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:id="@+id/no_reservation"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/no_inquiries"
+            android:textColor="@color/switch_thumb_disabled_material_dark"
+            android:layout_centerHorizontal="true" />
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/no_listing_msg"
+            android:textSize="@dimen/midi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:id="@+id/host_home_msg"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/no_reservation"
+            android:textColor="@color/switch_thumb_disabled_material_dark"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:src="@drawable/d_bottom"
+            android:layout_marginTop="10dp"
+            android:id="@+id/hrline1"
+            android:layout_below="@id/host_home_msg"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</LinearLayout>

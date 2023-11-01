@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item >
+
+        <layer-list >
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/title_text_color"/>
+                </shape>
+            </item>
+            <item
+                android:drawable="@drawable/n2_ic_check_babu"
+                android:bottom="10dp"
+                android:left="10dp"
+                android:right="10dp"
+                android:top="10dp"
+                />
+        </layer-list>
+
+    </item>
+
+    <!-- <item>
+         <layer-list >
+             <item>
+                 <shape trioangle:shape="oval">
+                     <solid trioangle:color="@color/disablebackground"/>
+                 </shape>
+             </item>
+             <item
+                 trioangle:drawable="@drawable/n2_standard_row_right_caret_gray"
+                 trioangle:bottom="20dp"
+                 trioangle:left="20dp"
+                 trioangle:right="20dp"
+                 trioangle:top="20dp"/>
+         </layer-list>
+     </item>-->
+</selector>

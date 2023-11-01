@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layoutDirection="@string/layout_direction">
+
+    <RelativeLayout
+        android:id="@+id/rlt_bed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border">
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/tv_bed_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentStart="true"
+            android:text="@string/bedroom_1"
+            android:textColor="@color/text_shadow"
+            android:textSize="@dimen/midb" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_bed"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_bed_title"
+            android:layout_alignParentStart="true"
+            android:clipToPadding="false"
+            android:scrollbars="none" />
+
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/tv_bed_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/tv_bed_title"
+            android:layout_alignEnd="@id/rv_bed"
+            android:text="+0"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/background"
+            android:textSize="@dimen/midb" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

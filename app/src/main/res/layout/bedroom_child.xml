@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="10dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/llt_add_beds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_bedroom"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:weightSum="4">
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/bedtext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.6"
+            android:text="@string/anybed"
+            android:textColor="@color/white"
+            android:textSize="@dimen/midb" />
+        <!--android:src="@drawable/d_minus_selector"
+        android:src="@drawable/d_plus_selector"-->
+        <ImageView
+            android:id="@+id/iv_bedminus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".55"
+            android:enabled="false"
+            android:minHeight="30dp"
+            android:textSize="@dimen/midb" />
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/tv_bed_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/midb" />
+
+        <ImageView
+            android:id="@+id/iv_bedplus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".55"
+
+            android:minHeight="30dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/hostButton"
+            android:textSize="@dimen/midb" />
+
+    </LinearLayout>
+
+</RelativeLayout>

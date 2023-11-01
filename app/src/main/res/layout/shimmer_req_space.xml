@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_text_color"
+    android:layoutDirection="@string/layout_direction">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_text_color"
+        android:fitsSystemWindows="false"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:contentInsetStart="0dp"
+            android:contentInsetLeft="0dp"
+            android:contentInsetEnd="0dp"
+            android:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <ImageView
+                android:id="@+id/request_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/ivDotLoader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBookingTypeShimmer"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:src="@drawable/dot_loading" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:id="@+id/rltParentLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/d_tab">
+
+            <com.makent.trioangle.palette.TextView.MakentTextView
+                android:id="@+id/tvSpaceTitleShimmer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:text=""
+                android:background="@color/shimmer_bg"
+                android:textColor="@color/text_shadow"
+                android:textSize="@dimen/text_23"
+                android:textStyle="bold" />
+
+            <com.makent.trioangle.palette.TextView.MakentLightTextView
+                android:id="@+id/tvBookingTypeShimmer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvSpaceTitleShimmer"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/shimmer_bg"
+                android:textColor="@color/text_shadow"
+                android:textSize="@dimen/big"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/room_details_hrline0Shimmer"
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:layout_below="@+id/tvBookingTypeShimmer"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/d_bottom" />
+
+
+            <LinearLayout
+                android:id="@+id/request_layoutShimmer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvBookingTypeShimmer"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/request_name">
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:id="@+id/hostbyShimmer"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/request_details_hometypeShimmer"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/shimmer_bg"
+                        android:textColor="@color/text_shadow"
+                        android:textSize="@dimen/text_18" />
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:id="@+id/tvHostNameShimmer"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/request_details_hometypeShimmer"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_toEndOf="@+id/hostbyShimmer"
+                        android:background="@color/shimmer_bg"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/background"
+                        android:textSize="@dimen/midb" />
+
+                    <ImageView
+                        android:id="@+id/iv_host_user_imageShimmer"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/shimmer_profile" />
+
+                    <com.makent.trioangle.palette.TextView.MakentBookTextView
+                        android:id="@+id/request_details_hometypeShimmer"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/hostbyShimmer"
+                        android:layout_alignTop="@+id/iv_host_user_imageShimmer"
+                        android:background="@color/shimmer_bg"
+                        android:textColor="@color/text_shadow"
+                        android:textSize="@dimen/midb" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/room_details_hrline1Shimmer"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/room_details_hostprofile"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/d_bottom" />
+
+                <RelativeLayout
+                    android:id="@+id/request_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/room_details_hrline1Shimmer"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/d_bottom"
+                    android:divider="@drawable/divider"
+                    android:dividerPadding="5dp"
+                    android:paddingBottom="20dp">
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:id="@+id/tvStartDateTimeShimmer"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="40dp"
+                        android:background="@color/shimmer_bg"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/background"
+                        android:textSize="@dimen/big"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView6Shimmer"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/d_slash_line"
+                        android:tint="@color/text_light_gray" />
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:id="@+id/tvEndDateTimeShimmer"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="20dp"
+                        android:gravity="end"
+                        android:paddingStart="20dp"
+                        android:background="@color/shimmer_bg"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/background"
+                        android:textSize="@dimen/big"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/request_night1Shimmer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/request_date"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/d_bottom"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:visibility="gone"
+                    android:weightSum="2">
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/nights"
+                        android:textColor="@color/text_shadow"
+                        android:textSize="@dimen/midb" />
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:id="@+id/nightcount1Shimmer"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="8"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/background"
+                        android:textSize="@dimen/midb" />
+                    >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/request_nightShimmer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/request_hour"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/d_bottom"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:weightSum="2">
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/shimmer_bg"
+                        android:textColor="@color/text_shadow"
+                        android:textSize="@dimen/text_18" />
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:id="@+id/tvTotalHoursShimmer"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/background"
+                        android:textSize="@dimen/midb" />
+                    >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/request_guestShimmer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/request_nightShimmer"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/d_bottom"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:weightSum="2">
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/shimmer_bg"
+                        android:textColor="@color/text_shadow"
+                        android:textSize="@dimen/text_18" />
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:id="@+id/tvTotalGuestShimmer"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/background"
+                        android:textSize="@dimen/text_18" />
+                    >
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/price_dreakShimmer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/request_guestShimmer"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/d_bottom"
+                    android:paddingBottom="20dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rltPriceBreakDownShimmer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@color/transparent"
+                        android:paddingBottom="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.makent.trioangle.palette.TextView.MakentTextView
+                                android:id="@+id/total_amountShimmer"
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerInParent="true"
+                                android:background="@color/shimmer_bg"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/text_shadow"
+                                android:textSize="@dimen/bigi"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                        <com.makent.trioangle.palette.TextView.MakentTextView
+                            android:id="@+id/tvTotalPriceShimmer"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:gravity="center"
+                            android:background="@color/shimmer_bg"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/text_shadow"
+                            android:textSize="@dimen/bigi"
+                            android:textStyle="bold" />
+
+                        <com.makent.trioangle.palette.TextView.MakentLightTextView
+                            android:id="@+id/tvCurrencyCodeShimmer"
+                            android:layout_width="@dimen/text_30"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvTotalPriceShimmer"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toStartOf="@+id/tvTotalPriceShimmer"
+                            android:gravity="center"
+                            android:background="@color/shimmer_bg"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/text_shadow"
+                            android:textSize="@dimen/mid" />
+
+                        <com.makent.trioangle.palette.TextView.MakentLightTextView
+                            android:layout_width="145dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvTotalPriceShimmer"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="19dp"
+                            android:background="@color/shimmer_bg"
+                            android:gravity="center"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/background"
+                            android:textSize="@dimen/text_18" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

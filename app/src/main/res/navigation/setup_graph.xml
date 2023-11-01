@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/setup_nav_host_fragment"
+    app:startDestination="@id/photoFragment">
+
+    <fragment
+        android:id="@+id/photoFragment"
+        android:name="com.makent.trioangle.createspace.PhotoFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/photo_layout">
+
+        <action
+            android:id="@+id/action_photoFragment_to_spaceFragment"
+            app:destination="@id/spaceFragment"
+            app:enterAnim="@anim/trans_left_in"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/spaceFragment"
+        android:name="com.makent.trioangle.createspace.SpaceStyleFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/space_style_layout">
+
+        <action
+            android:id="@+id/action_spaceFragment_to_specialFeaturesFragment"
+            app:destination="@id/specialFeaturesFragment"
+            app:enterAnim="@anim/trans_left_in"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/specialFeaturesFragment"
+        android:name="com.makent.trioangle.createspace.SpecialFeatures"
+        android:label="fragment_third"
+        tools:layout="@layout/special_feature_style">
+
+        <action
+            android:id="@+id/action_specialFeaturesFragment_to_spaceRulesFragment"
+            app:destination="@id/spaceRulesFragment"
+            app:enterAnim="@anim/trans_left_in"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/spaceRulesFragment"
+        android:name="com.makent.trioangle.createspace.SpaceRulesFragment"
+        android:label="fragment_fourth"
+        tools:layout="@layout/space_rules_layout">
+
+        <action
+            android:id="@+id/action_spaceRulesFragment_to_spaceDescriptionFragment"
+            app:destination="@id/spaceDescriptionFragment"
+            app:enterAnim="@anim/trans_left_in"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/spaceDescriptionFragment"
+        android:name="com.makent.trioangle.createspace.SpaceDescriptionFragment"
+        android:label="fragment_fourth"
+        tools:layout="@layout/space_description_layout">
+
+    </fragment>
+
+
+</navigation>

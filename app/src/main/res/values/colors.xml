@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--App Theam text color-->
+<!--    <color name="background">#00A699</color>-->
+
+    <color name="background">#e82953</color>
+
+<!--    <color name="text_light_blue">#55AAAE</color>-->
+    <color name="text_light_blue">#e82953</color>
+    <color name="light_blue_disable">#ec5375</color>
+
+    <color name="title_text_color">#ffffff</color>
+    <color name="text_color">#f6f6f6</color>
+
+    <!--App Background color-->
+    <color name="g_start">#a21c3a</color>
+    <color name="g_center">#e82953</color>
+    <color name="g_end">#ec5375</color>
+    <color name="red_dim">#FFE27476</color>
+
+    <color name="button_border_green">#008489</color>
+
+    <color name="text_shadow">#484848</color>
+    <color name="text_shadow1">#636363</color>
+    <color name="brown">#C7896B</color>
+    <color name="text_light_shadow">#ff616161</color>
+    <color name="text_dark_gray">#ff778088</color>
+    <color name="transp_text_dark_gray">#F3778088</color>
+    <color name="text_light_gray">#aaaaaa</color>
+    <color name="text_bold">#001a16</color>
+    <color name="text_black">#000000</color>
+
+
+    <color name="line_gray">#DBDBDB</color>
+    <color name="pink">#F7AA94</color>
+    <color name="yellow">#FFB400</color>
+    <color name="rectgray">#DBDFDF</color>
+    <color name="day_back_color">#ffefefef</color>
+
+    <color name="blocked_days">#40778088</color>
+    <color name="blocked_hours">#40778088</color>
+    <color name="available_hours">#40778088</color>
+    <color name="reservation_clr">#4da9ad</color>
+    <color name="today_bg_color">#FFE2B4B6</color>
+
+    <!--<color name="colorPrimary">#FF5A5F</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">@color/hostButton</color>
+
+
+    <color name="red_text">@color/hostButton</color>
+    <color name="red_text_disable">@color/hostButtonDisable</color>
+
+    <color name="hostBgc">#D87F00</color>
+    <color name="hostSignupButton">#FF9600</color>
+    <color name="hostButton">#007F78</color>
+    <color name="hostButtonDisable">#7fd2cc</color>
+    &lt;!&ndash;<color name="hostButtonDisable">#e6ffee</color>&ndash;&gt;
+
+
+    <color name="guestBgc">#007F78</color>
+    <color name="guestButton">#D87F00</color>
+    <color name="guestButtonDisable">#4DFF9800</color>-->
+
+
+
+
+
+    <color name="colorPrimary">#FF5A5F</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccentDisable">#12FF4081</color>
+
+    <!--<color name="red_text">#FF5A5F</color>
+    <color name="red_text_disable">#ffbdbf</color>-->
+
+
+    <color name="red_text">#FF4081</color>
+    <color name="red_text_disable">#20FF4081</color>
+
+    <color name="hostBgc">@drawable/d_gradient_background</color>
+    <color name="hostSignupButton">@color/hostButton</color>
+    <color name="hostButton">@color/text_light_blue</color>
+    <color name="hostButtonDisable">@color/light_blue_disable</color>
+    <!--<color name="hostButtonDisable">#e6ffee</color>-->
+
+    <color name="guestBgc">@drawable/d_gradient_background</color>
+    <color name="guestButton">@color/text_light_blue</color>
+    <color name="guestButtonDisable">@color/light_blue_disable</color>
+    <color name="google_bg">#d34836</color>
+
+   <!-- Added for Makent Space:-->
+
+    <color name="cell_color">#05000000</color>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--android:startColor="#006E75"
+    android:centerColor="#006E75"
+    android:endColor="#008489"-->
+
+
+    <!--  Calender Host library Color -->
+
+    <color name="calendar_divider_host">#ffbababa</color>
+    <color name="calendar_inactive_month_bg_host">#ffd7d9db</color>
+    <color name="calendar_text_selected_host">#ffffffff</color>
+    <color name="calendar_text_highlighted_host">#ff778088</color>
+
+    <color name="custom_header_text_host">@color/calendar_text_highlighted_host</color>   <!--Sun, Mon text color-->
+    <!--Selected text background color-->
+    <!-- old #F0F8DB date color-->
+    <color name="custom_background_today_host">@color/text_light_shadow</color> <!--Month Text color and unselected Dates text color-->
+    <!-- old #F0F8DB Disable date for before month background color -->
+    <color name="custom_text_selected_host">@color/title_text_color</color>  <!--Selected text color-->
+    <!--Disable Text color-->
+
+    <!--Calender  Host Colour-->
+
+
+<!--  Calender library Color -->
+
+ <color name="calendar_active_month_bg">#fff5f7f9</color>
+  <color name="calendar_bg">#ffffffff</color>
+  <color name="calendar_divider">#ffbababa</color>
+  <color name="calendar_inactive_month_bg">#ffd7d9db</color>
+  <color name="calendar_selected_day_bg">#ff379bff</color>
+  <color name="calendar_highlighted_day_bg">#ccffcc</color>
+  <color name="calendar_selected_range_bg">#ff96caff</color>
+  <color name="calendar_text_inactive">#40778088</color>
+  <color name="calendar_text_active">#ff778088</color>
+  <color name="calendar_text_selected">#ffffffff</color>
+  <color name="calendar_text_unselectable">@color/text_light_blue</color>
+  <!--<color name="calendar_text_highlighted">#ff778088</color>-->
+
+  <color name="calendar_text_highlighted">@color/text_light_blue</color>
+
+<!--Calender Colour-->
+
+    <color name="custom_header_text">@color/title_text_color</color>   <!--Sun, Mon text color-->
+    <!--Selected text background color-->
+    <color name="custom_background">#00000000</color>  <!-- old #F0F8DB date color-->
+    <color name="custom_background_today">@color/title_text_color</color> <!--Month Text color and unselected Dates text color-->
+    <color name="custom_background_disabled">#00000000</color>  <!-- old #F0F8DB Disable date for before month background color -->
+    <color name="custom_text_selected">@color/background</color>  <!--Selected text color-->
+    <color name="custom_text_inactive">@color/text_light_blue</color> <!--Disable Text color-->
+    <color name="transparent">#00000000</color>
+
+    <!--Colors from Airbnb-->
+
+
+    <color name="abc_input_method_navigation_guard">@android:color/black</color>
+    <color name="abc_search_url_text_normal">#7fa87f</color>
+    <color name="abc_search_url_text_pressed">@android:color/black</color>
+    <color name="abc_search_url_text_selected">@android:color/black</color>
+    <color name="accent_material_dark">@color/material_deep_teal_200</color>
+    <color name="accent_material_light">@color/material_deep_teal_500</color>
+    <color name="background_floating_material_dark">@color/material_grey_800</color>
+    <color name="background_floating_material_light">@android:color/white</color>
+    <color name="background_material_dark">@color/material_grey_850</color>
+    <color name="background_material_light">@color/material_grey_50</color>
+    <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
+    <color name="bright_foreground_disabled_material_light">#80000000</color>
+    <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
+    <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_dark</color>
+    <color name="bright_foreground_material_dark">@android:color/white</color>
+    <color name="bright_foreground_material_light">@android:color/black</color>
+    <color name="button_material_dark">#ff5a595b</color>
+    <color name="button_material_light">#ffd6d7d7</color>
+    <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
+    <color name="dim_foreground_disabled_material_light">#80323232</color>
+    <color name="dim_foreground_material_dark">#ffbebebe</color>
+    <color name="dim_foreground_material_light">#ff323232</color>
+    <color name="foreground_material_dark">@android:color/white</color>
+    <color name="foreground_material_light">@android:color/black</color>
+    <color name="highlighted_text_material_dark">#6680cbc4</color>
+    <color name="highlighted_text_material_light">#66009688</color>
+    <color name="material_blue_grey_800">#ff37474f</color>
+    <color name="material_blue_grey_900">#ff263238</color>
+    <color name="material_blue_grey_950">#ff21272b</color>
+    <color name="material_deep_teal_200">#ff80cbc4</color>
+    <color name="material_deep_teal_500">#ff009688</color>
+    <color name="material_grey_100">#fff5f5f5</color>
+    <color name="material_grey_300">#ffe0e0e0</color>
+    <color name="material_grey_50">#fffafafa</color>
+    <color name="material_grey_600">#ff757575</color>
+    <color name="material_grey_800">#ff424242</color>
+    <color name="material_grey_850">#ff303030</color>
+    <color name="material_grey_900">#ff212121</color>
+    <color name="notification_action_color_filter">#ffffffff</color>
+    <color name="notification_icon_bg_color">#ff9e9e9e</color>
+    <color name="notification_material_background_media_default_color">#ff424242</color>
+    <color name="primary_dark_material_dark">@android:color/black</color>
+    <color name="primary_dark_material_light">@color/material_grey_600</color>
+    <color name="primary_material_dark">@color/material_grey_900</color>
+    <color name="primary_material_light">@color/material_grey_100</color>
+    <color name="primary_text_default_material_dark">#ffffffff</color>
+    <color name="primary_text_default_material_light">#de000000</color>
+    <color name="primary_text_disabled_material_dark">#4Dffffff</color>
+    <color name="primary_text_disabled_material_light">#39000000</color>
+    <color name="ripple_material_dark">#33ffffff</color>
+    <color name="ripple_material_light">#1f000000</color>
+    <color name="secondary_text_default_material_dark">#b3ffffff</color>
+    <color name="secondary_text_default_material_light">#8a000000</color>
+    <color name="secondary_text_disabled_material_dark">#36ffffff</color>
+    <color name="secondary_text_disabled_material_light">#24000000</color>
+    <color name="switch_thumb_disabled_material_dark">#ff616161</color>
+    <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
+    <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
+    <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
+    <color name="white_bg">#fdfdfd</color>
+
+    <!-- Status Bar Colours-->
+    <color name="progress_primary">@color/white</color>
+    <color name="progress_secondary">@color/gray_scale</color>
+    <color name="progress_max_active">@color/white</color>
+
+    <color name="gray_scale">#8affffff</color>
+    <color name="white">#fff</color>
+    <color name="shimmer_bg">#dddddd</color>
+    <color name="red_mandatory">#FF0000</color>
+
+    <color name="simpletooltip_background">@android:color/primary_text_light</color>
+    <color name="simpletooltip_text">@android:color/white</color>
+    <color name="simpletooltip_arrow">@android:color/primary_text_light</color>
+</resources>

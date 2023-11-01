@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_editphone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.makent.trioangle.profile.edit.EditPhone">
+
+    <RelativeLayout
+        android:id="@+id/editphone_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/d_bottom_shadow"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/editphone_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingEnd="20dp"
+            android:scaleY=".8"
+            android:scaleX=".8"
+            android:paddingTop="5dp"
+            android:src="@drawable/back_grayblack_arrow"/>
+
+
+        <com.makent.trioangle.palette.TextView.MakentTextView
+            android:id="@+id/editphone"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/big"
+            android:textColor="@color/text_light_shadow"
+            android:text="@string/phonenumber"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/editphone_back" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:isScrollContainer="false"
+        android:layout_below="@+id/editphone_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:paddingBottom="10dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/phone3"
+                android:scaleX=".9"
+                android:scaleY=".9"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:text="@string/phone_msg"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/text_light_shadow"
+                android:textSize="@dimen/midi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutme_msg"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/edit_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textAlignment="viewStart"
+                android:minHeight="50dp"
+                android:layout_marginTop="10dp"
+                android:inputType="phone"
+                android:textCursorDrawable="@null"
+                android:layout_toEndOf="@+id/setprice_symbol"
+                android:textSize="@dimen/big"
+                android:cursorVisible="true"
+                android:text=""
+                android:backgroundTint="@color/red_text"
+                android:hint="011 2345 6789"
+                android:textColorHint="@color/text_light_gray"
+                android:paddingEnd="20dp"
+                android:textColor="@color/text_shadow"
+                android:fontFamily="@string/fonts_Book"/>
+            <com.makent.trioangle.palette.Button.MakentButton
+                android:id="@+id/editphone_sendcode"
+                android:layout_width="match_parent"
+                android:textAllCaps="false"
+                android:elevation="0dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:textSize="@dimen/mid"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:background="@drawable/d_red_button"
+                android:text="@string/send"
+                android:textStyle="bold"
+                android:textColor="@color/title_text_color"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
+

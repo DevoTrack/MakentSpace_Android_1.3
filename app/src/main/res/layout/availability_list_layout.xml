@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:id="@+id/rlt_available"
+        android:background="@drawable/d_bottom"
+        android:paddingBottom="15dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/n2_standard_row_right_caret_gray"
+            android:tint="@color/text_dark_gray"
+            android:scaleX=".8"
+            android:scaleY=".8"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/payout_img"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llt_day"
+            android:layout_marginRight="30dp"
+            android:weightSum="2"
+            >
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/tv_week"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="0dp"
+                android:text="Sunday"
+                android:textColor="@color/text_shadow"
+                android:textSize="@dimen/midb" />
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/llt_sun_close"
+                android:paddingLeft="10dp"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_sun_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    />
+
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:id="@+id/tv_sun_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Close"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midb" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+            <RadioGroup
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:weightSum="2"
+                android:visibility="gone"
+
+                android:layout_below="@+id/llt_day"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/radio_sun_all_hours"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:layout_height="wrap_content"
+                    android:text="@string/all_hours"
+                    />
+                <RadioButton android:id="@+id/radio_sun_set_hours"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/set_hours"
+                    android:layout_weight="1"
+                    android:layout_marginStart="15dp"
+                    />
+            </RadioGroup>
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

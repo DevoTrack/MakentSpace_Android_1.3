@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootView"
+    android:background="@color/title_text_color"
+    android:fitsSystemWindows="true">
+
+
+    <RelativeLayout
+        android:id="@+id/rlt_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/d_bottom_shadow"
+        android:paddingTop="15dp">
+
+        <RelativeLayout
+            android:id="@+id/rlt_done"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleY=".7"
+                android:scaleX=".7"
+                android:backgroundTint="@color/text_shadow"
+                android:paddingStart="15dp"
+                android:paddingEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/icon_checkmark_black"/>
+
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/tv_done"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/midb"
+                android:textColor="@color/text_light_shadow"
+                android:text="@string/done"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/iv_close" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_done_dot_loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="23dp"
+            android:src="@drawable/dot_loading" />
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_below="@+id/rlt_header"
+        tools:context=".host.RoomsBeds.BedsActivity"
+        android:background="@color/title_text_color"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/roomsdetailsnestedscrool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:background="@color/title_text_color"
+            >
+
+            <com.makent.trioangle.palette.TextView.MakentTextView
+                android:id="@+id/tv_bedroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+
+                android:layout_marginEnd="20dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/rooms_and_beds"
+                android:textAlignment="textStart"
+                android:textColor="@color/text_shadow"
+                android:textSize="@dimen/midv"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/llt_add_beds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_bedroom"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:weightSum="4">
+
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:id="@+id/bedtext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.6"
+                    android:text="@string/bed_room"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midb" />
+                <!--android:src="@drawable/d_minus_selector"
+                android:src="@drawable/d_plus_selector"-->
+                <ImageView
+                    android:id="@+id/iv_bedminus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".55"
+                    android:enabled="false"
+                    android:minHeight="30dp"
+                    android:textSize="@dimen/midb" />
+
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:id="@+id/tv_bed_count"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/midb" />
+
+                <ImageView
+                    android:id="@+id/iv_bedplus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".55"
+
+                    android:minHeight="30dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/background"
+                    android:textSize="@dimen/midb" />
+
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_bed_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llt_add_beds"
+                android:layout_marginTop="10dp"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    </FrameLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp">
+
+       <!-- <include layout="@layout/bottom_sheet"/>-->
+        <LinearLayout
+            android:id="@+id/lltBottomSheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/hostBgc"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical"
+            app:behavior_hideable="true"
+            app:behavior_peekHeight="0dp"
+            app:layout_behavior="@string/bottom_sheet_behavior">
+
+            <RelativeLayout
+                android:id="@+id/rltDone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/red_text"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <com.makent.trioangle.palette.TextView.MakentTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/done"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="@dimen/big"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvBedType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlt_beds_lay"
+                />
+        </LinearLayout>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>

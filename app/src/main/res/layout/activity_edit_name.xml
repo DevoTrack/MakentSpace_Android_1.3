@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_editname"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.makent.trioangle.host.LYS_Step2_AddTitle">
+
+    <RelativeLayout
+        android:id="@+id/editname_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/d_bottom_shadow"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/editname_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleY=".7"
+            android:scaleX=".7"
+            android:backgroundTint="@color/text_shadow"
+            android:paddingStart="15dp"
+            android:paddingEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/icon_checkmark_black"/>
+
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/editname"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midb"
+            android:textColor="@color/text_light_shadow"
+            android:text="@string/done"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/editname_back" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/editname_title"
+        android:layout_centerHorizontal="true">
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/firstname"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/text_shadow"
+            android:textSize="@dimen/midi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstname_txt"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:src="@drawable/d_bottom"/>
+        <EditText
+            android:id="@+id/editname_firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp"
+            android:gravity="top|start"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/midi"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="20dp"
+            android:textAlignment="viewStart"
+            android:paddingEnd="10dp"
+            android:textColor="@color/text_shadow"
+            android:fontFamily="@string/fonts_Book"
+            android:background="@color/title_text_color"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/first_name"
+        android:layout_centerHorizontal="true">
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/lastname"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/text_shadow"
+            android:textSize="@dimen/midi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:src="@drawable/d_bottom"/>
+        <EditText
+            android:id="@+id/editname_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp"
+            android:gravity="top|start"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/midi"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="10dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/text_shadow"
+            android:fontFamily="@string/fonts_Book"
+            android:background="@color/title_text_color"/>
+    </LinearLayout>
+
+</RelativeLayout>

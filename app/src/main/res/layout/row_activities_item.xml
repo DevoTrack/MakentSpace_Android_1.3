@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp">
+<RelativeLayout
+    android:id="@+id/rltActivities"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:clickable="false"
+        android:checked="true"
+        android:id="@+id/cbActivities"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:layout_toEndOf="@+id/cbActivities"
+        android:layout_centerVertical="true"
+        android:id="@+id/tvActivities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="asdg jkhdasgkj hdasgkj h"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/midb" />
+</RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginStart="10dp"
+        android:visibility="gone"
+        android:id="@+id/rvSubActivity"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:clipToPadding="false"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        android:isScrollContainer="false"/>
+</LinearLayout>

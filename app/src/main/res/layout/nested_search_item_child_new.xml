@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_linear"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:background="@color/title_text_color"
+        android:gravity="start|center_vertical">
+
+        <ImageView
+            android:id="@+id/hrline3"
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/d_bottom"/>
+        <ImageView
+            android:id="@+id/icons"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/hrline3"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp" />
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/tv_child"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midb"
+            android:textColor="@color/text_shadow"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/icons" />
+    </RelativeLayout>
+
+
+   <!-- <ImageView
+        android:id="@+id/hrline1"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/d_bottom"/>
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id= "@+id/icons"
+        android:layout_marginStart="15dp" />
+
+    <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:id="@+id/tv_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="@dimen/midb"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        android:text="Child Item"/>
+    </LinearLayout>
+    <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:visibility="gone"
+        android:id="@+id/tv_isShared"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:paddingBottom="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="@dimen/small"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        android:textColor="@color/text_light_blue"
+        android:text="@string/is_shared"/>
+    <ImageView
+        android:id="@+id/image_child"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/d_blue_line"/>-->
+</LinearLayout>

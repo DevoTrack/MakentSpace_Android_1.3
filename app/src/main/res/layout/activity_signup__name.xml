@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hostBgc"
+    android:layoutDirection="@string/layout_direction"
+    android:paddingEnd="20dp"
+    tools:context="com.makent.trioangle.signup.Signup_NameActivity">
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_height="match_parent">-->
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="20dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:background="@drawable/arrow_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/name_back"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:text="@string/name_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/vbigb"
+                    android:textColor="@color/title_text_color"
+                    android:textStyle="bold"
+                    android:id="@+id/name_title"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/name_back"
+                    android:layout_alignStart="@+id/name_back" />
+
+                <TextView
+                    android:text="@string/first_name"
+                    android:textSize="@dimen/mid"
+                    android:textColor="@color/text_color"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/txt_fname"
+                    android:layout_below="@+id/name_title"
+                    />
+
+                <com.makent.trioangle.palette.EditText.MakentBookEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:textSize="@dimen/bige"
+                    android:ems="10"
+                    android:textCursorDrawable="@null"
+                    android:id="@+id/first_name"
+                    android:textAlignment="viewStart"
+                    android:layout_below="@+id/txt_fname"
+                    android:layout_alignStart="@+id/txt_fname"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="2dp"
+                    android:textColor="@color/title_text_color"
+                    android:background="@null">
+                    <requestFocus/>
+                </com.makent.trioangle.palette.EditText.MakentBookEditText>
+
+                <View
+                    android:id="@+id/UnderLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignStart="@+id/txt_fname"
+                    android:layout_below="@+id/first_name"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/edit_text_bottom_line" />
+
+                <TextView
+                    android:text="@string/last_name"
+                    android:textSize="@dimen/mid"
+                    android:textColor="@color/text_color"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_lname"
+                    android:layout_below="@+id/first_name"
+                    android:layout_alignLeft="@+id/first_name"
+                    android:layout_alignStart="@+id/first_name"
+                    android:layout_marginTop="14dp" />
+
+                <com.makent.trioangle.palette.EditText.MakentBookEditText
+                    android:id="@+id/last_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_lname"
+                    android:layout_alignStart="@+id/txt_lname"
+                    android:background="@null"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="2dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/title_text_color"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/bige" />
+
+                <View
+                    android:id="@+id/UnderLine2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignStart="@+id/last_name"
+                    android:layout_below="@+id/last_name"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/edit_text_bottom_line" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/transparent"
+            android:src="@drawable/d_next_button"
+            android:layout_gravity="end|right"
+            android:id="@+id/name_next" />
+    </LinearLayout>
+
+</RelativeLayout>

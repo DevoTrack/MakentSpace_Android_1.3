@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    android:background="@color/title_text_color"
+    android:windowSoftInputMode="adjustPan|adjustResize"
+    tools:context=".chat.ChatActivity">
+
+    <RelativeLayout
+        android:id="@+id/chatback"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:clipToPadding="false"
+        android:background="@drawable/d_bottom_shadow"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/chat_backimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingEnd="20dp"
+            android:scaleY=".8"
+            android:scaleX=".8"
+            android:paddingTop="5dp"
+            android:src="@drawable/back_grayblack_arrow"/>
+
+        <com.makent.trioangle.palette.TextView.MakentTextView
+            android:id="@+id/chat_hostname"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/big"
+            android:textColor="@color/text_light_shadow"
+            android:text="Sonai"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/chat_backimg" />
+        <ImageView
+            android:id="@+id/chatmenu"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingEnd="5dp"
+            android:paddingTop="13dp"
+            android:paddingStart="5dp"
+            android:paddingBottom="13dp"
+            android:tint="@color/text_shadow"
+            android:visibility="gone"
+            android:src="@drawable/menu"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/chatback"
+        android:background="@color/title_text_color"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chatacceptbuttons"
+            android:background="@color/title_text_color"
+            android:orientation="vertical">
+
+        <LinearLayout
+
+            android:id="@+id/acceptbutton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/request_night"
+            android:weightSum="2"
+
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/chat_pre_approve"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/midv"
+                android:textColor="@color/title_text_color"
+                android:textAlignment="center"
+                android:text="@string/preapprove"
+                android:gravity="center_vertical"
+                android:background="@color/guestBgc"
+                android:layout_marginEnd="5dp"/>
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:textAlignment="center"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/midv"
+                android:textColor="@color/title_text_color"
+                android:text="@string/decline"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:id="@+id/chat_decline"
+                android:background="@color/guestButton"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/chatmessage_details"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/guestBgc"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="start"
+            android:layout_below="@+id/chatacceptbuttons"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/conversation_status"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/midv"
+                android:textColor="@color/title_text_color"
+                android:textAlignment="textEnd"
+                android:text="@string/expire"
+                android:paddingStart="15dp"
+                android:layout_alignBaseline="@+id/chat_booknow"
+                android:layout_alignBottom="@+id/chat_booknow"
+                android:layout_centerHorizontal="true" />
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/midb"
+                android:textColor="@color/background"
+                android:text="@string/details"/>
+            >
+        </LinearLayout>
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:textAlignment="center"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="@dimen/midv"
+            android:textColor="@color/title_text_color"
+            android:text="@string/booknow"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:id="@+id/chat_booknow"
+            android:layout_below="@+id/chatacceptbuttons"
+            android:background="@color/guestButton"
+            android:layout_alignParentEnd="true"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/sendmessage"
+        android:clipToPadding="false"
+        android:background="@color/title_text_color"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="50dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/chatmessage_details"
+        android:scrollbars="none">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/tv_translate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midv"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="85dp"
+            android:textColor="@color/text_dark_gray"
+            android:textAlignment="textEnd"
+            android:text="Translate to English"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:id="@+id/chat_dot_loader"
+            android:src="@drawable/dot_loading"
+            android:layout_below="@+id/chatmessage_details"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|center_vertical"/>
+
+        <LinearLayout
+            android:id="@+id/sendmessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/d_tab"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="10dp"
+            android:weightSum="4">
+
+            <EditText
+                android:id="@+id/editTextMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/write_msgs"
+                android:maxLines="3"
+                android:paddingBottom="10dp"
+                android:background="@color/transparent"/>
+
+            <com.makent.trioangle.palette.Button.MakentBookButton
+                android:id="@+id/buttonSend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textAllCaps="false"
+                android:textColor="@color/guestButton"
+                android:textSize="@dimen/midb"
+                android:background="@color/transparent"
+                android:text="@string/send" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:id="@+id/send_dot_loader"
+        android:src="@drawable/dot_loading"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
+

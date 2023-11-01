@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/setup_nav_host_fragment"
+    app:startDestination="@id/activitysFragment">
+
+    <fragment
+        android:id="@+id/availabilityFragment"
+        android:name="com.makent.trioangle.createspace.AvailabilityFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/availability_layout">
+        <action
+            android:id="@+id/action_availabilityFragment_to_SpaceBookingtypeFragement"
+            app:destination="@id/SpaceBookingtypeFragement"
+            app:enterAnim="@anim/trans_left_in"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+
+     <fragment
+        android:id="@+id/SpaceBookingtypeFragement"
+        android:name="com.makent.trioangle.createspace.SpaceBookingtype"
+        android:label="fragment_first"
+        tools:layout="@layout/space_booking_layout"/>
+
+    <fragment
+        android:id="@+id/setPriceFragment"
+        android:name="com.makent.trioangle.createspace.setprice.SetPriceFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_set_price">
+
+        <action
+            android:id="@+id/action_setPriceFragment_to_availabilityFragment"
+            app:destination="@id/availabilityFragment"
+            app:enterAnim="@anim/trans_left_in"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim"
+            />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/activitysFragment"
+        android:name="com.makent.trioangle.createspace.ActivitysFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_activitys">
+        <action
+            android:id="@+id/action_activitysFragment_to_setPriceFragment"
+            app:destination="@id/setPriceFragment"
+            app:enterAnim="@anim/trans_left_in"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+
+</navigation>

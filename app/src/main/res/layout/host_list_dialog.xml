@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/calendar_list"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layoutDirection="@string/layout_direction"
+android:background="@color/title_text_color">
+
+
+<ImageView
+    android:id="@+id/calendar_list_image"
+    android:layout_width="90dp"
+    android:layout_height="70dp"
+    android:background="#ccc"
+    android:adjustViewBounds="true"
+    android:scaleType="centerCrop"
+    android:src="@drawable/default_photo_bg"
+    android:layout_alignParentStart="true"/>
+
+<com.makent.trioangle.palette.TextView.MakentBookTextView
+    android:id="@+id/calendar_list_title"
+    android:layout_width="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="30dp"
+    android:textStyle="bold"
+    android:textAlignment="textStart"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/midb"
+    android:textColor="@color/text_shadow"
+    android:singleLine="true"
+    android:ellipsize="end"
+    android:text= " adsgj kladsgjkl ajsd gkl sadg adsg adsgj adsg klajsdg kljasdgkl sadgl kldsgj  jgadsgj kldsagj l asgjasdg  sadgjasdg sd gkjasdg "
+    android:layout_toEndOf="@+id/calendar_list_image" />
+    <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:visibility="gone"
+        android:id="@+id/calendar_list_unlist"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/mid"
+        android:textColor="@color/text_dark_gray"
+        android:text="@string/unlisted"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/calendar_list_title"
+        android:layout_toEndOf="@+id/calendar_list_image" />
+    <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:id="@+id/calendar_list_dot"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/midb"
+        android:textColor="@color/text_shadow"
+        android:text="@string/dot"
+        android:layout_below="@id/calendar_list_title"
+        android:layout_toEndOf="@+id/calendar_list_unlist" />
+    <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:id="@+id/calendar_list_hometype"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/midi"
+        android:textColor="@color/text_shadow"
+        android:text="@string/entire_place"
+        android:layout_toEndOf="@+id/calendar_list_dot"
+        android:layout_below="@+id/calendar_list_title" />
+
+    <ImageView
+        android:id="@+id/hrline3"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_below="@id/calendar_list_image"
+        android:src="@drawable/d_bottom"/>
+
+    <ImageView
+        android:id="@+id/calendar_list_tick"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+
+        android:background="@drawable/checkmark"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/hostButton"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

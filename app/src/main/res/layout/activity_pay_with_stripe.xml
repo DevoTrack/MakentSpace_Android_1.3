@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.makent.trioangle.stripepayment.PayWithStripeActivity">
+
+    <include
+        android:id="@+id/vHeader"
+        layout="@layout/app_header"/>
+
+    <ScrollView
+        android:id="@+id/svpayment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/vHeader"
+        android:layout_above="@+id/addpayment"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rltCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.stripe.android.view.CardMultilineWidget
+                android:id="@+id/card_multiline_widget"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shouldShowPostalCode="false" />
+
+            <LinearLayout
+                android:id="@+id/lltDetails"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/custom_border"
+                android:layout_below="@+id/card_multiline_widget"
+                android:layout_height="wrap_content">
+
+
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_23"
+                    android:textColor="@color/text_black"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/billing_information"
+                    android:id="@+id/tvBillinginfo"/>
+
+                <include
+                    android:id="@+id/vFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/billing_info_details"/>
+
+                <include
+                    android:id="@+id/vLastName"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/billing_info_details"/>
+
+                <include
+                    android:id="@+id/vPostal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/billing_info_details"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/addpayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/d_blue_border"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_16" />
+
+</RelativeLayout>

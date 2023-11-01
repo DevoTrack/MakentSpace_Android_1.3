@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.makent.trioangle.createspace.SpaceListingActivity">
+
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/viewNotoken"
+        layout="@layout/no_token_layout"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:shimmer_duration="1500">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/shimmer_bg"
+                    android:textAlignment="textStart"
+                    android:textSize="@dimen/text_18" />
+
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/shimmer_bg"
+                    android:textAlignment="textStart"
+                    android:textSize="@dimen/text_18" />
+
+                <include layout="@layout/shimmer_space_listing"/>
+
+                <include layout="@layout/shimmer_space_listing"/>
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivSpaceListingLoader"
+        android:src="@drawable/dot_loading"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:visibility="gone"
+        android:id="@+id/nsvSpaceList">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+    <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:id="@+id/tvListingTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/listing"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/midb" />
+
+    <LinearLayout
+     android:id="@+id/lltListed"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/tvListingTxt"
+     android:orientation="vertical">
+
+     <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:id="@+id/tvCompleted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/listed"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/midb" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCompleted"
+        android:scrollbars="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lltUnListed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lltListed"
+        android:orientation="vertical">
+
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/tvInProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/unlisted"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/midb" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvInProgress"
+                android:scrollbars="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/vEmptyListing"
+        android:visibility="gone"
+        layout="@layout/empty_listing"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:src="@drawable/ic_action_new"
+        android:tint="@color/title_text_color"
+        app:backgroundTint="@color/red_text"
+        app:elevation="0dp" />
+</RelativeLayout>

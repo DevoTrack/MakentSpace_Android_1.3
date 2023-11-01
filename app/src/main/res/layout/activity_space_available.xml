@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color"
+    tools:context="com.makent.trioangle.spacebooking.views.SpaceAvailableActivity">
+
+    <include
+        android:id="@+id/vHeader"
+        layout="@layout/app_header" />
+
+
+    <ScrollView
+        android:id="@+id/svBooking"
+        android:layout_below="@+id/vHeader"
+        android:layout_above="@+id/rlt_ReqspaceFooter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rltHostDetails"
+                android:visibility="gone"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.makent.trioangle.palette.TextView.MakentTextView
+                    android:id="@+id/tvBookingSpaceTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layoutDirection="@string/layout_direction"
+                    android:text="The Seashell House ~ Casa Caracol"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/text_30"
+                    android:textStyle="bold" />
+
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:id="@+id/tvBookingSpaceType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/ivBookingSpaceHostImage"
+                    android:layout_below="@+id/tvBookingSpaceTitle"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Entire place"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/text_18"
+                    android:visibility="visible" />
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:id="@+id/tv_space_host"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvBookingSpaceType"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="3dp"
+                    android:text="@string/Hostedby"
+                    android:textColor="@color/text_shadow"
+                    android:textSize="@dimen/text_18" />
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:id="@+id/tvBookingSpaceHostName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/ivBookingSpaceHostImage"
+                    android:layout_below="@+id/tvBookingSpaceType"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@+id/tv_space_host"
+                    android:maxWidth="120dp"
+                    android:layout_marginBottom="3dp"
+                    android:singleLine="true"
+                    android:text="Test"
+                    android:textColor="@color/guestButton"
+                    android:textSize="@dimen/text_18" />
+
+                <ImageView
+                    android:id="@+id/ivBookingSpaceHostImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/tvBookingSpaceTitle"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/no_profile_photo" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlt_Activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:id="@+id/tvChooseEventType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@color/text_black"
+                    android:text="@string/event_type"
+                    android:textSize="@dimen/text_18" />
+
+                <LinearLayout
+                    android:id="@+id/rlt_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvChooseEventType"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/title_text_color"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_activity_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:isScrollContainer="false"
+                        android:padding="10dp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_activity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:isScrollContainer="false"
+                        android:padding="10dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rltCalender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:id="@+id/tvCheckinCheckout"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/text_black"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:text="@string/check_in_check_out"
+                    android:textSize="@dimen/text_18" />
+
+                <RelativeLayout
+                    android:id="@+id/rltCheckinCheckOutDates"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvCheckinCheckout"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/title_text_color"
+                    android:divider="@drawable/divider"
+                    android:gravity="center_vertical"
+                    android:dividerPadding="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="20dp">
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:id="@+id/tvCheckinDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@+id/iv_divider"
+                        android:text="@string/checkin"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"
+                        android:textAlignment="textStart"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/background"
+                        android:textSize="@dimen/text_19"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/iv_divider"
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/d_slash_line"
+                        android:tint="@color/text_light_gray" />
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:id="@+id/tvCheckOutdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toEndOf="@+id/iv_divider"
+                        android:gravity="end"
+                        android:layout_centerVertical="true"
+                        android:text="@string/checkout"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/background"
+                        android:textSize="@dimen/text_19"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rltGuestCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:id="@+id/tvGuest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:textColor="@color/text_black"
+                    android:text="@string/Guests"
+                    android:textSize="@dimen/text_16" />
+
+
+                <EditText
+                    android:id="@+id/edtGuestCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvGuest"
+                    android:background="@color/title_text_color"
+                    android:fontFamily="@string/fonts_Book"
+                    android:gravity="top|start"
+                    android:hint="@string/Guests"
+                    android:inputType="number"
+                    android:minHeight="60dp"
+                    android:maxLength="5"
+                    android:padding="15dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/text_shadow"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_19" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rltContactHost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginBottom="20dp">
+
+
+                <com.makent.trioangle.palette.TextView.MakentBookTextView
+                    android:id="@+id/tvMessageToHost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:textColor="@color/text_black"
+                    android:text="@string/messagehost_title"
+                    android:textSize="@dimen/text_16" />
+
+
+                <EditText
+                    android:id="@+id/edtMessageToHost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvMessageToHost"
+                    android:background="@color/title_text_color"
+                    android:fontFamily="@string/fonts_Book"
+                    android:gravity="top|start"
+                    android:hint="@string/write_msg"
+                    android:inputType="textMultiLine"
+                    android:minHeight="180dp"
+                    android:padding="15dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/text_shadow"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_19" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rlt_ReqspaceFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/d_tab">
+
+        <com.makent.trioangle.palette.Button.MakentButton
+            android:id="@+id/btnReadyToBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/d_red_button"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/requestbook"
+            android:textAllCaps="false"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/text_18"
+            android:textStyle="bold" />
+
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:id="@+id/tvPerHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/tv_spacehourlyPrice"
+            android:text="@string/per_hour"
+            android:textColor="@color/text_shadow"
+            android:textSize="@dimen/text_15" />
+
+
+        <com.makent.trioangle.palette.TextView.MakentLogoIcon
+            android:id="@+id/tv_instant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/tvPerHour"
+            android:gravity="center"
+            android:text="Z"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/text_15"
+            android:visibility="visible" />
+
+
+        <com.makent.trioangle.palette.TextView.MakentTextView
+            android:id="@+id/tvSpaceEventType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_spacehourlyPrice"
+            android:text=""
+            android:layout_marginTop="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/btnReadyToBook"
+            android:layout_marginStart="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_13" />
+
+        <com.makent.trioangle.palette.TextView.MakentTextView
+            android:id="@+id/tv_spacehourlyPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$1500"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/text_shadow"
+            android:textSize="@dimen/text_18"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/chooselist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_text_color"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:id="@+id/show_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/big"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_shadow"
+            android:text="@string/chooselist"/>
+        <TextView
+            android:id="@+id/createwishlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:tint="@color/background" />
+
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:text="Test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midb"
+            android:textColor="@color/background"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="10dp"
+            android:padding="10dp"
+            android:id="@+id/request_details_hostedby"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

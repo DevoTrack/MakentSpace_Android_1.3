@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditText
+        android:id="@+id/edt"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/emptyinbox"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeContainerstart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/emptyinbox3"
+        android:visibility="visible"
+        android:layout_height="wrap_content">
+
+    <com.makent.trioangle.palette.TextView.MakentTextView
+        android:text="@string/inbox"
+        android:textSize="@dimen/vvbig"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/inbox"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/text_shadow"/>
+
+    <com.makent.trioangle.palette.TextView.MakentLightTextView
+        android:text="@string/inbox_msg"
+        android:textSize="@dimen/midb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inbox_msg"
+        android:textColor="@color/primary_dark_material_light"
+        android:layout_below="@+id/inbox"
+        android:layout_alignStart="@+id/inbox"
+        android:layout_marginTop="10dp" />
+
+    <com.makent.trioangle.palette.Button.MakentButton
+        android:id="@+id/inbox_start_explore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:textSize="@dimen/midb"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:background="@color/guestButton"
+        android:text="@string/start_exploring"
+        android:textColor="#fff"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/listinbox"
+        android:visibility="visible"
+        android:layoutDirection="@string/layout_direction"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/inboxalert"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clipToPadding="false"
+        android:background="@color/title_text_color"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/n2_icon_alert"/>
+
+    </RelativeLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/inboxlist"
+        android:layout_below="@+id/inboxalert"
+            android:paddingTop="60dp"
+        android:clipToPadding="false"
+
+            android:layoutDirection="locale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inbox_dot_loader"
+        android:src="@drawable/dot_loading"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <!--<ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:background="@drawable/messagepage" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:fontFamily="fonts/Thonburi.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#fff"
+        android:paddingBottom="20dp" >
+
+        <com.makent.trioangle.palette.Button.MakentButton
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:textSize="@dimen/midb"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:textAllCaps="false"
+            android:background="@color/red_text"
+            android:text="@string/start_exploring"
+            android:textColor="#fff" />
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/textView3"
+            android:textSize="@dimen/midi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="@string/no_message_details"
+            android:textColor="@color/text_light_gray"
+            />
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/textView4"
+            android:textSize="@dimen/midb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/no_message_yet"
+            android:textColor="@color/text_shadow"
+            />
+    </RelativeLayout>
+
+
+    <com.makent.trioangle.palette.TextView.MakentTextView
+        android:id="@+id/textView1"
+        android:fontFamily="fonts/Thonburi.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:text="@string/message"
+        android:textColor="@color/title_text_color"
+        android:textSize="30sp"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3" />-->
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/viewNotoken"
+        layout="@layout/no_token_layout"/>
+
+</RelativeLayout>

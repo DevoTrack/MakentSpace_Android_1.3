@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_payoutmain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color"
+    tools:context="com.makent.trioangle.profile.PayoutMainActivity">
+
+    <RelativeLayout
+        android:id="@+id/payout_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/d_bottom_shadow"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/payout_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingEnd="20dp"
+            android:scaleY=".8"
+            android:scaleX=".8"
+            android:paddingTop="5dp"
+            android:src="@drawable/back_grayblack_arrow"/>
+
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/payout"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/big"
+            android:textColor="@color/text_light_shadow"
+            android:text="@string/payouts"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/payout_back" />
+    </RelativeLayout>
+
+    <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:id="@+id/payoutmain_title"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/vbigb"
+        android:layout_below="@+id/payout_title"
+        android:textColor="@color/text_light_shadow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/payout_title"/>
+
+    <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:id="@+id/payoutmain_msg"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/midb"
+        android:layout_below="@+id/payoutmain_title"
+        android:textColor="@color/text_light_shadow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+
+        android:text="@string/payout_msg"/>
+    <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:id="@+id/payoutmain_link"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/midb"
+        android:layout_below="@+id/payoutmain_msg"
+        android:textColor="@color/red_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/payout_link"/>
+
+    <com.makent.trioangle.palette.Button.MakentBookButton
+        android:id="@+id/payout_start"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="80dp"
+        android:textSize="@dimen/big"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:background="@drawable/d_red_button"
+        android:text="@string/add_paypal_payout"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/title_text_color"/>
+
+    <com.makent.trioangle.palette.Button.MakentBookButton
+        android:id="@+id/payout_stripe"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="@dimen/big"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:background="@drawable/d_red_button"
+        android:text="@string/add_stripe_payout"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/title_text_color"/>
+
+    </RelativeLayout>

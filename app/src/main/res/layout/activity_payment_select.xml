@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/guestBgc"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.makent.trioangle.signup.Signup_DobActivity">
+
+    <ImageView
+        android:background="@drawable/arrow_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/select_payment_back"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <!--<ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/guestButton"
+        android:src="@drawable/next"
+        android:id="@+id/select_payment_next"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp" />-->
+
+
+   <!-- <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/select_payment_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/guestButton"
+        android:src="@drawable/next"
+
+        />-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/backarrow"
+        android:id="@+id/select_payment_next"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <com.makent.trioangle.palette.TextView.MakentTextView
+        android:text="@string/creditcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/bigi"
+        android:textColor="@color/material_grey_850"
+        android:textStyle="bold"
+        android:id="@+id/select_payment_creditcard"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="20dp"
+        android:layout_below="@+id/select_payment_title" />
+
+    <com.makent.trioangle.palette.TextView.MakentLightTextView
+        android:text="@string/select_payment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/vbigi"
+        android:textColor="@color/text_color"
+        android:textStyle="bold"
+        android:id="@+id/select_payment_title"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/select_payment_back"
+        android:layout_alignStart="@+id/select_payment_back"
+        android:layout_alignEnd="@+id/select_payment_next" />
+
+    <com.makent.trioangle.palette.TextView.MakentTextView
+        android:text="@string/paypal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/bigi"
+        android:textColor="@color/material_grey_850"
+        android:textStyle="bold"
+        android:id="@+id/select_payment_paypal"
+        android:layout_marginTop="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="20dp"
+        android:layout_below="@+id/select_payment_creditcard" />
+
+</RelativeLayout>

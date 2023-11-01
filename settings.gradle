@@ -1,0 +1,3 @@
+include ':app',':weekview_library',':signinwithapplebutton'
+//include ':additionalProjects:dot-progress-bar'
+//include ':additionalProjects:smooth-app-bar-layout'

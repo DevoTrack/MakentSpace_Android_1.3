@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    android:background="@color/hostBgc"
+    tools:context="com.makent.trioangle.MainActivity">
+    <RelativeLayout
+        android:id="@+id/rltHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.makent.trioangle.palette.Button.MakentAwesomeButton
+            android:background="@android:color/transparent"
+            android:text="&#xF138;"
+            android:textAlignment="textStart"
+            android:textSize="@dimen/small"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/title_text_color"
+            android:id="@+id/home_close"/>
+
+        <com.makent.trioangle.palette.Button.MakentBookButton
+            android:text="@string/login"
+            android:textAlignment="textEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/mid"
+            android:id="@+id/home_login"
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_above="@+id/rlt_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rltHeader">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/space_icon"
+                android:id="@+id/imageView"
+                android:layout_marginTop="15dp" />
+
+            <com.makent.trioangle.palette.TextView.MakentLightTextView
+                android:text="@string/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/vbigb"
+                android:textStyle="bold"
+                android:textColor="@color/title_text_color"
+                android:layout_marginTop="10dp"
+                android:id="@+id/home_title"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp"
+            android:background="@drawable/white_background"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:id="@+id/home_facebook"
+                android:background="@drawable/com_facebook_button_background">
+
+                <RelativeLayout
+                    android:id="@+id/rel_fb_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    >
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:src="@drawable/facebook"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/rel_fb_icon"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="@dimen/midb"
+                        android:text="@string/continue_facebook"
+                        android:textColor="@color/white"
+                        />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!--            <com.makent.trioangle.palette.Button.MakentBookButton-->
+            <!--                android:text="@string/continue_facebook"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:textSize="@dimen/midb"-->
+            <!--                android:minHeight="50dp"-->
+            <!--                android:textAllCaps="false"-->
+            <!--                android:drawableStart="@drawable/facebook_logo"-->
+            <!--                android:textColor="@color/background"-->
+            <!--                android:background="@drawable/d_fb_gp_background"-->
+            <!--                android:paddingStart="20dp"-->
+            <!--                android:id="@+id/home_facebook"-->
+            <!--                android:layout_marginTop="33dp"/>-->
+
+            <!--            <com.makent.trioangle.palette.Button.MakentBookButton-->
+            <!--                android:text="@string/continue_google"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:drawableStart="@drawable/google_plus"-->
+            <!--                android:paddingStart="20dp"-->
+            <!--                android:textSize="@dimen/midb"-->
+            <!--                android:textAllCaps="false"-->
+            <!--                android:textColor="@color/background"-->
+            <!--                android:background="@drawable/d_fb_gp_background"-->
+            <!--                android:layout_marginTop="12dp"-->
+            <!--                android:id="@+id/home_google"/>-->
+
+            <RelativeLayout
+                android:id="@+id/home_google"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/view_corner_rad_google"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/rel_google_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        >
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_centerVertical="true"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:src="@drawable/google"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/rel_google_icon"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/continue_google"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/midb"
+
+                            />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <com.willowtreeapps.signinwithapplebutton.view.SignInWithAppleButton
+                android:id="@+id/btnapplelogin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_marginTop="12dp"
+                android:padding="10dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <!--            <com.makent.trioangle.palette.Button.MakentBookButton-->
+            <!--                android:text="@string/createaccount"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:textSize="@dimen/midb"-->
+            <!--                android:textAllCaps="false"-->
+            <!--                android:textColor="@color/background"-->
+            <!--                android:background="@drawable/d_fb_gp_background"-->
+            <!--                android:layout_marginTop="18dp"-->
+            <!--                android:id="@+id/createaccount" />-->
+
+            <com.makent.trioangle.palette.Button.MakentBookButton
+                android:text="@string/createaccount"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="@dimen/midb"
+                android:textAllCaps="false"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:textColor="@color/text_black"
+                android:background="@drawable/black_border_bg"
+                android:layout_marginTop="18dp"
+                android:id="@+id/createaccount" />
+
+
+
+        </LinearLayout>
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/policy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:autoLink="all"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:linksClickable="true"
+                android:textColorLink="@color/title_text_color"
+                android:paddingBottom="3dp"
+                android:text="@string/policy"
+                android:textColor="@color/title_text_color" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/rlt_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp">
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/tv_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="18dp"
+            android:text="@string/language"
+            android:textAllCaps="false"
+            android:textColor="@color/title_text_color"
+            android:textSize="18sp" />
+
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/tv_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="2dp"
+            android:layout_toStartOf="@+id/iv_next"
+            android:text=""
+            android:textAllCaps="false"
+            android:textColor="@color/title_text_color"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp"
+            android:src="@drawable/next"
+            android:tint="@color/white_bg" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

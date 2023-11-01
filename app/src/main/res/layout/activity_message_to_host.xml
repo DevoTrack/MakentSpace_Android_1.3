@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_message_to_host"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.makent.trioangle.travelling.MessageToHostActivity">
+
+    <RelativeLayout
+       android:id="@+id/messagehost_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/d_bottom"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+        <ImageView
+            android:id="@+id/messagehost_close"
+            android:layout_width="wrap_content"
+            android:gravity="start"
+            android:padding="5dp"
+            android:textAlignment="textStart"
+            android:src="@drawable/back_grayblack_arrow"
+            android:layout_marginStart="20dp"
+            android:layout_height="wrap_content"/>
+
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/messagehost_done"
+            android:layout_width="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:textAlignment="textEnd"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/mid"
+            android:textColor="@color/text_shadow"
+            android:text="@string/done"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:padding="5dp"
+            android:layout_marginEnd="20dp" />
+        >
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/d_bottom"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/messagehost_title"
+        android:id="@+id/relativeLayout">
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/introduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midb"
+            android:textColor="@color/text_shadow"
+            android:id="@+id/room_details_hometype"
+            />
+
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:text="@string/msg_host"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/mid"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/text_shadow"
+            android:id="@+id/room_details_hostedby"
+            android:layout_below="@+id/room_details_hometype"
+            android:layout_toStartOf="@+id/message_to_hostprofile" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/message_to_hostprofile"
+            android:src="@drawable/no_profile_photo"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:inputType="textMultiLine"
+        android:textCursorDrawable="@null"
+        android:ems="10"
+        android:textAlignment="viewStart"
+        android:hint="@string/write_msg"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignStart="@+id/relativeLayout"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/messagehost_etxt"
+        android:background="@android:color/transparent"
+        android:layout_alignEnd="@+id/relativeLayout"
+        android:gravity="top">
+    <requestFocus />
+    </EditText>
+</RelativeLayout>

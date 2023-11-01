@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hostBgc"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.makent.trioangle.signup.Signup_DobActivity">
+
+    <ImageView
+        android:background="@drawable/arrow_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dob_back"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/dob_back"
+        android:layout_margin="20dp"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="9"
+        android:orientation="vertical"
+        android:layout_height="0dp">
+
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:text="@string/dob_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/vbigb"
+            android:textColor="@color/title_text_color"
+            android:textStyle="bold"
+            android:id="@+id/dob_title"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/dob_back"
+            android:layout_alignLeft="@+id/dob_back"
+            android:layout_alignStart="@+id/dob_back"
+            android:layout_toLeftOf="@+id/dob_next"
+            android:layout_toStartOf="@+id/dob_next" />
+
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:text="@string/dob_msg"
+            android:textSize="@dimen/big"
+            android:textColor="@color/title_text_color"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dob_msg"
+            android:layout_marginTop="18dp"
+            android:layout_alignEnd="@+id/dob_next" />
+
+
+        <com.makent.trioangle.palette.TextView.MakentTextView
+            android:text="@string/dob"
+            android:textSize="@dimen/mid"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="46dp"
+            android:id="@+id/txt_dob"
+            />
+
+        <com.makent.trioangle.palette.EditText.MakentBookEditText
+            android:textSize="@dimen/bige"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textCursorDrawable="@null"
+            android:text="   /   /"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_below="@+id/txt_dob"
+            android:layout_alignLeft="@+id/txt_dob"
+            android:layout_alignStart="@+id/txt_dob"
+            android:layout_marginTop="7dp"
+            android:id="@+id/dob"
+            android:layout_alignRight="@+id/dob_next"
+            android:layout_alignEnd="@+id/dob_next"
+            android:background="@android:color/transparent"
+            android:paddingTop="20dp"
+            android:paddingBottom="2dp"
+            android:textColor="@color/title_text_color"/>
+
+        <View
+            android:id="@+id/UnderLine"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@+id/dob"
+            android:layout_centerHorizontal="true"
+            android:layout_alignLeft="@+id/txt_dob"
+            android:layout_alignStart="@+id/txt_dob"
+            android:layout_alignRight="@+id/dob_next"
+            android:layout_alignEnd="@+id/dob_next"
+            android:background="@drawable/edit_text_bottom_line" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/transparent"
+                android:src="@drawable/d_next_button"
+                android:layout_gravity="end|right"
+                android:id="@+id/dob_next"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

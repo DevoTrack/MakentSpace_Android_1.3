@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_od_cancel_policy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.makent.trioangle.host.optionaldetails.OD_CancelPolicy">
+    <RelativeLayout
+        android:id="@+id/booktype_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/d_bottom_shadow"
+        android:paddingTop="15dp">
+        <RelativeLayout
+            android:id="@+id/book_title"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <ImageView
+                android:id="@+id/booktype_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingEnd="20dp"
+                android:scaleY=".8"
+                android:scaleX=".8"
+                android:paddingTop="5dp"
+                android:src="@drawable/back_grayblack_arrow"/>
+
+
+            <com.makent.trioangle.palette.TextView.MakentTextView
+                android:id="@+id/describe"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/big"
+                android:textColor="@color/text_light_shadow"
+                android:text="@string/cancelpolicy"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/booktype_back" />
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:id="@+id/book_dot_loader"
+            android:src="@drawable/dot_loading"
+            android:layout_gravity="center_horizontal"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/flexible_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/title_text_color"
+        android:layout_marginEnd="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/booktype_title"
+        android:layout_centerHorizontal="true">
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/cancellation_type3"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/text_light_shadow"
+            android:textSize="@dimen/midb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/flexible"/>
+
+        <CheckBox
+            android:theme="@style/checkBoxStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/flexible_check"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignBaseline="@+id/flexible"
+            android:layout_alignBottom="@+id/flexible"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/moderate_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:background="@color/title_text_color"
+        android:layout_marginEnd="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/flexible_lay"
+        android:layout_centerHorizontal="true">
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/cancellation_type2"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/text_light_shadow"
+            android:textSize="@dimen/midb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/moderate"/>
+
+        <CheckBox
+            android:theme="@style/checkBoxStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/moderate_check"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignBaseline="@+id/moderate"
+            android:layout_alignBottom="@+id/moderate"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="19dp" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/strict_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:background="@color/title_text_color"
+        android:layout_marginEnd="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/moderate_lay"
+        android:layout_centerHorizontal="true">
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/cancellation_type1"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/text_light_shadow"
+            android:textSize="@dimen/midb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/strict"/>
+
+        <CheckBox
+            android:theme="@style/checkBoxStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/strict_check"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignBaseline="@+id/strict"
+            android:layout_alignBottom="@+id/strict"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="19dp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

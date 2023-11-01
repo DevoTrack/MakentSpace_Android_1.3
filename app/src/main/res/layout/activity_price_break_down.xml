@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_text_color"
+    tools:context="com.makent.trioangle.host.PriceBreakDown">
+
+    <com.makent.trioangle.palette.Button.MakentAwesomeButton
+        android:background="@android:color/transparent"
+        android:text="&#xF138;"
+        android:fontFamily="fonts/CircularAir-Bold.otf"
+        android:textSize="@dimen/mid"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:paddingStart="@dimen/small11"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/text_shadow"
+        android:id="@+id/btnClose"/>
+
+    <com.makent.trioangle.palette.TextView.MakentTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTitle"
+        android:text="@string/pricebreakdown"
+        android:textSize="@dimen/bige"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_light_shadow"
+        android:layout_below="@+id/btnClose"
+        android:layout_marginStart="20dp"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rltPriceBreakDown"
+        android:layout_below="@+id/tvTitle"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/rvPriceBreakDown"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/smallb"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="80dp"
+            android:layout_marginEnd="20dp"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivDotLoader"
+        android:src="@drawable/dot_loading"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

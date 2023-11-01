@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lys"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.makent.trioangle.host.LYS_Step3_SetPrice">
+
+    <RelativeLayout
+        android:id="@+id/setprice_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/d_bottom_shadow"
+        android:paddingTop="15dp">
+        <RelativeLayout
+            android:id="@+id/price_title"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/setprice_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleY=".7"
+            android:scaleX=".7"
+            android:backgroundTint="@color/text_shadow"
+            android:paddingStart="15dp"
+            android:paddingEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/icon_checkmark_black"/>
+
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/setprice"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midb"
+            android:textColor="@color/text_light_shadow"
+            android:text="@string/done"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/setprice_back" />
+            </RelativeLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:id="@+id/price_dot_loader"
+            android:src="@drawable/dot_loading"
+            android:layout_gravity="center_horizontal"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setpricetitle_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/setprice_title">
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/price_msg"
+            android:layout_marginBottom="20dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/text_shadow"
+            android:textSize="@dimen/mid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/setprice_msg"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setprice_msg"
+            android:minHeight="50dp"
+            android:clipToPadding="false"
+            android:background="@drawable/d_bottom_shadow"
+            android:layout_centerHorizontal="true">
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:text="$"
+                android:textAlignment="center"
+                android:textColor="@color/red_text"
+                android:textSize="@dimen/vbigb"
+                android:background="@color/transparent"
+                android:paddingStart="20dp"
+                android:minHeight="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/setprice_symbol"
+                android:gravity="center"
+                android:layout_gravity="center" />
+
+            <EditText
+            android:id="@+id/price_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="50dp"
+            android:inputType="number"
+            android:textCursorDrawable="@null"
+            android:layout_toEndOf="@+id/setprice_symbol"
+            android:textSize="@dimen/vbigb"
+            android:cursorVisible="true"
+            android:text=""
+            android:paddingEnd="20dp"
+            android:textColor="@color/red_text"
+            android:fontFamily="@string/fonts_Book"
+            android:background="@color/transparent"
+
+            />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.makent.trioangle.palette.Button.MakentButton
+        android:id="@+id/changecurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/changecurrency"
+        android:textAllCaps="false"
+        android:textColor="@color/red_text"
+        android:textSize="@dimen/midb"
+        android:background="@color/transparent"
+        android:layout_below="@+id/setpricetitle_txt"/>
+
+    <RelativeLayout
+        android:id="@+id/setprice_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/setprice_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleY=".6"
+            android:scaleX=".6"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/light_blue_disable"
+            android:background="@drawable/icon_lightbulb_sm_blue"/>
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/price_tip"
+            android:textColor="@color/text_light_shadow"
+            android:textSize="@dimen/midi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/setprice_txt"
+            android:layout_marginEnd="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/setprice_img" />
+    </RelativeLayout>
+</RelativeLayout>

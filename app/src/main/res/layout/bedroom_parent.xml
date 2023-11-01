@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:background="@drawable/d_bottom"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlt_beds_lay"
+        >
+
+    <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:id="@+id/tv_bedroom"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/midb"
+        android:textColor="@color/text_shadow"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text= "Bedroom "
+        />
+
+    <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:id="@+id/tv_bed"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/tv_bedroom"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/midb"
+        android:textColor="@color/text_shadow"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text= "1 Bed"
+        />
+
+
+
+
+    <com.makent.trioangle.palette.Button.MakentButton
+        android:id="@+id/button_beds"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="@dimen/midb"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/red_text"
+        android:text="@string/add_beds"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/title_text_color"
+        />
+    </RelativeLayout>
+
+
+    <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:id="@+id/tv_bed_types"
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/rlt_beds_lay"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/midb"
+        android:textColor="@color/text_shadow"
+        android:ellipsize="end"
+
+        />
+
+</RelativeLayout>

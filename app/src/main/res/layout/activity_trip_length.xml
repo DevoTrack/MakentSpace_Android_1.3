@@ -1,0 +1,152 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/title_text_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/title_text_color"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetEnd="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" >
+            <com.makent.trioangle.palette.Button.MakentAwesomeButton
+                android:id="@+id/additionalprice_close"
+                android:layout_width="30dp"
+                android:paddingStart="7dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="&#xF138;"
+                android:textSize="@dimen/small"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textColor="@color/text_shadow" />
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <!--</android.support.design.widget.AppBarLayout>-->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedscroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="20dp"
+    android:paddingBottom="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="20dp">
+
+    <com.makent.trioangle.palette.TextView.MakentTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/triplength"
+        android:textSize="@dimen/vbigi"
+        android:textColor="@color/text_light_shadow"/>
+    <LinearLayout
+        android:id="@+id/minimum_stay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/d_bottom"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/minimum_stay"
+            android:textColor="@color/text_light_shadow"
+            android:textSize="@dimen/big"/>
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0 nights"
+            android:id="@+id/minimumstay"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/text_light_gray"
+            android:textSize="@dimen/midb"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/maximum_stay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/d_bottom"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/maximum_stay"
+            android:textColor="@color/text_light_shadow"
+            android:textSize="@dimen/big"/>
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0 nights"
+            android:id="@+id/maximumstay"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/text_light_gray"
+            android:textSize="@dimen/midb"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/availability"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/d_bottom"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+        <com.makent.trioangle.palette.TextView.MakentLightTextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/availability"
+            android:textColor="@color/text_light_shadow"
+            android:textSize="@dimen/big"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:fitsSystemWindows="false"
+            android:clipToPadding="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/availability_list"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

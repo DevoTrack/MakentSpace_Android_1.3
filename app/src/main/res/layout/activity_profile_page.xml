@@ -1,0 +1,600 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:fitsSystemWindows="true"
+    android:background="@color/title_text_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction">
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:id="@+id/rlt_oh_no"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:fillViewport="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/error_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:contentInsetLeft="0dp"
+                    android:contentInsetStart="0dp"
+                    app:contentInsetLeft="0dp"
+                    app:contentInsetStart="0dp"
+                    android:contentInsetRight="0dp"
+                    android:contentInsetEnd="0dp"
+                    app:contentInsetRight="0dp"
+                    app:contentInsetEnd="0dp"
+                    app:contentScrim="@color/title_text_color"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" >
+
+                    <RelativeLayout
+                        android:id="@+id/error_profilemain_title"
+                        android:background="@color/transparent"
+                        android:clipToPadding="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp">
+                        <ImageView
+                            android:id="@+id/error_profilemain_back"
+                            android:padding="10dp"
+                            android:layout_margin="10dp"
+                            android:elevation="3dp"
+                            android:background="@drawable/makent_circle_bg"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/back_grayblack_arrow"/>
+
+                    </RelativeLayout>
+                </androidx.appcompat.widget.Toolbar>
+
+                <RelativeLayout
+                    android:id="@+id/rlt_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/error_toolbar"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="20dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_error"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="13sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="13sp"
+                        android:elevation="20dp"
+                        app:cardCornerRadius="60dp">
+
+                        <ImageView
+                            android:id="@+id/error_image"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_error_indicator" />
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        android:id="@+id/tv_ohno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cv_error"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="13sp"
+                        android:layout_marginTop="13sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="13sp"
+                        android:layout_marginBottom="13sp"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/oh_no"
+                        android:textColor="@color/text_black"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:id="@+id/UnderLine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/tv_ohno"
+                        android:layout_alignStart="@+id/tv_ohno"
+                        android:layout_alignLeft="@+id/tv_ohno"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/grey_del_background" />
+
+                    <TextView
+                        android:id="@+id/tv_user_deleted"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/UnderLine"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="13sp"
+                        android:layout_marginTop="13sp"
+                        android:layout_marginEnd="13sp"
+                        android:layout_marginBottom="13sp"
+                        android:drawableStart="@drawable/ic_round_error"
+                        android:gravity="center"
+                        android:text="@string/user_deleted"
+                        android:textColor="@color/text_black" />
+
+                    <TextView
+                        android:id="@+id/tv_room_deleted"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_user_deleted"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="13sp"
+                        android:layout_marginTop="13sp"
+                        android:layout_marginEnd="13sp"
+                        android:layout_marginBottom="13sp"
+                        android:drawableStart="@drawable/ic_round_error"
+                        android:gravity="center"
+                        android:text="@string/room_deleted"
+                        android:textColor="@color/text_black" />
+
+                    <View
+                        android:id="@+id/UnderLine1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/tv_room_deleted"
+                        android:layout_alignStart="@+id/tv_room_deleted"
+                        android:layout_alignLeft="@+id/tv_room_deleted"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/grey_del_background" />
+
+                    <TextView
+                        android:id="@+id/tv_contact_admin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/UnderLine1"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="13sp"
+                        android:layout_marginTop="13sp"
+                        android:layout_marginEnd="13sp"
+                        android:layout_marginBottom="13sp"
+                        android:gravity="center"
+                        android:text="@string/contact_admin"
+                        android:textColor="@color/quantum_grey" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlt_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:paddingTop="250dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.makent.trioangle.palette.TextView.MakentTextView
+                    android:textSize="@dimen/vbigb"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_light_shadow"
+                    android:id="@+id/profilemain_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text=""
+                    android:layout_below="@+id/profilemain_img"
+                    android:textAlignment="textStart" />
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:id="@+id/profilemain_userlocation"
+                    android:textSize="@dimen/midi"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="20dp"
+                    android:textColor="@color/text_shadow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAlignment="2" />
+                <ImageView
+                    android:id="@+id/hrline"
+                    android:background="@drawable/d_bottom"
+                    android:layout_width="50dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="20dp"/>
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:id="@+id/profilemain_aboutuser"
+                    android:textSize="@dimen/midi"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="20dp"
+                    android:textColor="@color/text_shadow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAlignment="2" />
+                <RelativeLayout
+                    android:id="@+id/emailconnect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:background="@drawable/d_bottom">
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:textSize="@dimen/midb"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_shadow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/emailconnect"
+                        android:layout_centerVertical="true"
+                        android:textAlignment="2" />
+
+                    <com.makent.trioangle.palette.Button.MakentLightButton
+                        android:textSize="@dimen/midb"
+                        android:textStyle="bold"
+                        android:textColor="@color/guestButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/connect"
+                        android:minHeight="30dp"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/d_blue_line_color"
+                        android:textAlignment="center"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/makentLightButton" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/facebookconnect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:background="@drawable/d_bottom">
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:textSize="@dimen/midb"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_shadow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/facebookconnect"
+                        android:layout_centerVertical="true"
+                        android:textAlignment="2" />
+
+                    <com.makent.trioangle.palette.Button.MakentLightButton
+                        android:textSize="@dimen/midb"
+                        android:textStyle="bold"
+                        android:textColor="@color/guestButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Connect"
+                        android:minHeight="30dp"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/d_blue_line_color"
+                        android:textAlignment="center"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/googleconnect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:background="@drawable/d_bottom">
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:textSize="@dimen/midb"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_shadow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/googleconnect"
+                        android:layout_centerVertical="true"
+                        android:textAlignment="2" />
+
+                    <com.makent.trioangle.palette.Button.MakentLightButton
+                        android:textSize="@dimen/midb"
+                        android:textStyle="bold"
+                        android:textColor="@color/guestButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Connect"
+                        android:minHeight="30dp"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/d_blue_line_color"
+                        android:textAlignment="center"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/twitterconnect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:background="@drawable/d_bottom">
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:textSize="@dimen/midb"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_shadow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/twitterconnect"
+                        android:layout_centerVertical="true"
+                        android:textAlignment="2" />
+
+                    <com.makent.trioangle.palette.Button.MakentLightButton
+                        android:textSize="@dimen/midb"
+                        android:textStyle="bold"
+                        android:textColor="@color/guestButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Connect"
+                        android:minHeight="30dp"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/d_blue_line_color"
+                        android:textAlignment="center"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/profilemain_membersince"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:background="@drawable/d_bottom">
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:textSize="@dimen/midb"
+                        android:id="@+id/profilemain_member"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_shadow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/membersince"
+                        android:textAlignment="2" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/profile_work"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/d_bottom">
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:textSize="@dimen/midb"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_shadow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/work"
+                        android:textAlignment="2" />
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:id="@+id/profilemain_work"
+                        android:textSize="@dimen/midi"
+                        android:layout_centerVertical="true"
+                        android:paddingTop="5dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_shadow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textAlignment="2" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/profile_school"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/d_bottom">
+
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:textSize="@dimen/midv"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_shadow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/school"
+                        android:textAlignment="2" />
+                    <com.makent.trioangle.palette.TextView.MakentLightTextView
+                        android:id="@+id/profilemain_school"
+                        android:textSize="@dimen/midi"
+                        android:layout_centerVertical="true"
+                        android:paddingTop="5dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_shadow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textAlignment="2" />
+                </LinearLayout>
+
+
+
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:textSize="@dimen/bigb"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_shadow"
+                    android:id="@+id/profilemain_verified_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/verifiedinfo"
+                    android:layout_below="@+id/hrline1"
+                    android:textAlignment="2" />
+                <com.makent.trioangle.palette.TextView.MakentLightTextView
+                    android:textSize="@dimen/midi"
+                    android:textStyle="bold"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/text_shadow"
+                    android:id="@+id/profilemain_verified"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/phonenumberemail"
+                    android:layout_below="@+id/profilemain_verified_text"
+                    android:textAlignment="2" />
+            </LinearLayout>
+            <me.henrytao.smoothappbarlayout.SmoothAppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@android:color/transparent"
+                app:elevation="0dp">
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/collapsing_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed">
+
+                    <FrameLayout
+                        android:id="@+id/carouselLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <!--android:background="@drawable/profile_photo"-->
+                        <ImageView
+                            android:id="@+id/profilemain_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true" />
+                    </FrameLayout>
+
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:contentInsetLeft="0dp"
+                        android:contentInsetStart="0dp"
+                        app:contentInsetLeft="0dp"
+                        app:contentInsetStart="0dp"
+                        android:contentInsetRight="0dp"
+                        android:contentInsetEnd="0dp"
+                        app:contentInsetRight="0dp"
+                        app:contentInsetEnd="0dp"
+                        app:contentScrim="@color/title_text_color"
+                        app:layout_collapseMode="pin"
+                        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" >
+
+                        <RelativeLayout
+                            android:id="@+id/profilemain_title"
+                            android:background="@color/transparent"
+                            android:clipToPadding="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp">
+                            <ImageView
+                                android:id="@+id/profilemain_back"
+                                android:paddingStart="20dp"
+                                android:paddingTop="20dp"
+                                android:paddingEnd="20dp"
+                                android:paddingBottom="20dp"
+                                android:tint="@color/title_text_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/back_grayblack_arrow"/>
+
+                            <ImageView
+                                android:id="@+id/profilemain_edit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="10dp"
+                                android:paddingTop="10dp"
+                                android:paddingEnd="20dp"
+                                android:paddingBottom="10dp"
+                                android:tint="@color/title_text_color"
+                                android:src="@drawable/icon_edit_profile"
+                                android:layout_alignParentEnd="true" />
+                        </RelativeLayout>
+                    </androidx.appcompat.widget.Toolbar>
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+            </me.henrytao.smoothappbarlayout.SmoothAppBarLayout>
+        </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

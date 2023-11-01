@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.makent.trioangle.palette.TextView.MakentTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header"
+    android:layout_width="wrap_content"
+    android:paddingStart="20dp"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp"
+    android:textStyle="bold"
+    android:textAlignment="textStart"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/midv"
+    android:textColor="@color/text_light_shadow"
+    android:layoutDirection="@string/layout_direction"
+    android:text="@string/selectcurrency">
+
+</com.makent.trioangle.palette.TextView.MakentTextView>

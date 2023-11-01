@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:layoutDirection="@string/layout_direction"
+    tools:context=".travelling.HomeActivity">
+
+    <ImageView
+        android:id="@+id/iv_space_image"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:background="#ccc"
+        android:tileMode="repeat"
+        android:cacheColorHint="#00000000"
+        />
+
+    <LinearLayout
+        android:id="@+id/llt_header"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_space_image">
+
+
+    <com.makent.trioangle.palette.TextView.MakentTextView
+        android:text="Gallery . 5525 Sq ft"
+        android:layout_width="170dp"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginStart="5dp"
+        android:gravity="start"
+        android:textAlignment="viewStart"
+        android:layout_marginTop="5dp"
+        android:textSize="@dimen/small"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_space_type"
+        android:layout_below="@+id/iv_space_image"/>
+
+        <com.makent.trioangle.palette.TextView.MakentTextView
+            android:text="Johnny johnny"
+            android:layout_width="170dp"
+            android:textSize="@dimen/small"
+            android:gravity="start"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textColor="@color/text_shadow"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:id="@+id/tv_similarSpace_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rate_lay"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:layout_below="@+id/llt_header">
+
+    <com.makent.trioangle.palette.TextView.MakentBookTextView
+        android:text="$100 per hour"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/small"
+        android:textStyle="bold"
+        android:textColor="@color/text_shadow"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewStart"
+        android:id="@+id/tv_space_price" />
+
+        <com.makent.trioangle.palette.TextView.MakentLogoIcon
+            android:id="@+id/tv_instant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:text="Z"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/small" />
+
+</LinearLayout>
+
+    <RatingBar
+        android:id="@+id/rb_space_avg"
+        style="@style/CustomRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rate_lay"
+        android:layout_alignStart="@+id/llt_header"
+        android:layout_marginStart="5dp"
+        android:clickable="false"
+        android:isIndicator="true"
+        android:maxHeight="12.5dp"
+        android:minHeight="10.5dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="2dp" />
+
+    <com.makent.trioangle.palette.TextView.MakentLightTextView
+        android:id="@+id/tv_space_total_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rate_lay"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/rb_space_avg"
+        android:text=" 99+ Reviews"
+        android:textAlignment="viewStart"
+        android:textColor="@color/text_shadow"
+        android:textSize="@dimen/smallb" />
+
+    <ImageView
+        android:id="@+id/iv_space_wishlist"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/n2_heart_light_outline"
+        android:layout_marginTop="5dp"
+        android:layout_alignTop="@+id/iv_space_image"
+        android:layout_alignEnd="@+id/iv_space_image" />
+</RelativeLayout>

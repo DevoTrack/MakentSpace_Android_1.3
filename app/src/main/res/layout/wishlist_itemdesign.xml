@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    tools:context=".travelling.HomeActivity">
+
+    <ProgressBar
+        android:id="@+id/explore_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:visibility="gone"
+        />
+
+    <com.makent.trioangle.palette.TextView.MakentTextView
+        android:text="Siva sdg dsg sgsdg sagjsdg sdjg ls"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/midi"
+        android:textStyle="bold"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/text_shadow"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="140dp"
+        android:maxWidth="100dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:id="@+id/wishlist_name" />
+
+    <com.makent.trioangle.palette.TextView.MakentLightTextView
+        android:text="@string/nothing"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/midi"
+        android:textStyle="bold"
+        android:textColor="@color/text_shadow"
+        android:layout_height="wrap_content"
+        android:id="@+id/wishlist_homecount"
+        android:maxWidth="100dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_alignBaseline="@+id/wishlist_name"
+        android:layout_alignBottom="@+id/wishlist_name"
+        android:layout_toEndOf="@+id/wishlist_name"
+        android:layout_marginStart="10dp" />
+    <ImageView
+        android:id="@+id/wishlist_image"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:background="#ccc"
+        android:minWidth="270dp"
+        android:tileMode="repeat"
+        android:cacheColorHint="#00000000"
+        />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/wishlistimages"
+        android:orientation="horizontal"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="5dp"
+        android:weightSum="1">
+        <ImageView
+            android:id="@+id/wishlist_image1"
+            android:layout_width="0dp"
+            android:layout_weight=".65"
+            android:layout_height="130dp"
+            android:layout_marginEnd="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:tileMode="repeat"
+            android:cacheColorHint="#00000000"
+            android:paddingEnd="3dp"
+            />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight=".35"
+            android:layout_marginEnd="5dp"
+            android:layout_height="130dp">
+            <ImageView
+                android:id="@+id/wishlist_image2"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:scaleType="fitXY"
+                android:background="#ccc"
+                android:tileMode="repeat"
+                android:cacheColorHint="#00000000"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="5dp"/>
+
+            <ImageView
+                android:id="@+id/wishlist_image3"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:scaleType="fitXY"
+                android:background="#ccc"
+                android:tileMode="repeat"
+                android:cacheColorHint="#00000000"
+                android:layout_below="@+id/wishlist_image2"
+                android:layout_alignParentEnd="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+

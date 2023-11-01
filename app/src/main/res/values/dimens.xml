@@ -1,0 +1,51 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="vvvbig">50dp</dimen>
+    <dimen name="vvbig">40dp</dimen>
+    <dimen name="vbig1">37dp</dimen>
+    <dimen name="vbig">35dp</dimen>
+    <dimen name="vbigi">32dp</dimen>
+    <dimen name="vbigb">25dp</dimen>
+    <dimen name="bigb">27dp</dimen>
+    <dimen name="bigi">24dp</dimen>
+    <dimen name="bige">23dp</dimen>
+    <dimen name="big">21dp</dimen>
+    <dimen name="midv">20dp</dimen>
+    <dimen name="midb">18dp</dimen>
+    <dimen name="midi">16dp</dimen>
+    <dimen name="mid">15dp</dimen>
+    <dimen name="smalli">14dp</dimen>
+    <dimen name="small">13dp</dimen>
+    <dimen name="small11">11dp</dimen>
+    <dimen name="smallb">10dp</dimen>
+    <!--Calendar round size-->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Calendar Lib  -->
+
+    <dimen name="calendar_day_headers_paddingbottom">4dp</dimen>
+    <dimen name="calendar_month_topmargin">16dp</dimen>
+    <dimen name="calendar_month_title_bottommargin">4dp</dimen>
+    <dimen name="calendar_text_medium">18sp</dimen>
+    <dimen name="calendar_text_small">14sp</dimen>
+
+    <dimen name="progress_bar_height">3dp</dimen>
+    <dimen name="amenities_size">30dp</dimen>
+    <dimen name="r_amenities_size">33dp</dimen>
+
+
+    <dimen name="text_13">13sp</dimen>
+    <dimen name="text_15">15sp</dimen>
+    <dimen name="text_16">16sp</dimen>
+    <dimen name="text_18">18sp</dimen>
+    <dimen name="text_19">19sp</dimen>
+    <dimen name="text_21">21sp</dimen>
+    <dimen name="text_22">22sp</dimen>
+    <dimen name="text_23">23sp</dimen>
+    <dimen name="text_24">24sp</dimen>
+    <dimen name="text_30">30sp</dimen>
+    <dimen name="text_35">35sp</dimen>
+    <dimen name="header_title">22sp</dimen>
+
+</resources>

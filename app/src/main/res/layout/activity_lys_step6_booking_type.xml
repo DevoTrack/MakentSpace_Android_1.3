@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lys_step6_booking_type"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.makent.trioangle.host.LYS_Step6_Booking_Type">
+    <RelativeLayout
+        android:id="@+id/booktype_title1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/d_bottom_shadow"
+        android:visibility="gone"
+        android:paddingTop="15dp">
+        <RelativeLayout
+            android:id="@+id/book_title1"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+        <ImageView
+            android:id="@+id/booktype_back1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingEnd="20dp"
+            android:scaleY=".8"
+            android:scaleX=".8"
+            android:paddingTop="5dp"
+            android:src="@drawable/back_grayblack_arrow"/>
+
+
+        <com.makent.trioangle.palette.TextView.MakentTextView
+            android:id="@+id/describe1"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/big"
+            android:textColor="@color/text_light_shadow"
+            android:text="@string/booksetting"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/booktype_back1" />
+            </RelativeLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:id="@+id/book_dot_loader1"
+            android:src="@drawable/dot_loading"
+            android:layout_gravity="center_horizontal"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/booktype_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/d_bottom_shadow"
+        android:paddingTop="15dp">
+        <RelativeLayout
+            android:id="@+id/book_title"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <ImageView
+                android:id="@+id/booktype_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleY=".7"
+                android:scaleX=".7"
+                android:backgroundTint="@color/text_shadow"
+                android:paddingStart="15dp"
+                android:paddingEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/icon_checkmark_black"/>
+
+
+            <com.makent.trioangle.palette.TextView.MakentBookTextView
+                android:id="@+id/describe"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/midb"
+                android:textColor="@color/text_light_shadow"
+                android:text="@string/done"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/booktype_back" />
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:id="@+id/book_dot_loader"
+            android:src="@drawable/dot_loading"
+            android:layout_gravity="center_horizontal"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/book_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/booktype_title">
+
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/booksetting"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/text_light_shadow"
+            android:textSize="@dimen/midb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/booktitle_txt"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+
+    <RelativeLayout
+        android:id="@+id/instantbook_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/title_text_color"
+        android:layout_marginEnd="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/booktitle_txt"
+        android:layout_centerHorizontal="true">
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/instantbook"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/text_light_shadow"
+            android:textSize="@dimen/midb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/instantbook"/>
+
+        <CheckBox
+            android:theme="@style/checkBoxStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/instantbook_check"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignBaseline="@+id/instantbook"
+            android:layout_alignBottom="@+id/instantbook"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/requestbook_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:background="@color/title_text_color"
+        android:layout_marginEnd="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/instantbook_lay"
+        android:layout_centerHorizontal="true">
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:text="@string/requestbook"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/text_light_shadow"
+            android:textSize="@dimen/midb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/requestbook"/>
+
+        <CheckBox
+            android:theme="@style/checkBoxStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/requestbook_check"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignBaseline="@+id/requestbook"
+            android:layout_alignBottom="@+id/requestbook"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="19dp" />
+        <EditText
+            android:visibility="gone"
+            android:id="@+id/edt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

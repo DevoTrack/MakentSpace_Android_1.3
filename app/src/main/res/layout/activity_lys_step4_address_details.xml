@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lys"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.makent.trioangle.host.LYS_Step2_AddTitle">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addressdetails_title">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp">
+
+        <EditText
+            android:id="@+id/address_street"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midi"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:hint="@string/street_hint"
+            android:textCursorDrawable="@null"
+            android:textAlignment="viewStart"
+            android:backgroundTint="@drawable/d_edit_text_focus"
+            android:textColorHint="@color/calendar_text_unselectable"
+            android:textColor="@color/text_shadow"
+            android:layout_centerVertical="true" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/location_placesearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/vbig"
+            android:background="@color/text_color"/>
+
+        <EditText
+            android:id="@+id/address_apt"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midi"
+            android:hint="@string/apt_hint"
+            android:textCursorDrawable="@null"
+            android:textAlignment="viewStart"
+            android:backgroundTint="@drawable/d_edit_text_focus"
+            android:textColorHint="@color/calendar_text_unselectable"
+            android:textColor="@color/text_shadow"
+            android:layout_centerVertical="true" />
+        <EditText
+            android:id="@+id/address_city"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midi"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:hint="@string/city_hint"
+            android:textCursorDrawable="@null"
+            android:textAlignment="viewStart"
+            android:backgroundTint="@drawable/d_edit_text_focus"
+            android:textColorHint="@color/calendar_text_unselectable"
+            android:textColor="@color/text_shadow"
+            android:layout_centerVertical="true" />
+        <EditText
+            android:id="@+id/address_state"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midi"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:hint="@string/state_hint"
+            android:textCursorDrawable="@null"
+            android:textAlignment="viewStart"
+            android:backgroundTint="@drawable/d_edit_text_focus"
+            android:textColorHint="@color/calendar_text_unselectable"
+            android:textColor="@color/text_shadow"
+            android:layout_centerVertical="true" />
+        <EditText
+            android:id="@+id/address_pin"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midi"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:hint="@string/pin_hint"
+            android:textCursorDrawable="@null"
+            android:backgroundTint="@drawable/d_edit_text_focus"
+            android:textColorHint="@color/calendar_text_unselectable"
+            android:textColor="@color/text_shadow"
+            android:textAlignment="viewStart"
+            android:layout_centerVertical="true" />
+        <EditText
+            android:id="@+id/address_country"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midi"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:hint="@string/country_hint"
+            android:textCursorDrawable="@null"
+            android:backgroundTint="@drawable/d_edit_text_focus"
+            android:textColorHint="@color/calendar_text_unselectable"
+            android:textColor="@color/text_shadow"
+            android:layout_centerVertical="true"
+            android:textAlignment="viewStart"
+            />
+        <requestFocus></requestFocus>
+
+    </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/addressdetails_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/d_bottom_shadow"
+        android:paddingTop="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/describe_title"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/addressdetails_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleY=".7"
+            android:scaleX=".7"
+            android:backgroundTint="@color/text_shadow"
+            android:paddingStart="15dp"
+            android:paddingEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/icon_checkmark_black"/>
+
+
+        <com.makent.trioangle.palette.TextView.MakentBookTextView
+            android:id="@+id/addressdetails"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midb"
+            android:textColor="@color/text_light_shadow"
+            android:text="@string/done"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/addressdetails_back" />
+
+            </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:id="@+id/describe_dot_loader"
+            android:src="@drawable/dot_loading"
+            android:layout_gravity="center_horizontal"/>
+
+    </RelativeLayout>
+</RelativeLayout>
